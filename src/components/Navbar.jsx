@@ -12,8 +12,8 @@ const Navbar = () => {
 
         <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
             {navLinks.map((nav,index)=>(
-                <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index===navLinks.length-1? 'mr-0' : 'mr-10'} text-white `}>
-                    <a href={`#${nav.id}`}>
+                <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index===navLinks.length-1? 'mr-0' : 'mr-10'} text-white hover:text-secondary`}>
+                    <a href={`./${nav.id}`}>
                         {nav.title}
                     </a>
                 </li>
@@ -24,8 +24,8 @@ const Navbar = () => {
             <div className={`${toggle ? 'flex':'hidden'} p-6 bg-[#413f34] absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
                 <ul className='list-none flex flex-col justify-end items-center flex-1'>
                     {navLinks.map((nav,index)=>(
-                        <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index===navLinks.length-1? 'mb-0' : 'mb-4'} text-white `}>
-                            <a href={`#${nav.id}`}>
+                        <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index===navLinks.length-1? 'mb-0' : 'mb-4'} text-white hover:text-secondary`}>
+                            <a href={`./${nav.id}`}>
                                 {nav.title}
                             </a>
                         </li>

@@ -4,7 +4,7 @@ import App from './App'
 import './index.css'
 import {useEffect, useState} from 'react';
 import RingLoader from "react-spinners/RingLoader";
-
+import { BrowserRouter } from 'react-router-dom';
 
 const Loader=() =>{
   const [loading,setLoading]=useState(false);
@@ -30,6 +30,8 @@ return(
 }
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Loader />
+    <BrowserRouter>
+      <Loader />
+    </BrowserRouter>
   </React.StrictMode>
 )

@@ -3,8 +3,9 @@ import { facebook, instagram, linkedin, twitter  } from "../assets";
 export const navLinks =[
     { id:'home',title:'Home'},
     { id:'about',title:'About Us'},
-    { id:'team',title:'Members'},
+    { id:'members',title:'Members'},
     { id:'announcement',title:'Annoucements'},
+    { id:'events',title:'Events'},
     { id:'contact',title:'Contact Us'},
 ];
 
@@ -15,19 +16,19 @@ export const footerLinks = [
       links: [
         {
           name: "Who are we",
-          link: "https://www.hoobank.com/content/",
+          link: "./home#whoarewe",
         },
         {
           name: "What we do",
-          link: "https://www.hoobank.com/how-it-works/",
+          link: "./home#whatwedo",
         },
         {
           name: "What we have achieved",
-          link: "https://www.hoobank.com/create/",
+          link: "./home#achievements",
         },
         {
           name: "Our Alumni are at",
-          link: "https://www.hoobank.com/explore/",
+          link: "./home#alumni",
         },
       ],
     },
@@ -36,19 +37,19 @@ export const footerLinks = [
       links: [
         {
           name: "History of FOSS CIT",
-          link: "https://www.hoobank.com/help-center/",
+          link: "./about#history",
         },
         {
           name: "Details",
-          link: "https://www.hoobank.com/partners/",
+          link: "./about#detials",
         },
         {
           name: "Present Board",
-          link: "https://www.hoobank.com/suggestions/",
+          link: "./about#board",
         },
         {
           name: "Previous Board",
-          link: "https://www.hoobank.com/blog/",
+          link: "./about#prevboard",
         },
       ],
     },
@@ -57,17 +58,17 @@ export const footerLinks = [
       links: [
         {
           name: "Join Our Community",
-          link: "https://www.hoobank.com/our-partner/",
+          link: "./events#community",
         },
         {
-          name: "Offline Events",
-          link: "https://www.hoobank.com/become-a-partner/",
+          name: "Events Gallery",
+          link: "./events#gallery",
         },
       ],
     },
-  ];
+];
   
-  export const socialMedia = [
+export const socialMedia = [
     {
       id: "social-media-1",
       icon: instagram,

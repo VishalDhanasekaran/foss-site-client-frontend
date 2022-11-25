@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../style';
 import { logo } from '../assets';
 import { footerLinks,socialMedia } from '../constants';
+import { Link } from 'react-router-dom';
 const Footer = () => (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col `}>
       <div className={`${styles.flexCenter} md:flex-row flex-col mb-8 w-full border-t-[1px] border-t-[#f7f2cb] pt-5`}>
@@ -16,7 +17,7 @@ const Footer = () => (
                 <ul className='list-none mt-4'>
                   {footerLinks.links.map((link,index)=>(
                     <li key={link.name} className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index !== footerLinks.links.length-1? 'mb-4': 'mb-0' }`}>
-                      {link.name}
+                      <a href={link.link}>{link.name}</a>
                     </li>
                   ))}
                 </ul>

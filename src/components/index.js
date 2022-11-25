@@ -1,9 +1,12 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Hero from "./Hero";
-import Home from "./Home";
 import HomePage from "./pages/HomePage";
+import AboutUs from "./pages/AboutUs";
+import Members from "./pages/Members";
+import Contact from "./pages/Contact";
+import Announcement from "./pages/Announcement";
+import Events from "./pages/Events";
 
 export{
-    Navbar, Footer, Hero,Home,HomePage
+    Navbar, Footer, HomePage,AboutUs,Members,Contact,Announcement,Events
 };
