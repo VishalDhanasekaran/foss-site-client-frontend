@@ -10,7 +10,11 @@ import twitter from "./twitter.svg";
 import discord from "./discord.svg";
 import youtube from "./youtube.svg";
 import github from "./github.svg";
+import location from "./location.svg"
+import mail from "./mail.svg"
+import phone from "./phone.svg"
+
 
 export {
-    logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github
+    logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone
 };

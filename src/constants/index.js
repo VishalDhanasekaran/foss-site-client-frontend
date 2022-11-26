@@ -62,6 +62,19 @@ export const footerLinks = [
         },
       ],
     },
+    {
+      title: "Contact",
+      links: [
+        {
+          name: "Location",
+          link: "./contact#location",
+        },
+        {
+          name: "Mail Us",
+          link: "./contact#mailform",
+        },
+      ],
+    },
 ];
   
 export const socialMedia = [
