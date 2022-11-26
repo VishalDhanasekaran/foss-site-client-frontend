@@ -1,4 +1,4 @@
-import { facebook, instagram, linkedin, twitter  } from "../assets";
+import { discord, facebook, github, instagram, linkedin, twitter, youtube  } from "../assets";
 
 export const navLinks =[
     { id:'',title:'Home'},
@@ -44,12 +44,8 @@ export const footerLinks = [
           link: "./about#detials",
         },
         {
-          name: "Present Board",
-          link: "./about#board",
-        },
-        {
-          name: "Previous Board",
-          link: "./about#prevboard",
+          name: "Board Members",
+          link: "./about#members",
         },
       ],
     },
@@ -70,24 +66,29 @@ export const footerLinks = [
   
 export const socialMedia = [
     {
-      id: "social-media-1",
+      id: "instagram",
       icon: instagram,
-      link: "https://www.instagram.com/",
+      link: "https://instagram.com/fosscit",
     },
     {
-      id: "social-media-2",
-      icon: facebook,
-      link: "https://www.facebook.com/",
+      id: "discord",
+      icon: discord,
+      link: "https://discord.com/invite/zAqY6nqQ8H",
     },
     {
-      id: "social-media-3",
-      icon: twitter,
-      link: "https://www.twitter.com/",
+      id: "youtube",
+      icon: youtube,
+      link: "https://www.youtube.com/channel/UCZh_zcyn3jXz8-kHT-ezLRQ",
     },
     {
-      id: "social-media-4",
+      id: "linkedin",
       icon: linkedin,
-      link: "https://www.linkedin.com/",
+      link: "https://www.linkedin.com/company/foss-cit/",
+    },
+    {
+      id: "github",
+      icon: github,
+      link: "https://github.com/fosscit",
     },
   ];
 
@@ -319,5 +320,68 @@ export const membersList=[
     personalMail: "sainikhilsureshkrish28@gmail.com",
     clgMail: "71762131041@cit.edu.in",
     photo : "https://photos.app.goo.gl/tY16narrW55vNrkt5"
+  }
+]
+
+export const mainMembers=[
+  {
+    sno: 1,
+    name: "Tharun Kailash K",
+    role : "Secretary",
+    department: "M.Sc Software Systems",
+    year : "III",
+    dateOfBirth: "21-09-2002",
+    mobileNumber: 7603825332,
+    personalMail: "https://www.linkedin.com/in/tharun-kailash/",
+    clgMail: "2031051mss@cit.edu.in",
+    photo : "https://drive.google.com/file/d/1tX17fGwaHeTGr1RjJy8yKAkQKmBcco_Q/view?usp=share_link"
+  },
+  {
+    sno: 2,
+    name: "Yuvanika S V",
+    role : "Secretary",
+    department: "M.Sc Software Systems",
+    year : "III",
+    dateOfBirth: "11-08-2002",
+    mobileNumber: 9500710340,
+    personalMail: "yuvanikavishwa02@gmail.com",
+    clgMail: "2031056mss@cit.edu.in",
+    photo : "https://drive.google.com/file/d/1pT8GWKh-fwrxF5LwPi_xP-3w8xp5Hdky/view?usp=drivesdk"
+  },
+  {
+    sno: 3,
+    name: "Lakshana S",
+    role : "Treasurer",
+    department: "M.Sc Software Systems ",
+    year : "III",
+    dateOfBirth: "22-10-2002",
+    mobileNumber: 8610531943,
+    personalMail: "lakshanarajalakshmi22@gmail.com ",
+    clgMail: "2031024mss@cit.edu.in ",
+    photo : "https://drive.google.com/file/d/105j31iRuT_YbsHtnD4og-GL_JFtUB878/view?usp=drivesdk"
+  },
+  {
+    sno: 4,
+    name: "Dhivya Shree R",
+    role : "Joint Secretary",
+    department: "M.Sc Artificial Intelligence and Machine Learning",
+    year : "III",
+    dateOfBirth: "11-09-2002",
+    mobileNumber: 8754055705,
+    personalMail: "dhivyashree11sep2@gmail.com",
+    clgMail: "2034014aiml@cit.edu.in",
+    photo : "https://drive.google.com/file/d/1Gv9CXg8oczjKpjczXy-EAqsV1rdHgGIH/view?usp=drivesdk"
+  },
+  {
+    sno: 5,
+    name: "Shriram R",
+    role : "Joint Secretary",
+    department: "M.Sc Decision and Computing Sciences",
+    year : "III",
+    dateOfBirth: "18-03-2003",
+    mobileNumber: 9677751871,
+    personalMail: "rshriramrsr1232003@gmail.com",
+    clgMail: "2033033mdcs@cit.edu.in",
+    photo : "https://drive.google.com/file/d/1si5x91MRheAcE5cxXKF9Oz6_ohj9eATR/view?usp=drivesdk"
   }
 ]
