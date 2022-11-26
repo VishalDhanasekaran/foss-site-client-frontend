@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../style';
 import { arrowUp } from '../assets';
+import GetStarted from './GetStarted';
 
 const MemberCard = ({sno,name,role,department,year,dateOfBirth,mobileNumber,personalMail,clgMail,photo}) => {
   const pic=photo.split('/');
@@ -19,16 +20,7 @@ const MemberCard = ({sno,name,role,department,year,dateOfBirth,mobileNumber,pers
         <span >Role: {role}</span>
         <span >Department: {department}</span>
         <span >Year: {year}</span>
-        <div className={`${styles.flexCenter} w-full h-[40px] bg-black p-[2px] cursor-pointer mt-2`} onClick={handleClick}>
-          <div className={`${styles.flexCenter} flex-col bg-black w-[100%] h-[100%] `}>
-            <div className={`${styles.flexCenter} flex-row`}>
-              <p className='font-poppins font-medium text-[18px] leading-[23px] mr-2'>
-                <span className='text-white'>Linkedin</span>
-              </p>
-              <img src={arrowUp} className='w-[23px] h-[23px] object-contain' alt='arrow'/>
-            </div>
-          </div>
-        </div>
+        <GetStarted text={'Linkedin'}/>
       </div>
     </div>
   )
