@@ -8,8 +8,8 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false)
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-        <img src={logo} alt='FOSS-CIT Logo' className='w-[60px] h-[72px]' />
-
+        <img src={logo} alt='FOSS-CIT Logo' className='w-[80px] h-[75px]' />
+        <span className='font-poppins font-semibold text-4xl mx-10'>FOSS CIT</span>
         <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
             {navLinks.map((nav,index)=>(
                 <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index===navLinks.length-1? 'mr-0' : 'mr-10'} text-white hover:text-secondary`}>

@@ -13,9 +13,7 @@ const HomePage = () => {
                 Free and <br className="sm:block hidden" />{" "}
                 <span className="text-gradient">Open Source</span>{" "}
               </h1>
-              <div className="ss:flex hidden md:mr-4 mr-0">
-                <GetStarted />
-              </div>
+              
             </div>
 
             <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
@@ -24,6 +22,9 @@ const HomePage = () => {
             <p className={`${styles.paragraph} max-w-[470px] mt-5 text-justify`}>
               Nostrud cupidatat Lorem labore labore eu aliqua commodo ut eiusmod irure cillum laborum Lorem. Proident aliqua reprehenderit amet incididunt. Ex incididunt tempor anim esse nostrud eiusmod cupidatat. 
             </p>
+            <div className="ss:flex hidden md:mr-4 mr-0 ml-[25%]">
+              <GetStarted />
+            </div>
           </div>
 
           <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
