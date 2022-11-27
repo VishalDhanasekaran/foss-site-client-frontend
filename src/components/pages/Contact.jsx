@@ -75,7 +75,7 @@ const Contact = () => {
         </div>
 
         <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15664.54909339735!2d77.0272806!3d11.0283259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd9ca28d3c37cf8a!2sCoimbatore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1669484649904!5m2!1sen!2sin" loading="lazy" className='h-[30rem] w-[40rem] mx-10' ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15664.54909339735!2d77.0272806!3d11.0283259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd9ca28d3c37cf8a!2sCoimbatore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1669484649904!5m2!1sen!2sin" loading="lazy" className='h-[30rem] w-[40rem] mx-10 z-[10]' ></iframe>
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
           <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
