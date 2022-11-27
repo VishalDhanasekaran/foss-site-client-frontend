@@ -187,14 +187,6 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1vPcZF4mW9i_A0AodWTwJFntWoFNyvPGV/view?usp=drivesdk"
   },
   {
-    name: "Karthick Srinivas ",
-    role: "Content Writer",
-    department: "BTech AI&amp;DS",
-    year: "II",
-    linkedin: "https://www.linkedin.com/in/",
-    photo: "https://drive.google.com/file/d/1qmpX4ACH3UGaor8e8TTjAkt-ZKaIojmV/view?usp=sharing"
-  },
-  {
     name: "Padmashini A",
     role: "Content Writer",
     department: "M.Sc Artificial intelligence and Machine learning ",
