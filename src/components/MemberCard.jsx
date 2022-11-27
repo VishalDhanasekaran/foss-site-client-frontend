@@ -3,7 +3,7 @@ import styles from '../style';
 import { arrowUp } from '../assets';
 import GetStarted from './GetStarted';
 
-const MemberCard = ({sno,name,role,department,year,dateOfBirth,mobileNumber,personalMail,clgMail,photo}) => {
+const MemberCard = ({name,role,department,year,linkedin,photo}) => {
   const pic=photo.split('/');
   
   return (
@@ -17,7 +17,7 @@ const MemberCard = ({sno,name,role,department,year,dateOfBirth,mobileNumber,pers
         <span >Role: {role}</span>
         <span >Department: {department}</span>
         <span >Year: {year}</span>
-        <GetStarted text={'Linkedin'} link={personalMail}/>
+        <GetStarted text={'Linkedin'} link={linkedin}/>
       </div>
     </div>
   )
