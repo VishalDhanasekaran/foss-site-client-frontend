@@ -104,7 +104,7 @@ const Contact = () => {
                   <textarea name={'message'} placeholder={'Message'} className={`${styles.flexStart} mx-5 w-[75%] my-3`} onChange={e=>setMessage(e.target.value)}/>
                 </div>
                 <div className='flex justify-center items-center m-10'>
-                  <button className='bg-white text-black w-80 rounded-3xl h-10 hover:bg-secondary' onClick={handleSubmit}>SUBMIT</button>
+                  <button className='bg-white text-black w-80 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={handleSubmit}>SUBMIT</button>
                 </div>
               </form>
             </div>

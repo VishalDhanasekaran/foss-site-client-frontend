@@ -6,7 +6,7 @@ const GetStarted = ({text,link}) => {
     window.open(link, '_blank', 'noopener,noreferrer');
   }
   return (
-    <div className={`${styles.flexCenter} w-[200px] h-[40px]  bg-black p-[2px] cursor-pointer`} onClick={handleClick}>
+    <div className={`${styles.flexCenter} w-[200px] h-[40px]  bg-black p-[2px] cursor-pointer hover:scale-105 ease-in-out duration-300`} onClick={handleClick}>
         <div className={`${styles.flexCenter} flex-col bg-black w-[100%] h-[100%] `}>
           <div className={`${styles.flexCenter} flex-row`}>
             <p className='font-poppins font-medium text-[18px] leading-[23px] mr-2'>

@@ -1,12 +1,12 @@
 import { discord, facebook, github, instagram, linkedin, twitter, youtube  } from "../assets";
 
 export const navLinks =[
-    { id:'',title:'Home'},
-    { id:'about',title:'About Us'},
-    { id:'members',title:'Members'},
-    { id:'announcement',title:'Annoucements'},
-    { id:'events',title:'Events'},
-    { id:'contact',title:'Contact Us'},
+    { id:'/',title:'Home'},
+    { id:'/about',title:'About Us'},
+    { id:'/members',title:'Members'},
+    { id:'/announcement',title:'Annoucements'},
+    { id:'/events',title:'Events'},
+    { id:'/contact',title:'Contact Us'},
 ];
 
 
@@ -41,7 +41,7 @@ export const footerLinks = [
         },
         {
           name: "Details",
-          link: "./about#detials",
+          link: "./about#details",
         },
         {
           name: "Board Members",
@@ -301,4 +301,64 @@ export const mainMembers=[
     linkedin: "https://www.linkedin.com/in/",
     photo: "https://drive.google.com/file/d/1si5x91MRheAcE5cxXKF9Oz6_ohj9eATR/view?usp=drivesdk"
   }
+]
+
+
+export const eventsList=[
+  {
+    name:'event-1',
+    date:'10/12/2022',
+    time:'5pm - 6pm',
+    venue:'CM-102',
+    poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.',
+  },
+  {
+    name:'event-2',
+    date:'10/12/2022',
+    time:'5pm - 6pm',
+    venue:'CM-102',
+    poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+  },
+  {
+    name:'event-3',
+    date:'10/12/2022',
+    time:'5pm - 6pm',
+    venue:'CM-102',
+    poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+  },
+  {
+    name:'event-4',
+    date:'10/12/2022',
+    time:'5pm - 6pm',
+    venue:'CM-102',
+    poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+  },
+  {
+    name:'event-5',
+    date:'10/12/2022',
+    time:'5pm - 6pm',
+    venue:'CM-102',
+    poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+  },
+  {
+    name:'event-6',
+    date:'10/12/2022',
+    time:'5pm - 6pm',
+    venue:'CM-102',
+    poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+  },
+  {
+    name:'event-7',
+    date:'10/12/2022',
+    time:'5pm - 6pm',
+    venue:'CM-102',
+    poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+  },
 ]

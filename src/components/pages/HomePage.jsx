@@ -1,9 +1,16 @@
 import React from 'react'
+import { eventsList } from '../../constants';
 import GetStarted from '../GetStarted';
-import {linux } from '../../assets';
+import AnnounceCard from '../AnnounceCard';
+import {linux,left_arrow,right_arrow } from '../../assets';
 import styles from '../../style';
 
 const HomePage = () => {
+
+  const handleClick=(event,link)=>{
+    window.open(link, '_blank', 'noopener,noreferrer');
+  }
+
   return (
     <div>
       <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
@@ -36,6 +43,37 @@ const HomePage = () => {
 
         <div className={`ss:hidden ${styles.flexCenter}`}>
           <GetStarted text={'Get Started'}/>
+        </div>
+      </section>
+      
+      <section id={'upcomingevents'} className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[60.8px] leading-[75px] text-justify">
+            Few Words About FOSS-CIT
+          </h1>
+          <p className={`${styles.paragraph} mt-5 text-justify`}>
+                Fugiat quis nostrud eiusmod nostrud enim in. Do eiusmod in sunt consequat elit nostrud do Lorem. Ullamco eu cupidatat sint aliquip veniam minim.
+                Qui incididunt sunt eu excepteur nostrud deserunt do. Occaecat minim culpa ea veniam laborum do id sit officia dolore eiusmod. Voluptate culpa dolor proident pariatur aliqua elit minim nulla occaecat. Nostrud minim sunt irure elit adipisicing pariatur velit pariatur. 
+            </p>
+        </div>
+        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
+            Upcoming Events
+          </h1>
+
+          <div className='border-2 w-full h-[17rem] overflow-x-hidden overflow-y-auto'>
+            {eventsList.map((item,index)=>(
+              <div key={item.name} className={`flex flex-row w-full h-fit ${index === eventsList.length-1 ? 'border-b-0': 'border-b-2' }`} onClick={event => handleClick(event, `/announcement/${item.name}`)}>
+                <div className='w-full text-center hover:scale-105 ease-in-out duration-300'>
+                  <span className='text-2xl text-gradient'>{item.name}</span>
+                  <div className='flex flex-row justify-between mx-10 text-xl py-5'>
+                    <div>Date: {item.date}</div>
+                    <div>Time: {item.time}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
       
