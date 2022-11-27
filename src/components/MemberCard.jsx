@@ -5,10 +5,7 @@ import GetStarted from './GetStarted';
 
 const MemberCard = ({sno,name,role,department,year,dateOfBirth,mobileNumber,personalMail,clgMail,photo}) => {
   const pic=photo.split('/');
-  const handleClick=event=>{
-    
-    window.open(personalMail, '_blank', 'noopener,noreferrer');
-  }
+  
   return (
     <div className='flex flex-col justify-center items-center w-[250px] p-4 bg-black bg-opacity-80 backdrop-blur-sm rounded-lg m-2'>
       <div className=' w-full h-56'>
@@ -20,7 +17,7 @@ const MemberCard = ({sno,name,role,department,year,dateOfBirth,mobileNumber,pers
         <span >Role: {role}</span>
         <span >Department: {department}</span>
         <span >Year: {year}</span>
-        <GetStarted text={'Linkedin'}/>
+        <GetStarted text={'Linkedin'} link={personalMail}/>
       </div>
     </div>
   )
