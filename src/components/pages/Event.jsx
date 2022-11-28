@@ -13,6 +13,7 @@ const Event = () => {
       }
   return (
     <div className={`flex flex-col ${styles.paddingY}`}>
+        
         <section id={'event'} className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`}>
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] text-gradient my-4">
             {eventName.name}

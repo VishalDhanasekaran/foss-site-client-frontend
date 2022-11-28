@@ -40,11 +40,11 @@ const Contact = () => {
 
   }
   return (
-    <>
-      <div className={`flex-1 ${styles.paddingY} ${styles.flexStart} items-center flex-col xl:px-0 sm:px-16 px-6`}>
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
+    <div className={`flex flex-col ${styles.paddingY}`}>
+      <div className={`w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]`}>
+        <h2 className={`${styles.heading2} text-center text-gradient`}>
           Contact Us
-        </h1>
+        </h2>
       </div>
       <section id="location" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
         <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
@@ -113,7 +113,7 @@ const Contact = () => {
         
 
       </section>
-    </>
+    </div>
   )
 }
 
