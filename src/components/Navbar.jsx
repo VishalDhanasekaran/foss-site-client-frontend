@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {navLinks,socialMedia} from '../constants'
+import {navLinks} from '../constants'
 
 import {logo,menu,close} from '../assets'
 
@@ -19,7 +19,7 @@ const Navbar = () => {
                 </li>
             ))}
         </ul>
-        <div className='sm:hidden flex flex-1 justify-center items-center'>
+        <div className='sm:hidden flex justify-center items-center'>
             <img src={toggle? close : menu} alt='menu' className='w-[28px] h=[28px] object-contain' onClick={()=>setToggle((prev)=>!prev)} />
             <div className={`${toggle ? 'left-0':'-left-full'} fixed top-0 h-screen w-2/4 bg-gradient-to-tl from-white/10 to-[#2d270e] backdrop-blur-lg z-[15] p-6 md-hidden ease-in-out duration-[400ms] object-contain`}>
                 <div className='flex flex-row my-10 justify-center items-center'>
