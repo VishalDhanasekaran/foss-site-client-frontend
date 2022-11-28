@@ -61,7 +61,7 @@ const HomePage = () => {
             Upcoming Events
           </h1>
 
-          <div className='border-2 w-full h-[17rem] overflow-x-hidden overflow-y-auto events-scroll'>
+          <div className='shadow-lg shadow-[#b0a854] w-full h-[17rem] overflow-x-hidden overflow-y-auto events-scroll'>
             {eventsList.map((item,index)=>(
               <div key={item.name} className={`flex flex-row w-full h-fit ${index === eventsList.length-1 ? 'border-b-0': 'border-b-2' }`} onClick={event => handleClick(event, `/announcement/${item.name}`)}>
                 <div className='w-full text-center hover:scale-105 ease-in-out duration-300'>
