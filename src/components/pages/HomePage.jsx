@@ -7,10 +7,6 @@ import styles from '../../style';
 
 const HomePage = () => {
 
-  const handleClick=(event,link)=>{
-    window.open(link, '_blank', 'noopener,noreferrer');
-  }
-
   return (
     <div>
       <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
@@ -63,15 +59,17 @@ const HomePage = () => {
 
           <div className='shadow-lg shadow-[#b0a854] w-full h-[17rem] overflow-x-hidden overflow-y-auto events-scroll'>
             {eventsList.map((item,index)=>(
-              <div key={item.name} className={`flex flex-row w-full h-fit ${index === eventsList.length-1 ? 'border-b-0': 'border-b-2' }`} onClick={event => handleClick(event, `/announcement/${item.name}`)}>
-                <div className='w-full text-center hover:scale-105 ease-in-out duration-300'>
-                  <span className='text-2xl text-gradient'>{item.name}</span>
-                  <div className='flex flex-row justify-between mx-10 text-xl py-5'>
-                    <div>Date: {item.date}</div>
-                    <div>Time: {item.time}</div>
+              <a href={`/announcement/${item.name}`}>
+                <div key={item.name} className={`flex flex-row w-full h-fit ${index === eventsList.length-1 ? 'border-b-0': 'border-b-2' }`} >
+                  <div className='w-full text-center hover:scale-105 ease-in-out duration-300'>
+                    <span className='text-2xl text-gradient'>{item.name}</span>
+                    <div className='flex flex-row justify-between mx-10 text-xl py-5'>
+                      <div>Date: {item.date}</div>
+                      <div>Time: {item.time}</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
