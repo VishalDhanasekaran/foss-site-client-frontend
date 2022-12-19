@@ -17,11 +17,11 @@ const App = () => (
       <div className={`${styles.boxWidth} text-white`}>
         <Routes>
           <Route path='/' element={<HomePage/>}/>
+          <Route path='*' element={<HomePage/>}/>
           <Route path='/home' element={<HomePage/>}/>
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/members' element={<Members/>}/>
-          <Route path='/announcement' element={<Announcement/>}/>
-          <Route path='/announcement/:name' element={<Event/>}/>
+          <Route path='/events/:name' element={<Event/>}/>
           <Route path='/events' element={<Events/>}/>
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
