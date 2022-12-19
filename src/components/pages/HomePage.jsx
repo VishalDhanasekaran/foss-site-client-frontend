@@ -1,5 +1,5 @@
 import React from 'react'
-import { eventsList } from '../../constants';
+import { event } from '../../constants';
 import GetStarted from '../GetStarted';
 import {linux} from '../../assets';
 import styles from '../../style';
@@ -52,26 +52,16 @@ const HomePage = () => {
                 Qui incididunt sunt eu excepteur nostrud deserunt do. Occaecat minim culpa ea veniam laborum do id sit officia dolore eiusmod. Voluptate culpa dolor proident pariatur aliqua elit minim nulla occaecat. Nostrud minim sunt irure elit adipisicing pariatur velit pariatur. 
             </p>
         </div>
-        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up-left" data-aos-duration='2000'>
+        <div className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up-left" data-aos-duration='2000'>
           <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
             Current Event
           </h1>
-
-          <div className='shadow-lg shadow-[#b0a854] w-full h-[20rem] overflow-x-hidden overflow-y-auto events-scroll'>
-            {eventsList.map((item,index)=>(
-              <a href={`/announcement/${item.name}`}>
-                <div key={item.name} className={`flex flex-row w-full h-fit ${index === eventsList.length-1 ? 'border-b-0': 'border-b-2' }`} >
-                  <div className='w-full text-center hover:scale-105 ease-in-out duration-300'>
-                    <div className='text-2xl text-gradient my-5'>{item.name}</div>
-                    <div className='flex flex-row justify-between mx-10 text-xl py-5'>
-                      <div>Date: {item.date}</div>
-                      <div>Time: {item.time}</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
+          <a href={`/events/${event.name}`}>
+            <div >
+              <img src={event.poster} className='shadow-lg shadow-[#b0a854] w-full h-[20rem]'/>
+            </div>
+          </a>
+            {/* ))} */}
           
         </div>
       </section>

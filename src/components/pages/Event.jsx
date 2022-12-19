@@ -2,15 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import styles from '../../style';
 import { eventsList } from '../../constants';
-import AnnounceCard from '../AnnounceCard';
 
 const Event = () => {
 
     const eventName=useParams();
     console.log(eventsList);
-    const handleClick=(event,link)=>{
-        window.open(link, '_blank', 'noopener,noreferrer');
-      }
+    
   return (
     <div className={`flex flex-col ${styles.paddingY}`}>
         
