@@ -1,16 +1,16 @@
 import React from 'react'
 import { eventsList } from '../../constants';
 import GetStarted from '../GetStarted';
-import AnnounceCard from '../AnnounceCard';
-import {linux,left_arrow,right_arrow } from '../../assets';
+import {linux} from '../../assets';
 import styles from '../../style';
+
 
 const HomePage = () => {
 
   return (
     <div>
       <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} >
           <div className="flex flex-row justify-between items-center w-full">
             <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
               Free and <br className="sm:block hidden" />{" "}
@@ -43,7 +43,7 @@ const HomePage = () => {
       </section>
       
       <section id={'upcomingevents'} className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up-right" data-aos-duration='2000'>
           <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[60.8px] leading-[75px] text-justify">
             Few Words About FOSS-CIT
           </h1>
@@ -52,9 +52,9 @@ const HomePage = () => {
                 Qui incididunt sunt eu excepteur nostrud deserunt do. Occaecat minim culpa ea veniam laborum do id sit officia dolore eiusmod. Voluptate culpa dolor proident pariatur aliqua elit minim nulla occaecat. Nostrud minim sunt irure elit adipisicing pariatur velit pariatur. 
             </p>
         </div>
-        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up-left" data-aos-duration='2000'>
           <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
-            Upcoming Events
+            Current Event
           </h1>
 
           <div className='shadow-lg shadow-[#b0a854] w-full h-[20rem] overflow-x-hidden overflow-y-auto events-scroll'>
@@ -72,11 +72,12 @@ const HomePage = () => {
               </a>
             ))}
           </div>
+          
         </div>
       </section>
       
       <div className={`flex flex-col ${styles.paddingY}`}>
-        <section id={'whoarewe'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+        <section id={'whoarewe'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up" data-aos-duration='2000'>
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
                 Who are we...
             </h1>
@@ -86,7 +87,7 @@ const HomePage = () => {
                 Aliquip aute Lorem labore nulla tempor exercitation. Nulla incididunt amet in do voluptate sit culpa cupidatat nostrud et ad sit ex ullamco. Aliqua qui consectetur laborum sunt deserunt occaecat duis mollit non culpa. Enim magna eiusmod et aliquip anim anim minim dolore.
             </p>
         </section>
-        <section id={'whatwedo'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+        <section id={'whatwedo'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up" data-aos-duration='2000'>
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
                 what we do...
             </h1>
@@ -96,7 +97,7 @@ const HomePage = () => {
                 Aliquip aute Lorem labore nulla tempor exercitation. Nulla incididunt amet in do voluptate sit culpa cupidatat nostrud et ad sit ex ullamco. Aliqua qui consectetur laborum sunt deserunt occaecat duis mollit non culpa. Enim magna eiusmod et aliquip anim anim minim dolore.
             </p>
         </section>
-        <section id={'achievements'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+        <section id={'achievements'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up" data-aos-duration='2000'>
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
                 what we have achieved...
             </h1>
@@ -106,7 +107,7 @@ const HomePage = () => {
                 Aliquip aute Lorem labore nulla tempor exercitation. Nulla incididunt amet in do voluptate sit culpa cupidatat nostrud et ad sit ex ullamco. Aliqua qui consectetur laborum sunt deserunt occaecat duis mollit non culpa. Enim magna eiusmod et aliquip anim anim minim dolore.
             </p>
         </section>
-        <section id={'alumni'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+        <section id={'alumni'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up" data-aos-duration='2000'>
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
                 Our alumni are at...
             </h1>

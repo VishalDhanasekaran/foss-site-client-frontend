@@ -4,6 +4,7 @@ import styles from './style';
 import { Navbar,Footer,HomePage, AboutUs, Members, Contact, Announcement, Events } from './components'; 
 import { Route, Routes } from 'react-router-dom';
 import Event from './components/pages/Event';
+
 const App = () => (
   <div className='bg-header w-full overflow-hidden'>
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>

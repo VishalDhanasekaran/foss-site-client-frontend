@@ -5,6 +5,8 @@ import './index.css'
 import {useEffect, useState} from 'react';
 import RingLoader from "react-spinners/RingLoader";
 import { BrowserRouter } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Loader=() =>{
   const [loading,setLoading]=useState(false);
@@ -13,7 +15,9 @@ const Loader=() =>{
       setTimeout(()=>{
           setLoading(false)
       },1500);
-  },[])
+  },[]);
+
+  AOS.init();
 
 return(
   <div className='flex'>
