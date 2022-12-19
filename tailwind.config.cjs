@@ -14,6 +14,28 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      keyframes:{
+        fadeInLeft:{
+          'from':{opacity: '0', transform: 'translateX(-200px)'},
+          'to':{opacity: '1'}
+        },
+        fadeInRight:{
+          'from':{opacity: '0', transform: 'translateX(200px)'},
+          'to':{opacity: '1'}
+        },
+        fadeInUp:{
+          'from':{opacity: '0', transform: 'translateY(-200px)'},
+          'to':{opacity: '1'}
+        },
+        fadeInDown:{
+          'from':{opacity: '0', transform: 'translateY(200px)'},
+          'to':{opacity: '1'}
+        },
+        zoomIn:{
+          '0%': {transform:'scale(0.5,0.5)'},
+          '100%':{transform:'scale(1,1)'}
+        },
+      }
     },
     screens: {
       xs: "480px",

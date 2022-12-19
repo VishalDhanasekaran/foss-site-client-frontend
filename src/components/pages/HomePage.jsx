@@ -9,8 +9,8 @@ const HomePage = () => {
 
   return (
     <div>
-      <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} >
+      <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} `}>
+        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 animate-[fadeInLeft_1s_ease-in-out]`}>
           <div className="flex flex-row justify-between items-center w-full">
             <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
               Free and <br className="sm:block hidden" />{" "}
@@ -30,7 +30,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
+        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative animate-[fadeInRight_1s_ease-in-out]`}>
           <img src={linux} alt="billing" className="w-[60%] h-[60%] relative z-[5] md:w-[100%] md:h-[100%]" />
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />

@@ -41,15 +41,15 @@ const Contact = () => {
   }
   return (
     <div className={`flex flex-col ${styles.paddingY}`}>
-      <div className={`w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]`}>
+      <div className={`w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1] animate-[zoomIn_0.75s_ease-in-out]`}>
         <h2 className={`${styles.heading2} text-center text-gradient`}>
           Contact Us
         </h2>
       </div>
-      <section id="location" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+      <section id="location" className={`flex md:flex-row flex-col ${styles.paddingY} `}>
+        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 animate-[fadeInLeft_0.75s_ease-in-out]`}>
           <div className="flex flex-row justify-between items-center w-full">
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[32px] text-white ss:leading-[100.8px] leading-[50px]">
+            <h1 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[32px] text-white ss:leading-[55px] leading-[45px]">
               <span>Our Office</span><br className="sm:block" />{" "}
               <span className="text-gradient sm:text-[22px] text-[15px] leading-tight">FOSS Club at Coimbatore Institute of Technology</span>{" "}
             </h1>
@@ -74,7 +74,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
+        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative animate-[fadeInRight_0.75s_ease-in-out]`}>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.143871172457!2d77.02472797478232!3d11.027830589136626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8570bbbdef6f1%3A0x3d2892336503d775!2sFOSS(Free%20and%20Open%20Source%20Software)%20CIT!5e0!3m2!1sen!2sin!4v1671453029041!5m2!1sen!2sin" loading="lazy" className='h-[30rem] w-[40rem] mx-10 z-[10]' ></iframe>
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
@@ -82,7 +82,7 @@ const Contact = () => {
         </div>
       </section>
       
-      <section id="mailform" className={`flex md:flex-col flex-col ${styles.paddingY}`}>
+      <section id="mailform" className={`flex md:flex-col flex-col ${styles.paddingY}`} data-aos="zoom-in" data-aos-duration='2000'>
         <div>
           <h1 className="flex-1 font-poppins font-semibold text-center ss:text-[42px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
             Mail Us Your Message
