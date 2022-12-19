@@ -6,7 +6,8 @@ import Members from "./pages/Members";
 import Contact from "./pages/Contact";
 import Announcement from "./pages/Announcement";
 import Events from "./pages/Events";
+import Error from "./pages/Error";
 
 export{
-    Navbar, Footer, HomePage,AboutUs,Members,Contact,Announcement,Events
+    Navbar, Footer, HomePage,AboutUs,Members,Contact,Announcement,Events,Error
 };

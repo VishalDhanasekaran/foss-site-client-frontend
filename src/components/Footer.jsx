@@ -9,9 +9,9 @@ const Footer = () => {
     window.open(link, '_blank', 'noopener,noreferrer');
   }
 return (
-    <section className={`${styles.flexCenter} ${styles.paddingY} flex-col `}>
+    <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
       <div className={`${styles.flexCenter} md:flex-row flex-col mb-8 w-full border-t-[1px] border-t-[#f7f2cb] pt-5`}>
-        <div className='flex-1 flex flex-col justify-start mr-10'>
+        <div className='flex-1 flex flex-col justify-start'>
           <img src={logo} alt='FOSS Logo' className='w-[266px] h-[72px] object-contain' />
           <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>Free and Open Source Software, CIT</p>
         </div>

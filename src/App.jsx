@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style';
 
-import { Navbar,Footer,HomePage, AboutUs, Members, Contact, Announcement, Events } from './components'; 
+import { Navbar,Footer,HomePage, AboutUs, Members, Contact,Error, Events } from './components'; 
 import { Route, Routes } from 'react-router-dom';
 import Event from './components/pages/Event';
 
@@ -17,7 +17,7 @@ const App = () => (
       <div className={`${styles.boxWidth} text-white`}>
         <Routes>
           <Route path='/' element={<HomePage/>}/>
-          <Route path='*' element={<HomePage/>}/>
+          <Route path='*' element={<Error/>}/>
           <Route path='/home' element={<HomePage/>}/>
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/members' element={<Members/>}/>

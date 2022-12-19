@@ -4,7 +4,6 @@ export const navLinks =[
     { id:'/',title:'Home'},
     { id:'/about',title:'About Us'},
     { id:'/members',title:'Members'},
-    { id:'/announcement',title:'Annoucements'},
     { id:'/events',title:'Events'},
     { id:'/contact',title:'Contact Us'},
 ];
@@ -44,8 +43,25 @@ export const footerLinks = [
           link: "./about#details",
         },
         {
-          name: "Board Members",
-          link: "./about#members",
+          name: "Founders",
+          link: "./about#founders",
+        },
+        {
+          name: "Join Our Community",
+          link: "./about#community",
+        },
+      ],
+    },
+    {
+      title: "Members",
+      links: [
+        {
+          name: "Current Board",
+          link: "./members#current",
+        },
+        {
+          name: "Previous Board",
+          link: "./members#previous",
         },
       ],
     },
@@ -53,8 +69,8 @@ export const footerLinks = [
       title: "Events",
       links: [
         {
-          name: "Join Our Community",
-          link: "./events#community",
+          name: "Events",
+          link: "./events#events",
         },
         {
           name: "Events Gallery",
@@ -362,3 +378,13 @@ export const eventsList=[
     description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
   },
 ]
+
+export const event=
+  {
+    name:'event-1',
+    date:'10/12/2022',
+    time:'5pm - 6pm',
+    venue:'CM-102',
+    poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.',
+  }
