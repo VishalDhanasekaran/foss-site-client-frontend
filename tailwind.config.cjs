@@ -35,6 +35,10 @@ module.exports = {
           '0%': {transform:'scale(0.5,0.5)'},
           '100%':{transform:'scale(1,1)'}
         },
+        zoomOut:{
+          '0%': {transform:'scale(0,0)'},
+          '100%':{transform:'scale(1,1)'}
+        },
       }
     },
     screens: {

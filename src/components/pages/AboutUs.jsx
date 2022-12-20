@@ -20,7 +20,7 @@ const AboutUs = () => {
             Aliquip aute Lorem labore nulla tempor exercitation. Nulla incididunt amet in do voluptate sit culpa cupidatat nostrud et ad sit ex ullamco. Aliqua qui consectetur laborum sunt deserunt occaecat duis mollit non culpa. Enim magna eiusmod et aliquip anim anim minim dolore.
         </p>
       </section>
-      <section id={'details'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-right" data-aos-duration='2000'>
+      <section id={'details'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
         <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
             Details of FOSS-CIT
         </h1>
@@ -31,7 +31,7 @@ const AboutUs = () => {
         </p>
       </section>
 
-      <section id={'founders'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-right" data-aos-duration='2000'>
+      <section id={'founders'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
         <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
           Founders
         </h1>
@@ -41,7 +41,7 @@ const AboutUs = () => {
           </p>
       </section>
       
-      <section id={'community'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 mt-4 `} data-aos="fade-right" data-aos-duration='2000'>
+      <section id={'community'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 mt-4 `} data-aos="fade-up" data-aos-duration='2000'>
         <h2 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[22px] text-white ss:leading-[100.8px] leading-[75px]">
           Join Our Community
         </h2>
