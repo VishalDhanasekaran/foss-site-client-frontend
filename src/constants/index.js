@@ -326,56 +326,77 @@ export const eventsList=[
     date:'10/12/2022',
     time:'5pm - 6pm',
     venue:'CM-102',
+    speaker:'Tharun',
+    onlineLink:'https://meet.google.com',
     poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
     description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.',
+    material:'https://download.com'
   },
   {
     name:'event-2',
     date:'10/12/2022',
     time:'5pm - 6pm',
     venue:'CM-102',
+    speaker:'Tharun Kailash K',
+    onlineLink:'https://meet.google.com',
     poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
-    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.',
+    material:'https://download.com'
   },
   {
     name:'event-3',
     date:'10/12/2022',
     time:'5pm - 6pm',
     venue:'CM-102',
+    speaker:'Tharun',
+    onlineLink:'https://meet.google.com',
     poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
-    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.',
+    material:'https://download.com'
   },
   {
     name:'event-4',
     date:'10/12/2022',
     time:'5pm - 6pm',
     venue:'CM-102',
+    speaker:'Tharun',
+    onlineLink:'https://meet.google.com',
     poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
-    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.',
+    material:'https://download.com'
   },
   {
     name:'event-5',
     date:'10/12/2022',
     time:'5pm - 6pm',
     venue:'CM-102',
+    speaker:'Tharun',
+    onlineLink:'https://meet.google.com',
     poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
-    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.',
+    material:'https://download.com'
   },
   {
     name:'event-6',
     date:'10/12/2022',
     time:'5pm - 6pm',
     venue:'CM-102',
+    speaker:'Tharun',
+    onlineLink:'https://meet.google.com',
     poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
-    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.',
+    material:'https://download.com'
   },
   {
     name:'event-7',
     date:'10/12/2022',
     time:'5pm - 6pm',
     venue:'CM-102',
+    speaker:'Tharun',
+    onlineLink:'https://meet.google.com',
     poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
-    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.'
+    description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.',
+    material:'https://download.com'
   },
 ]
 
