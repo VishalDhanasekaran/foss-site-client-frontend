@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style';
 
-import { Navbar,Footer,HomePage, AboutUs, Members, Contact,Error, Events } from './components'; 
+import { Navbar,Footer,HomePage, AboutUs, Members, Contact,Error, Events,Login,Register } from './components'; 
 import { Route, Routes } from 'react-router-dom';
 import Event from './components/pages/Event';
 
@@ -24,6 +24,8 @@ const App = () => (
           <Route path='/events/:name' element={<Event/>}/>
           <Route path='/events' element={<Events/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/register' element={<Register/>}/>
         </Routes>
       </div>
     </div>

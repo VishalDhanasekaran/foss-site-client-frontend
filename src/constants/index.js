@@ -6,6 +6,7 @@ export const navLinks =[
     { id:'/members',title:'Members'},
     { id:'/events',title:'Events'},
     { id:'/contact',title:'Contact Us'},
+    { id:'/login',title:'Log In'},
 ];
 
 
