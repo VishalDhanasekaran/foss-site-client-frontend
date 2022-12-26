@@ -15,8 +15,9 @@ import mail from "./mail.svg"
 import phone from "./phone.svg"
 import left_arrow from "./left_arrow.svg"
 import right_arrow from "./right_arrow.svg"
+import google from "./google.svg"
 
 
 export {
-    logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow
+    logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google
 };

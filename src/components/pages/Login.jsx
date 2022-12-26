@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../../style'
 import * as yup from 'yup';
 import { useState } from 'react';
+import { google } from '../../assets';
 
 const Login = () => {
     const [email,setEmail]=useState();
@@ -39,7 +40,7 @@ const Login = () => {
                         <form method='post' autoComplete='off'>
                             
                             <div className='my-5 mx-10'>
-                                <input type='text' name={'email'} placeholder={'E-Mail'} className='mx-5 sm:w-[20rem] w-[75%] my-3' onChange={e=>setEmail(e.target.value)}/>
+                                <input type={'email'} name={'email'} placeholder={'E-Mail'} className='mx-5 sm:w-[20rem] w-[75%] my-3' onChange={e=>setEmail(e.target.value)}/>
                             </div>
                             
                             <div className='my-5 mx-10'>
@@ -49,14 +50,19 @@ const Login = () => {
                             <div className='flex justify-center items-center m-10'>
                                 <button className='bg-white text-black w-40 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={handleSubmit}>Log In</button>
                             </div>
-                            
-                            <div className='flex justify-center items-center m-10'>
-                                <span className={`${styles.paragraph}`}>New Here? <a href='register' className='hover:text-secondary'>Register</a></span>
-                            </div>
 
                         </form>
+                        <div className='flex h-[1px] w-full bg-white'/>
+                        <div className='flex flex-row bg-black rounded-3xl mt-5 w-50 p-3 hover:scale-105 ease-in-out duration-300 cursor-pointer'>
+                            <img alt='google' src={google} className={`w-[21px] h-[21px] object-contain bg-white m-auto rounded-xl`}/>
+                            <span className={`${styles.paragraph} mx-3 text-base`}>Log in with Google</span>
+                        </div>
+                    </div>
+                    <div className='flex justify-center items-center m-10'>
+                        <span className={`${styles.paragraph}`}>New Here? <a href='register' className='hover:text-secondary'>Register</a></span>
                     </div>
                 </div>
+                
             </div>
         </section>
     </div>

@@ -124,6 +124,7 @@ export const socialMedia = [
 
 export const membersList=[
   {
+    id:1001,
     name: "Tharun Kailash K",
     role: "Secretary",
     department: "M.Sc Software Systems",
@@ -132,6 +133,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1VltQH8E4_7cLxs9gLtlsFRTQPG_N2lYH/view?usp=drivesdk"
   },
   {
+    id:1002,
     name: "Yuvanika S V",
     role: "Secretary",
     department: "M.Sc Software Systems",
@@ -140,6 +142,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1pT8GWKh-fwrxF5LwPi_xP-3w8xp5Hdky/view?usp=drivesdk"
   },
   {
+    id:1003,
     name: "Lakshana S",
     role: "Treasurer",
     department: "M.Sc Software Systems ",
@@ -148,6 +151,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/105j31iRuT_YbsHtnD4og-GL_JFtUB878/view?usp=drivesdk"
   },
   {
+    id:1004,
     name: "Dhivya Shree R",
     role: "Joint Secretary",
     department: "M.Sc Artificial Intelligence and Machine Learning",
@@ -156,6 +160,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1Gv9CXg8oczjKpjczXy-EAqsV1rdHgGIH/view?usp=drivesdk"
   },
   {
+    id:1005,
     name: "Shriram R",
     role: "Joint Secretary",
     department: "M.Sc Decision and Computing Sciences",
@@ -164,6 +169,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1si5x91MRheAcE5cxXKF9Oz6_ohj9eATR/view?usp=drivesdk"
   },
   {
+    id:1006,
     name: "Gokulprasanth N ",
     role: "Head of Editing",
     department: "M.sc Data Science ",
@@ -172,6 +178,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1ah9mwNVcFTcdFYgLVHthWairHrUjcxfD/view?usp=drivesdk"
   },
   {
+    id:1007,
     name: "Theeraj Subhakaar AS",
     role: "Poster Designer",
     department: "M.sc Data Science ",
@@ -180,6 +187,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1AgBZCF6wBWdlosyeX6PhU5y2ykTc2oP1/view?usp=drivesdk"
   },
   {
+    id:1008,
     name: "Suhaina S",
     role: "Poster Designer",
     department: "M.Sc Software Systems",
@@ -188,6 +196,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1j3RCIuPubX6xiSe3D4QNtprjM1RqF0Bz/view?usp=drivesdk"
   },
   {
+    id:1009,
     name: "Chandru B",
     role: "Poster Designer",
     department: "M. Sc Software Systems",
@@ -196,6 +205,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1j5vDQ-YTibnyOmvQmaU2V8LDUkvAn4U2/view?usp=drivesdk"
   },
   {
+    id:1010,
     name: "Ana Dorthy L",
     role: "Content Writer",
     department: "M.Sc Software Systems",
@@ -204,6 +214,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1vPcZF4mW9i_A0AodWTwJFntWoFNyvPGV/view?usp=drivesdk"
   },
   {
+    id:1011,
     name: "Padmashini A",
     role: "Content Writer",
     department: "M.Sc Artificial intelligence and Machine learning ",
@@ -212,6 +223,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1y0z8tE-Vhz5zfvKBOn5n9TKiaj-M8fOC/view?usp=drivesdk"
   },
   {
+    id:1012,
     name: "Mithra V",
     role: "Innovation Head",
     department: "M.Sc Decision and computing science",
@@ -220,6 +232,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1ekQFzK-fRaXZzNEU1-ZH9-qAiDYqL-Bn/view?usp=drivesdk"
   },
   {
+    id:1013,
     name: "Meghashri A",
     role: "Innovation Head",
     department: "M.Sc Software Systems",
@@ -228,6 +241,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1YZehzq3Dv8XQ_GkHah6j85LEf1B2wiK2/view?usp=drivesdk"
   },
   {
+    id:1014,
     name: "Dhanush R",
     role: "Innovation Head",
     department: "Msc. Artificial intelligence and Machine learning",
@@ -236,6 +250,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1P89bZrQj33DtQqZvASB--VZ91UlVUABt/view?usp=drivesdk"
   },
   {
+    id:1015,
     name: "Srivarshini G",
     role: "Public relations",
     department: "M.Sc Data Science",
@@ -244,6 +259,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/19vPBHjJvq5HceperRRlKHp7KgW_PNjbP/view?usp=drivesdk"
   },
   {
+    id:1016,
     name: "Shakthivel K",
     role: "Public relations",
     department: "M.Sc Software Systems",
@@ -252,6 +268,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1qVCeULtV-I436FQOLXkvfuXwzPlXskmJ/view?usp=sharing"
   },
   {
+    id:1017,
     name: "Abirami R",
     role: "Digital Media Head",
     department: "M.Sc Decision and computing science",
@@ -260,6 +277,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1aJXMMuiSU3B5_XsWhda1eHW0GwQzXYp4/view?usp=drivesdk"
   },
   {
+    id:1018,
     name: "Sanjay A",
     role: "Event manager",
     department: "M.Sc Decision and Computing Science",
@@ -268,6 +286,7 @@ export const membersList=[
     photo: "https://drive.google.com/file/d/1NJm66ggJ75mITWwXPDRALNN3eLS3n9DA/view?usp=drivesdk"
   },
   {
+    id:1019,
     name: "Sai Nikhil S",
     role: "Event manager",
     department: "M.Sc Software Systems",
@@ -277,52 +296,10 @@ export const membersList=[
   }
 ]
 
-export const mainMembers=[
-  {
-    name: "Tharun Kailash K",
-    role: "Secretary",
-    department: "M.Sc Software Systems",
-    year: "III",
-    linkedin: "https://www.linkedin.com/in/tharun-kailash/",
-    photo: "https://drive.google.com/file/d/1VltQH8E4_7cLxs9gLtlsFRTQPG_N2lYH/view?usp=drivesdk"
-  },
-  {
-    name: "Yuvanika S V",
-    role: "Secretary",
-    department: "M.Sc Software Systems",
-    year: "III",
-    linkedin: "https://www.linkedin.com/in/",
-    photo: "https://drive.google.com/file/d/1pT8GWKh-fwrxF5LwPi_xP-3w8xp5Hdky/view?usp=drivesdk"
-  },
-  {
-    name: "Lakshana S",
-    role: "Treasurer",
-    department: "M.Sc Software Systems ",
-    year: "III",
-    linkedin: "https://www.linkedin.com/in/",
-    photo: "https://drive.google.com/file/d/105j31iRuT_YbsHtnD4og-GL_JFtUB878/view?usp=drivesdk"
-  },
-  {
-    name: "Dhivya Shree R",
-    role: "Joint Secretary",
-    department: "M.Sc Artificial Intelligence and Machine Learning",
-    year: "III",
-    linkedin: "https://www.linkedin.com/in/",
-    photo: "https://drive.google.com/file/d/1Gv9CXg8oczjKpjczXy-EAqsV1rdHgGIH/view?usp=drivesdk"
-  },
-  {
-    name: "Shriram R",
-    role: "Joint Secretary",
-    department: "M.Sc Decision and Computing Sciences",
-    year: "III",
-    linkedin: "https://www.linkedin.com/in/",
-    photo: "https://drive.google.com/file/d/1si5x91MRheAcE5cxXKF9Oz6_ohj9eATR/view?usp=drivesdk"
-  }
-]
-
 
 export const eventsList=[
   {
+    id:5001,
     name:'event-1',
     date:'10/12/2022',
     time:'5pm - 6pm',
@@ -334,6 +311,7 @@ export const eventsList=[
     material:'https://download.com'
   },
   {
+    id:5002,
     name:'event-2',
     date:'10/12/2022',
     time:'5pm - 6pm',
@@ -345,6 +323,7 @@ export const eventsList=[
     material:'https://download.com'
   },
   {
+    id:5003,
     name:'event-3',
     date:'10/12/2022',
     time:'5pm - 6pm',
@@ -356,6 +335,7 @@ export const eventsList=[
     material:'https://download.com'
   },
   {
+    id:5004,
     name:'event-4',
     date:'10/12/2022',
     time:'5pm - 6pm',
@@ -367,6 +347,7 @@ export const eventsList=[
     material:'https://download.com'
   },
   {
+    id:5005,
     name:'event-5',
     date:'10/12/2022',
     time:'5pm - 6pm',
@@ -378,6 +359,7 @@ export const eventsList=[
     material:'https://download.com'
   },
   {
+    id:5006,
     name:'event-6',
     date:'10/12/2022',
     time:'5pm - 6pm',
@@ -389,6 +371,7 @@ export const eventsList=[
     material:'https://download.com'
   },
   {
+    id:5007,
     name:'event-7',
     date:'10/12/2022',
     time:'5pm - 6pm',
