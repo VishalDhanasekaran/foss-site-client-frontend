@@ -39,12 +39,12 @@ const Login = () => {
                     <div className='flex flex-col justify-center items-center font-poppins text-justify text-white text-base'>
                         <form method='post' autoComplete='off'>
                             
-                            <div className='my-5 mx-10'>
-                                <input type={'email'} name={'email'} placeholder={'E-Mail'} className='mx-5 sm:w-[20rem] w-[75%] my-3' onChange={e=>setEmail(e.target.value)}/>
+                            <div className={` my-5 `}>
+                                <input type={'email'} name={'email'} placeholder={'E-Mail'} className=' sm:w-[20rem] w-full my-3' onChange={e=>setEmail(e.target.value)}/>
                             </div>
                             
-                            <div className='my-5 mx-10'>
-                                <input type='password' name={'password'} placeholder={'Password'} className='mx-5 sm:w-[20rem] w-[75%] my-3' onChange={e=>setPassword(e.target.value)}/>
+                            <div className={`my-5`}>
+                                <input type='password' name={'password'} placeholder={'Password'} className='sm:w-[20rem] w-full my-3' onChange={e=>setPassword(e.target.value)}/>
                             </div>
 
                             <div className='flex justify-center items-center m-10'>

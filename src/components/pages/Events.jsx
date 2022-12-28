@@ -3,20 +3,13 @@ import styles from '../../style';
 import AnnounceCard from '../AnnounceCard'
 import { eventsList } from '../../constants'
 
-const Events = ({admin}) => {
+const Events = () => {
   const [active,setActive]=useState('1');
-  const eventEdit=(event,id)=>{
-    console.log(id);
-  };
-  const eventDelete=(event,id)=>{
-    console.log(id);
-  };
+  
   return (
     <div className='flex flex-col'>
       
-      {admin == true && <div className={`flex ${styles.paddingY} ${styles.paddingX} justify-end items-end animate-[zoomIn_1s_ease-in-out]`}>
-        <a href='/member/add-event'><button className='bg-black text-white w-36 mx-3 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300'>Add Event</button></a>
-      </div>}
+      
 
       <div className={`${styles.paddingY} ${styles.flexCenter} animate-[zoomIn_1s_ease-in-out]`}>
         <select className='cursor-pointer bg-primary h-10 font-poppins text-2xl rounded-lg outline-none' value={active} onChange={(e)=>{setActive(e.target.value)}}>
@@ -41,10 +34,7 @@ const Events = ({admin}) => {
               {eventsList.map((card) => 
                 <div data-aos="fade-up" data-aos-duration='1000'>
                   <a href={`/events/${card.id}`}><AnnounceCard key={card.id} {...card} /></a>
-                  {admin == true && <div className={`${styles.flexCenter}`}>
-                    <button className='bg-black text-white w-36 mx-3 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={e=>eventEdit(e,card.id)}>Edit</button>
-                    <button className='bg-black text-white w-36 mx-3 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={e=>eventDelete(e,card.id)}>Delete</button>
-                  </div>}
+                  
                 </div>
               )}
             </div>
@@ -63,10 +53,7 @@ const Events = ({admin}) => {
               {eventsList.map((card) => 
                 <div data-aos="fade-up" data-aos-duration='1000'>
                   <a href={`/events/${card.id}`}><AnnounceCard key={card.id} {...card} /></a>
-                  {admin == true && <div className={`${styles.flexCenter}`}>
-                    <button className='bg-black text-white w-36 mx-3 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={e=>eventEdit(e,card.id)}>Edit</button>
-                    <button className='bg-black text-white w-36 mx-3 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={e=>eventDelete(e,card.id)}>Delete</button>
-                  </div>}
+                  
                 </div>
               )}
             </div>

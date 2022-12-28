@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style';
 
-import { Navbar,Footer,HomePage, AboutUs, Members, Contact,Error, Events,Login,MemberRegister,Register,MemberProfile,Event,AddEvent } from './components'; 
+import { Navbar,Footer,HomePage, AboutUs, Members, Contact,Error, Events,Login,Register,Event } from './components'; 
 import { Route, Routes } from 'react-router-dom';
 
 const App = () => (
@@ -19,19 +19,12 @@ const App = () => (
           <Route path='*' element={<Error/>}/>
           <Route path='/home' element={<HomePage/>}/>
           <Route path='/about' element={<AboutUs/>}/>
-          <Route path='/members' element={<Members admin={false}/>}/>
-          <Route path='/admin/members' element={<Members admin={true}/>}/>
+          <Route path='/members' element={<Members/>}/>
           <Route path='/events/:id' element={<Event/>}/>
-          <Route path='/events' element={<Events admin={false}/>}/>
-          <Route path='/admin/events' element={<Events admin={true}/>}/>
-          <Route path='/member/events' element={<Events admin={true}/>}/>
-          <Route path='/member/add-event' element={<AddEvent/>}/>
-          <Route path='/admin/add-event' element={<AddEvent/>}/>
+          <Route path='/events' element={<Events/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
-          <Route path='/admin/member-register' element={<MemberRegister/>}/>
-          <Route path='/member/profile/:id' element={<MemberProfile/>}/>
         </Routes>
       </div>
     </div>

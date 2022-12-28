@@ -2,7 +2,6 @@ import React from 'react'
 import styles from '../style';
 import { logo } from '../assets';
 import { footerLinks,socialMedia } from '../constants';
-import { Link } from 'react-router-dom';
 const Footer = () => {
 
   const handleClick=(event,link)=>{
@@ -17,7 +16,7 @@ return (
         </div>
         <div className='flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10'>
           {footerLinks.map((footerLinks)=>(
-            <div key={footerLinks.key} className='flex flex-col ss:my-0 my-4 min-w-[150px]'>
+            <div key={footerLinks.id} className='flex flex-col ss:my-0 my-4 min-w-[150px]'>
                 <h4 className='font-poppins font-medium text-[18px] leading-[27px] text-white mt-4 underline underline-offset-4'>{footerLinks.title}</h4>
                 <ul className='list-none mt-4'>
                   {footerLinks.links.map((link,index)=>(

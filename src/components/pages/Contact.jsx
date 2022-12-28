@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { arrowUp, location, mail, phone } from '../../assets';
+import { location, mail, phone } from '../../assets';
 import styles from '../../style';
 
 import * as yup from 'yup';
@@ -58,7 +58,7 @@ const Contact = () => {
           <h1 className="font-poppins font-semibold ss:text-[40px] text-[30px] text-white ss:leading-[100.8px] leading-[75px] w-full">
             Location:
           </h1>
-          <p className={`${styles.paragraph} max-w-[470px] text-justify`}>
+          <div className={`${styles.paragraph} max-w-[470px] text-justify`}>
             <div className='flex flex-row my-4'>
               <img src={location} className='w-[23px] h-[23px] object-contain'/>
               <span className='mx-5 cursor-pointer' onClick={event => handleClick(event, 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore, Tamil Nadu 641014 </span>
@@ -71,7 +71,7 @@ const Contact = () => {
               <img src={mail} className='w-[23px] h-[23px] object-contain'/>
               <span className='mx-5'>fosscit@gmail.com </span>
             </div>
-          </p>
+          </div>
         </div>
 
         <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative animate-[fadeInRight_0.75s_ease-in-out]`}>
