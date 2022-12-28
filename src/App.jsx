@@ -6,13 +6,13 @@ import { Route, Routes } from 'react-router-dom';
 
 const App = () => (
   <div className='bg-primary  w-full overflow-hidden'>
-    <div className={`${styles.paddingX} ${styles.flexCenter} bg-header animate-[fadeInUp_0.5s_ease-in-out]`}>
-      <div className={`${styles.boxWidth} text-white`}>
+    <div className={`${styles.paddingX} ${styles.flexCenter} fixed w-full z-[14] bg-header animate-[fadeInUp_0.5s_ease-in-out]`}>
+      <div className={`${styles.boxWidth} text-white `}>
         <Navbar/>
       </div>
     </div>
 
-    <div className={`${styles.flexStart}`}>
+    <div className={`${styles.flexStart} mt-32`}>
       <div className={`${styles.boxWidth} text-white`}>
         <Routes>
           <Route path='/' element={<HomePage/>}/>

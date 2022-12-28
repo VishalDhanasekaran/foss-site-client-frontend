@@ -1,11 +1,23 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import styles from '../../style';
 import AnnounceCard from '../AnnounceCard'
 import { eventsList } from '../../constants'
+import axios from 'axios';
 
 const Events = () => {
   const [active,setActive]=useState('1');
-  
+  const [data,setData]=useState(null);
+
+  useEffect(()=>{
+    async function fetchData(){
+      const response = await axios.get('https://foss-backend.onrender.com/api/events');
+      setData(response.data);
+    }
+    fetchData();
+  },[]);
+
+  console.log(data);
+
   return (
     <div className='flex flex-col'>
       
@@ -31,9 +43,9 @@ const Events = () => {
             <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
         
             <div className="flex flex-wrap justify-center w-full z-[1]" >
-              {eventsList.map((card) => 
+              {data && data.map((card) => 
                 <div data-aos="fade-up" data-aos-duration='1000'>
-                  <a href={`/events/${card.id}`}><AnnounceCard key={card.id} {...card} /></a>
+                  <a href={`/events/${card._id}`}><AnnounceCard key={card.id} {...card} /></a>
                   
                 </div>
               )}
@@ -50,9 +62,9 @@ const Events = () => {
             <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
         
             <div className="flex flex-wrap justify-center w-full z-[1]" >
-              {eventsList.map((card) => 
+              {data && data.map((card) => 
                 <div data-aos="fade-up" data-aos-duration='1000'>
-                  <a href={`/events/${card.id}`}><AnnounceCard key={card.id} {...card} /></a>
+                  <a href={`/events/${card._id}`}><AnnounceCard key={card.id} {...card} /></a>
                   
                 </div>
               )}

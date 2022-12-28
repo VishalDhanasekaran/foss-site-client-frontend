@@ -11,107 +11,49 @@ export const navLinks =[
 
 
 export const footerLinks = [
-    {
-      id:1001,
-      title: "Home",
-      links: [
-        {
+       {
           id:1011,
-          name: "Who are we",
-          link: ".#whoarewe",
+          name: "Home",
+          link: "./",
         },
         {
           id:1012,
-          name: "What we do",
-          link: ".#whatwedo",
+          name: "About Us",
+          link: "about",
         },
         {
           id:1013,
-          name: "What we have achieved",
-          link: ".#achievements",
+          name: "Members",
+          link: "members",
         },
         {
           id:1014,
-          name: "Our Alumni are at",
-          link: ".#alumni",
-        },
-      ],
-    },
-    {
-      id:1002,
-      title: "About",
-      links: [
-        {
-          id:1021,
-          name: "History of FOSS CIT",
-          link: "./about#history",
-        },
-        {
-          id:1022,
-          name: "Details",
-          link: "./about#details",
-        },
-        {
-          id:1023,
-          name: "Founders",
-          link: "./about#founders",
-        },
-        {
-          id:1024,
-          name: "Join Our Community",
-          link: "./about#community",
-        },
-      ],
-    },
-    {
-      id:1003,
-      title: "Members",
-      links: [
-        {
-          id:1031,
-          name: "Current Board",
-          link: "./members#current",
-        },
-        {
-          id:1032,
-          name: "Previous Board",
-          link: "./members#previous",
-        },
-      ],
-    },
-    {
-      id:1004,
-      title: "Events",
-      links: [
-        {
-          id:1041,
           name: "Events",
-          link: "./events#events",
+          link: "events",
         },
         {
-          id:1042,
-          name: "Events Gallery",
-          link: "./events#gallery",
-        },
-      ],
-    },
-    {
-      id:1005,
-      title: "Contact",
-      links: [
-        {
+          id:1015,
+          name: "Contact Us",
+          link: "contact",
+        }
+      ];
+export const contributors=    [
+       {
           id:1051,
-          name: "Location",
-          link: "./contact#location",
+          name: "Tharun Kailash K",
+          link: "https://linkedin.com/in/tharun-kailash/",
         },
         {
           id:1052,
-          name: "Mail Us",
-          link: "./contact#mailform",
+          name: "Shriram R",
+          link: "https://www.linkedin.com/in/shriram-r-20841421a/",
         },
-      ],
-    },
-];
+        {
+          id:1053,
+          name: "Vignaraj D",
+          link: "https://linkedin.com/in/vignaraj-d/",
+        },
+      ];
   
 export const socialMedia = [
     {
@@ -184,7 +126,7 @@ export const membersList=[
     role: "Joint Secretary",
     department: "M.Sc Decision and Computing Sciences",
     year: "III",
-    linkedin: "https://www.linkedin.com/in/",
+    linkedin: "https://www.linkedin.com/in/shriram-r-20841421a/",
     photo: "https://drive.google.com/file/d/1si5x91MRheAcE5cxXKF9Oz6_ohj9eATR/view?usp=drivesdk"
   },
   {
@@ -405,6 +347,7 @@ export const eventsList=[
 
 export const event=
   {
+    id:5001,
     name:'event-1',
     date:'10/12/2022',
     time:'5pm - 6pm',

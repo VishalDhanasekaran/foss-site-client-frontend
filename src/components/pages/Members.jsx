@@ -1,10 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { membersList } from '../../constants';
 import MemberCard from '../MemberCard';
 import styles from '../../style';
+import axios from 'axios';
 
 const Members = () => {
   const [active,setActive]=useState('1');
+
+  const [data,setData]=useState(null);
+
+  useEffect(()=>{
+    async function fetchData(){
+      const response = await axios.get('https://foss-backend.onrender.com/api/users');
+      setData(response.data);
+    }
+    fetchData();
+  },[]);
+
+  console.log(data);
   
   return (
     <div className='flex flex-col'>
@@ -27,10 +40,10 @@ const Members = () => {
           </div>
 
           <div className="flex flex-wrap justify-center w-full z-[1]">
-            {membersList.map((card) => 
-            <div data-aos="fade-up" data-aos-duration='1000'>
-              <MemberCard key={card.id} {...card} />
-            </div>
+            {data && data.map((card) => 
+              <div data-aos="fade-up" data-aos-duration='1000'>
+                <MemberCard key={card._id} {...card} />
+              </div>
             )}
           </div>
           
@@ -45,10 +58,10 @@ const Members = () => {
           </div>
 
           <div className="flex flex-wrap justify-center w-full z-[1]">
-          {membersList.map((card) => 
-            <div data-aos="fade-up" data-aos-duration='1000'>
-              <MemberCard key={card.id} {...card} />
-            </div>
+            {data && data.map((card) => 
+              <div data-aos="fade-up" data-aos-duration='1000'>
+                <MemberCard key={card._id} {...card} />
+              </div>
             )}
           </div>
         </section>}

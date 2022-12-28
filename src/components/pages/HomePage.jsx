@@ -9,31 +9,25 @@ const HomePage = () => {
 
   return (
     <div>
-      <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} `}>
-        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 animate-[fadeInLeft_1s_ease-in-out]`}>
+      <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} mt-6 ss:mt-14`}>
+        <div className={`flex-1 ${styles.flexStart} flex-col ss:ml-20 mx-3 animate-[fadeInLeft_1s_ease-in-out]`}>
           <div className="flex flex-row justify-between items-center w-full">
             <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] ">
-              Free and <br className="sm:block hidden" />{" "}
-              <span className="text-gradient">Open Source</span>{" "}
+              <span className="text-gradient">Free and Open Source Software, CIT</span>
             </h1>
-            
           </div>
-
-          <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px]  w-full">
-            Software, CIT
-          </h1>
-          <p className={`${styles.paragraph} max-w-[470px] mt-5 text-justify`}>
+          <p className={`${styles.paragraph} max-w-[600px] mt-5 text-justify`}>
           FOSS-CIT is an integral framework that addresses the unmet needs of emerging technologists, ranging from novices to resource people.
           We aid students development in both fundamental and contemporary technological trends.
  
           </p>
-          <div className="ss:flex hidden md:mr-4 mr-0 ml-[25%]">
+          <div className="ss:flex hidden md:mr-4 mr-0 mt-8 ml-[25%]">
             <GetStarted text={'Get Started'}/>
           </div>
         </div>
 
-        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative animate-[fadeInRight_1s_ease-in-out]`}>
-          <img src={linux} alt="billing" className="w-[60%] h-[60%] relative z-[5] md:w-[100%] md:h-[100%]" />
+        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 ss:mr-20 relative animate-[fadeInRight_1s_ease-in-out]`}>
+          <img src={linux} alt="billing" className="w-[60%] h-[60%] relative z-[5] md:w-[85%] md:h-[85%]" />
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
           <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
@@ -45,33 +39,32 @@ const HomePage = () => {
       </section>
       
       <section id={'upcomingevents'} className={`flex md:flex-row flex-col ${styles.paddingY} my-6`}>
-        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up-right" data-aos-duration='2000'>
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[60.8px]  text-justify">
+        <div className={`flex-1 ${styles.flexStart} flex-col ss:ml-40 mx-4`} data-aos="fade-up-right" data-aos-duration='2000'>
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[60.8px]  text-justify">
             Few Words About FOSS-CIT
           </h1>
-          <p className={`${styles.paragraph} mt-5 text-justify`}>
+          <p className={`${styles.paragraph} text-justify`}>
           It is an open-source club that strives to create a powerful developer community in CIT. Our club members are involved in accomplishing the team goals.
           We divide responsibilities among us to ensure succession planning. The vision of FOSSCIT is to create a community of successful developers who realise and utilise the potential of open-source technologies. 
  
             </p>
         </div>
-        <div className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up-left" data-aos-duration='2000'>
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] ">
+        <div className={`flex-1 ${styles.flexCenter} flex-col ss:mr-44 mx-4 ss:mt-2 mt-5`} data-aos="fade-up-left" data-aos-duration='2000'>
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
             Current Event
           </h1>
-          <a href={`/events/${event.name}`}>
+          <a href={`/events/${event.id}`}>
             <div >
               <img src={event.poster} className='shadow-lg shadow-[#b0a854] w-full h-[20rem]'/>
             </div>
           </a>
-            {/* ))} */}
-          
+         
         </div>
       </section>
       
       <div className={`flex flex-col ${styles.paddingY} my-6`}>
         <section id={'whoarewe'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up" data-aos-duration='2000'>
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] ">
+            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
                 Who are we...
             </h1>
             <p className={`${styles.paragraph} mt-5 text-justify`}>
@@ -81,7 +74,7 @@ const HomePage = () => {
             </p>
         </section>
         <section id={'whatwedo'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] ">
+            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
                 what we do...
             </h1>
             <p className={`${styles.paragraph} mt-5 text-justify`}>
@@ -94,7 +87,7 @@ const HomePage = () => {
             </p>
         </section>
         <section id={'achievements'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] ">
+            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
                 what we have achieved...
             </h1>
             <p className={`${styles.paragraph} mt-5 text-justify`} >
@@ -129,7 +122,7 @@ const HomePage = () => {
         </section>
         
         <section id={'alumni'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] ">
+            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
                 Our alumni are at...
             </h1>
             <p className={`${styles.paragraph} mt-5 text-justify`}>
