@@ -1,41 +1,50 @@
 import React,{useState,useEffect} from 'react'
 import styles from '../../style';
 import AnnounceCard from '../AnnounceCard'
-import { eventsList } from '../../constants'
+import { RingLoader } from 'react-spinners';
 import axios from 'axios';
 
 const Events = () => {
   const [active,setActive]=useState('1');
   const [data,setData]=useState(null);
+  const [loading,setLoading]=useState(true);
+  const [error,setError]=useState(null);
+  let isAvailable=1;
 
   useEffect(()=>{
-    async function fetchData(){
-      const response = await axios.get('https://foss-backend.onrender.com/api/events');
-      setData(response.data);
-    }
-    fetchData();
+    axios.get('https://foss-backend.onrender.com/api/events')
+      .then((res)=>{setData(res.data);setLoading(false);})
+      .catch((err)=>{
+        console.log("error:",err.message);
+        setError(err.message);
+        setLoading(false);
+      });
+    setActive((new Date().getFullYear()).toString());
   },[]);
-
-  console.log(data);
+  
+  const years=new Set(data?.map((x)=>x.eventYear));
+  years.add((new Date().getFullYear()).toString());
+  const Years=[...years]?.sort().reverse();
+  const selectYear=data?.filter(x=>{return x.eventYear === active});
+  if (selectYear == 0){isAvailable=0;}
 
   return (
     <div className='flex flex-col'>
       
-      
-
       <div className={`${styles.paddingY} ${styles.flexCenter} animate-[zoomIn_1s_ease-in-out]`}>
-        <select className='cursor-pointer bg-primary h-10 font-poppins text-2xl rounded-lg outline-none' value={active} onChange={(e)=>{setActive(e.target.value)}}>
-          <option className={`my-4 font-poppins text-2xl`} value={1}>Current Year Events</option>
-          <option className={`my-4 font-poppins text-2xl`} value={2}>Previous Year Events</option>
+        <select className='cursor-pointer bg-primary h-10 font-poppins text-2xl rounded-lg outline-none' onChange={(e)=>{setActive(e.target.value)}}>
+          {Years?.map((x)=>(
+            <option className={`my-4 font-poppins text-2xl`} value={x}>{x}</option>
+          ))}
         </select>
       </div>
 
       <div className={`flex flex-col`}>
         
         <section id={"events"} className={` ${styles.flexCenter} flex-col relative `}>
-          {active=='1' && <div data-aos="fade-up" data-aos-duration='1000'>
+          <div data-aos="fade-up" data-aos-duration='1000'>
             <div className={`w-full flex justify-between items-center md:flex-row flex-col relative z-[1]`}>
-              <h2 className={`${styles.heading2} text-center text-gradient`}>
+              <h2 className={`${styles.heading2} mb-3 text-center text-gradient`}>
                 Events
               </h2>
             </div>
@@ -43,33 +52,20 @@ const Events = () => {
             <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
         
             <div className="flex flex-wrap justify-center w-full z-[1]" >
-              {data && data.map((card) => 
+              {selectYear?.map((card) => 
                 <div data-aos="fade-up" data-aos-duration='1000'>
                   <a href={`/events/${card._id}`}><AnnounceCard key={card.id} {...card} /></a>
                   
                 </div>
               )}
-            </div>
-          </div>}
 
-          {active=='2' && <div data-aos="fade-up" data-aos-duration='1000'>
-            <div className={`w-full flex justify-between items-center md:flex-row flex-col relative z-[1]`}>
-              <h2 className={`${styles.heading2} text-center text-gradient`}>
-                Events
-              </h2>
+              {isAvailable === 0 && <div className='flex'><span className={`${styles.heading2} text-center`}>Events Conducted in {active} are Yet to be Updated...</span></div>}
+              {loading && <div className='flex '> 
+                <RingLoader color={'#eecc21'} loading={loading} size={150}/>
+              </div>}
+              {error && <div className='flex'><span className={`${styles.heading2} text-center`}>{error}!</span></div>}
             </div>
-            
-            <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
-        
-            <div className="flex flex-wrap justify-center w-full z-[1]" >
-              {data && data.map((card) => 
-                <div data-aos="fade-up" data-aos-duration='1000'>
-                  <a href={`/events/${card._id}`}><AnnounceCard key={card.id} {...card} /></a>
-                  
-                </div>
-              )}
-            </div>
-          </div>}
+          </div>
 
         </section>
         

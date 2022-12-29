@@ -23,19 +23,15 @@ export const footerLinks = [
         },
         {
           id:1013,
-          name: "Members",
-          link: "members",
-        },
-        {
-          id:1014,
           name: "Events",
           link: "events",
         },
         {
-          id:1015,
+          id:1014,
           name: "Contact Us",
           link: "contact",
         }
+
       ];
 export const contributors=    [
        {

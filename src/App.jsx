@@ -29,7 +29,7 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-header ${styles.paddingX} ${styles.flexStart}`} data-aos="fade-up" data-aos-duration='1000'>
+    <div className={`bg-header ${styles.paddingX} ${styles.flexStart} mt-5`} data-aos="fade-up" data-aos-duration='1000'>
       <div className={`${styles.boxWidth} text-white`}>
         <Footer/>
       </div>

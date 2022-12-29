@@ -6,19 +6,18 @@ import { google } from '../../assets';
 
 const Login = () => {
     const [email,setEmail]=useState();
-    const [password,setPassword]=useState();
+    
     const data=yup.object().shape({
         email:yup.string().email().required(),
-        password:yup.string().required()
       })
   
     const handleSubmit= async event=>{
       event.preventDefault();
-      console.log(email,password);
+      console.log(email);
   
       let formData={
         email:email,
-        password:password
+        
       }
       const isValid=await data.isValid(formData);
       console.log(formData);
@@ -42,10 +41,6 @@ const Login = () => {
                             <div className={` my-5 `}>
                                 <input type={'email'} name={'email'} placeholder={'E-Mail'} className=' sm:w-[20rem] w-full my-3' onChange={e=>setEmail(e.target.value)}/>
                             </div>
-                            
-                            <div className={`my-5`}>
-                                <input type='password' name={'password'} placeholder={'Password'} className='sm:w-[20rem] w-full my-3' onChange={e=>setPassword(e.target.value)}/>
-                            </div>
 
                             <div className='flex justify-center items-center m-10'>
                                 <button className='bg-white text-black w-40 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={handleSubmit}>Log In</button>
@@ -59,7 +54,7 @@ const Login = () => {
                         </div>
                     </div>
                     <div className='flex justify-center items-center m-10'>
-                        <span className={`${styles.paragraph}`}>New Here? <a href='register' className='hover:text-secondary'>Register</a></span>
+                        <span className={`${styles.paragraph} text-base`}>New Here? <a href='register' className='hover:text-secondary underline underline-offset-2'>Register</a></span>
                     </div>
                 </div>
                 

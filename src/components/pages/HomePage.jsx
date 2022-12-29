@@ -3,17 +3,20 @@ import { event } from '../../constants';
 import GetStarted from '../GetStarted';
 import {linux} from '../../assets';
 import styles from '../../style';
-
+import Typewriter from 'typewriter-effect';
 
 const HomePage = () => {
-
+  
   return (
     <div>
-      <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} mt-6 ss:mt-14`}>
+      <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} `}>
         <div className={`flex-1 ${styles.flexStart} flex-col ss:ml-20 mx-3 animate-[fadeInLeft_1s_ease-in-out]`}>
-          <div className="flex flex-row justify-between items-center w-full">
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] ">
-              <span className="text-gradient">Free and Open Source Software, CIT</span>
+          <div className="flex flex-row justify-between items-center w-full h-[15rem]">
+            <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] text-gradient">
+              {/* <span className="text-gradient">Free & Open Source Software</span> */}
+              {/* <Typewriter onInit={(typewriter)=> {
+              typewriter.typeString("FOSS").pauseFor(1000).deleteAll().typeString("Free & Open Source Software").start();}} className={`text-gradient`} /> */}
+              <Typewriter options={{strings: ['FOSS', 'Free & Open Source Software'], autoStart: true, loop: true,}}/>
             </h1>
           </div>
           <p className={`${styles.paragraph} max-w-[600px] mt-5 text-justify`}>

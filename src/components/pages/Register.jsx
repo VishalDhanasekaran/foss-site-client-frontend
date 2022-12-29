@@ -7,21 +7,18 @@ import { google } from '../../assets';
 const Register = () => {
     const [name,setName]=useState();
     const [email,setEmail]=useState();
-    const [password,setPassword]=useState();
     const data=yup.object().shape({
         email:yup.string().email().required(),
-        password:yup.string().required(),
         name:yup.string().required()
       })
   
     const handleSubmit= async event=>{
       event.preventDefault();
-      console.log(email,password);
+      console.log(email);
   
       let formData={
         name:name,
         email:email,
-        password:password
       }
       const isValid=await data.isValid(formData);
       console.log(formData);
@@ -49,10 +46,6 @@ const Register = () => {
                             <div className='my-5'>
                                 <input type='text' name={'email'} placeholder={'E-Mail'} className='sm:w-[20rem] w-full my-3' onChange={e=>setEmail(e.target.value)}/>
                             </div>
-                            
-                            <div className='my-5'>
-                                <input type='password' name={'password'} placeholder={'Password'} className='sm:w-[20rem] w-full my-3' onChange={e=>setPassword(e.target.value)}/>
-                            </div>
 
                             <div className='flex justify-center items-center m-10'>
                                 <button className='bg-white text-black w-40 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={handleSubmit}>Sign Up</button>
@@ -64,6 +57,9 @@ const Register = () => {
                             <img alt='google' src={google} className={`w-[21px] h-[21px] object-contain bg-white m-auto rounded-xl`}/>
                             <span className={`${styles.paragraph} text-base mx-3`}>Sign Up with Google</span>
                         </div>
+                    </div>
+                    <div className='flex justify-center items-center m-5'>
+                        <span className={`${styles.paragraph} text-base`}>Already Signed Up? <a href='register' className='hover:text-secondary underline underline-offset-2'>Log In</a></span>
                     </div>
                 </div>
                 

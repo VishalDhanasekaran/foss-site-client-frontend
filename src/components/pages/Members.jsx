@@ -1,18 +1,20 @@
 import React, { useState,useEffect } from 'react'
-import { membersList } from '../../constants';
+import { RingLoader } from 'react-spinners';
+// import { membersList } from '../../constants';
 import MemberCard from '../MemberCard';
 import styles from '../../style';
 import axios from 'axios';
 
 const Members = () => {
   const [active,setActive]=useState('1');
-
+  const [loading,setLoading]=useState(true);
   const [data,setData]=useState(null);
 
   useEffect(()=>{
     async function fetchData(){
       const response = await axios.get('https://foss-backend.onrender.com/api/users');
       setData(response.data);
+      setLoading(false);
     }
     fetchData();
   },[]);
@@ -33,7 +35,7 @@ const Members = () => {
         {active==='1' && <section id="current" className={` ${styles.flexCenter} flex-col relative `}>
           <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
 
-          <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1] animate-[zoomIn_1s_ease-in-out]">
+          <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-10 mb-6 relative z-[1] animate-[zoomIn_1s_ease-in-out]">
             <h2 className={`${styles.heading2} text-center text-gradient`}>
               Current Board Members
             </h2>
@@ -45,6 +47,9 @@ const Members = () => {
                 <MemberCard key={card._id} {...card} />
               </div>
             )}
+            {loading && <div className='flex '> 
+                <RingLoader color={'#eecc21'} loading={loading} size={150}/>
+              </div>}
           </div>
           
         </section>}

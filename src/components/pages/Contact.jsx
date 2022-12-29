@@ -46,8 +46,8 @@ const Contact = () => {
           Contact Us
         </h2>
       </div>
-      <section id="location" className={`flex md:flex-row flex-col ${styles.paddingY} `}>
-        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 animate-[fadeInLeft_0.75s_ease-in-out]`}>
+      <section id="location" className={`flex md:flex-row flex-col `}>
+        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 ss:mx-14 animate-[fadeInLeft_0.75s_ease-in-out]`}>
           <div className="flex flex-row justify-between items-center w-full">
             <h1 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[32px] text-white ss:leading-[55px] leading-[45px]">
               <span>Our Office</span><br className="sm:block" />{" "}
@@ -58,7 +58,7 @@ const Contact = () => {
           <h1 className="font-poppins font-semibold ss:text-[40px] text-[30px] text-white ss:leading-[100.8px] leading-[75px] w-full">
             Location:
           </h1>
-          <div className={`${styles.paragraph} max-w-[470px] text-justify`}>
+          <div className={`font-poppins font-normal text-dimWhite text-[1.5rem] leading-[30.8px] max-w-[470px] text-justify`}>
             <div className='flex flex-row my-4'>
               <img src={location} className='w-[23px] h-[23px] object-contain'/>
               <span className='mx-5 cursor-pointer' onClick={event => handleClick(event, 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore, Tamil Nadu 641014 </span>
@@ -74,8 +74,8 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative animate-[fadeInRight_0.75s_ease-in-out]`}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.143871172457!2d77.02472797478232!3d11.027830589136626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8570bbbdef6f1%3A0x3d2892336503d775!2sFOSS(Free%20and%20Open%20Source%20Software)%20CIT!5e0!3m2!1sen!2sin!4v1671453029041!5m2!1sen!2sin" loading="lazy" className='h-[30rem] w-[40rem] mx-10 z-[10]' ></iframe>
+        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative animate-[fadeInRight_0.75s_ease-in-out] mx-20`}>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.143871172457!2d77.02472797478232!3d11.027830589136626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8570bbbdef6f1%3A0x3d2892336503d775!2sFOSS(Free%20and%20Open%20Source%20Software)%20CIT!5e0!3m2!1sen!2sin!4v1671453029041!5m2!1sen!2sin" className='ss:h-[30rem] h-[15rem] ss:w-[40rem] w-[20rem] z-[10] rounded-2xl' ></iframe>
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
           <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
@@ -89,22 +89,19 @@ const Contact = () => {
           </h1>
         </div>
         <div className="flex justify-center items-center w-full z-[1]">
-          <div className='flex flex-col justify-center items-center ss:w-[75%] w-[95%] p-4 bg-[#212015] bg-opacity-80 backdrop-blur-sm rounded-3xl m-2 object-fit'>
+          <div className='flex flex-col justify-center items-center ss:w-[50%] w-[95%] p-4 bg-[#212015] bg-opacity-80 backdrop-blur-sm rounded-3xl m-2 object-fit'>
             <div className=' flex flex-col justify-center items-center font-poppins text-justify text-white text-base '>
               <form method='post' autoComplete='off'>
                 <div className='my-5 mx-10'>
-                  <input type='text' name={'name'} placeholder={'Name'} className='mx-5 sm:w-[20rem] w-[75%] my-3' onChange={e=>setName(e.target.value)}/>
-                  <input type='text' name={'dept'} placeholder={'Department'} className='mx-5 sm:w-[20rem] w-[75%] my-3' onChange={e=>setDept(e.target.value)}/>
-                </div>
-                <div className='my-5 mx-10'>
-                  <input type='text' name={'mail'} placeholder={'Mail ID'} className='mx-5 sm:w-[20rem] w-[75%] my-3' onChange={e=>setEmail(e.target.value)}/>
-                  <input type='text' name={'contact'} placeholder={'Contact'} className='mx-5 sm:w-[20rem] w-[75%] my-3' onChange={e=>setContact(e.target.value)}/>
-                </div>
-                <div className='my-5 mx-10'>
+                  <input type='text' name={'name'} placeholder={'Name'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setName(e.target.value)}/>
+                  <input type='text' name={'dept'} placeholder={'Department'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setDept(e.target.value)}/>
+                
+                  <input type='text' name={'mail'} placeholder={'Mail ID'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setEmail(e.target.value)}/>
+                  <input type='text' name={'contact'} placeholder={'Contact'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setContact(e.target.value)}/>
+                
                   <textarea name={'message'} placeholder={'Message'} className={`${styles.flexStart} mx-5 w-[75%] my-3`} onChange={e=>setMessage(e.target.value)}/>
-                </div>
-                <div className='flex justify-center items-center m-10'>
-                  <button className='bg-white text-black w-80 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={handleSubmit}>SUBMIT</button>
+                
+                  <div className='flex w-full justify-center items-center my-10'><button className='bg-white text-black ss:w-80 w-40 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={handleSubmit}>SUBMIT</button></div>
                 </div>
               </form>
             </div>
