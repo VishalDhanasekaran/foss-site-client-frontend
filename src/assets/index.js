@@ -10,14 +10,15 @@ import twitter from "./twitter.svg";
 import discord from "./discord.svg";
 import youtube from "./youtube.svg";
 import github from "./github.svg";
-import location from "./location.svg"
-import mail from "./mail.svg"
-import phone from "./phone.svg"
-import left_arrow from "./left_arrow.svg"
-import right_arrow from "./right_arrow.svg"
-import google from "./google.svg"
-
+import location from "./location.svg";
+import mail from "./mail.svg";
+import phone from "./phone.svg";
+import left_arrow from "./left_arrow.svg";
+import right_arrow from "./right_arrow.svg";
+import google from "./google.svg";
+import apple from "./apple.svg";
+import outlook from "./outlook.svg";
 
 export {
-    logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google
+    logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google,apple,outlook
 };

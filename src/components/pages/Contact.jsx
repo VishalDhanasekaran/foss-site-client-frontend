@@ -82,7 +82,7 @@ const Contact = () => {
         </div>
       </section>
       
-      <section id="mailform" className={`flex md:flex-col flex-col ${styles.paddingY}`} data-aos="zoom-in" data-aos-duration='2000'>
+      <section id="mailform" className={`flex md:flex-col flex-col ${styles.paddingY}`} data-aos="fade-up" data-aos-duration='2000'>
         <div>
           <h1 className="flex-1 font-poppins font-semibold text-center ss:text-[42px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
             Mail Us Your Message

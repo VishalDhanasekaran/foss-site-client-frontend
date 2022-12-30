@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../../style'
 import * as yup from 'yup';
 import { useState } from 'react';
-import { google } from '../../assets';
+import { google,outlook,apple } from '../../assets';
 
 const Register = () => {
     const [name,setName]=useState();
@@ -35,11 +35,31 @@ const Register = () => {
                 </h2>
             </div>
             <div className="flex justify-center items-center w-full z-[1]">
-                <div className='flex flex-col justify-center items-center ss:w-[50%] w-[95%] p-4 bg-[#212015] bg-opacity-80 backdrop-blur-sm rounded-3xl m-auto object-fit'>
+                <div className='flex flex-col justify-center items-center ss:w-[40%] w-[95%] p-4 bg-[#212015] bg-opacity-80 backdrop-blur-sm rounded-3xl m-auto object-fit'>
                     <div className='flex flex-col justify-center items-center font-poppins text-justify text-white text-base'>
+                        <div className='flex flex-row mt-10'>
+                            <div className='flex bg-black rounded-3xl w-16 mt-2 mx-3 p-3 hover:scale-125 ease-in-out duration-300 cursor-pointer'>
+                                <img alt='google' src={google} className={`w-[30px] h-[30px] object-contain bg-white m-auto rounded-xl`}/>
+                                {/* <span className={`${styles.paragraph} mx-3 text-base`}>Log in with Google</span> */}
+                            </div>
+                            <div className='flex bg-black rounded-3xl w-16 mt-2 mx-3 p-3 hover:scale-125 ease-in-out duration-300 cursor-pointer'>
+                                <img alt='google' src={outlook} className={`w-[30px] h-[30px] object-contain bg-white m-auto rounded-xl`}/>
+                                {/* <span className={`${styles.paragraph} mx-3 text-base`}>Log in with Outlook</span> */}
+                            </div>
+                            <div className='flex bg-black rounded-3xl w-16 mt-2 mx-3 p-3 hover:scale-125 ease-in-out duration-300 cursor-pointer'>
+                                <img alt='google' src={apple} className={`w-[30px] h-[30px] object-contain bg-white m-auto rounded-xl`}/>
+                                {/* <span className={`${styles.paragraph} mx-3 text-base`}>Log in with Apple ID</span> */}
+                            </div>
+                        </div>
+                        <div className='flex items-center w-full mt-9 z-[1]'>
+                            <div className='flex flex-1 bg-white h-[1px]'/>
+                            <p className='flex'>or</p>
+                            <div className='flex flex-1 bg-white h-[1px]'/>
+
+                        </div>
                         <form method='post' autoComplete='off'>
                             
-                            <div className='my-5'>
+                            <div className='mt-9'>
                                 <input type='text' name={'name'} placeholder={'Name'} className='sm:w-[20rem] w-full my-3' onChange={e=>setName(e.target.value)}/>
                             </div>
 
@@ -47,19 +67,15 @@ const Register = () => {
                                 <input type='text' name={'email'} placeholder={'E-Mail'} className='sm:w-[20rem] w-full my-3' onChange={e=>setEmail(e.target.value)}/>
                             </div>
 
-                            <div className='flex justify-center items-center m-10'>
+                            <div className='flex justify-center items-center m-8'>
                                 <button className='bg-white text-black w-40 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={handleSubmit}>Sign Up</button>
                             </div>
 
                         </form>
-                        <div className='flex h-[1px] w-full bg-white'/>
-                        <div className='flex flex-row bg-black rounded-3xl my-5 p-3 hover:scale-105 ease-in-out duration-300 cursor-pointer'>
-                            <img alt='google' src={google} className={`w-[21px] h-[21px] object-contain bg-white m-auto rounded-xl`}/>
-                            <span className={`${styles.paragraph} text-base mx-3`}>Sign Up with Google</span>
-                        </div>
+                        
                     </div>
                     <div className='flex justify-center items-center m-5'>
-                        <span className={`${styles.paragraph} text-base`}>Already Signed Up? <a href='register' className='hover:text-secondary underline underline-offset-2'>Log In</a></span>
+                        <span className={`${styles.paragraph} text-base`}>Already Signed Up? <a href='login' className='hover:text-secondary underline underline-offset-2'>Log In</a></span>
                     </div>
                 </div>
                 

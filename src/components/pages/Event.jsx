@@ -24,23 +24,23 @@ const Event = () => {
     console.log(data);
     
   return (
-    <div className={`flex flex-col ${styles.paddingY}`}>
+    <div className={`flex flex-col ${styles.paddingY} animate-[zoomIn_1s_ease-in-out]`}>
         
         {data && <section id={'event'} className={`flex-1 ${styles.flexCenter} ${styles.paragraph} flex-col xl:px-0 sm:px-16 px-6`}>
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] text-gradient my-4 animate-[zoomIn_0.75s_ease-in-out]">
+            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] text-gradient my-4 ">
             { data.title}
             </h1>
             <div className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6 font-poppins font-semibold ss:text-[22px] text-[15px] `}>
                 <div className={`${styles.flexCenter}`}>
-                    <img src={data.pic} alt={data.content} className='shadow-lg shadow-[#b0a854] ss:h-[25rem] w-[40rem] animate-[zoomIn_0.75s_ease-in-out]'/>
+                    <img src={data.pic} alt={data.content} className='shadow-lg shadow-[#b0a854] ss:h-[25rem] w-[40rem] '/>
                 </div>
-                <div className={`${styles.flexCenter} flex flex-col my-7 leading-10 animate-[zoomIn_0.75s_ease-in-out]`}>
+                <div className={`${styles.flexCenter} flex flex-col my-7 leading-10 `}>
                     <div>Date: {data.eventDate.slice(0,10)}</div>
                     <div>Time: {data.time}</div>
                     <div>Venue: {data.venue}</div>
                     <div>Speaker: {data.speaker}</div>
                 </div>
-                <div className={`${styles.paragraph} text-justify ss:text-[22px] text-[15px] my-10`} data-aos="zoom-in" data-aos-duration='2000'>
+                <div className={`${styles.paragraph} text-justify ss:text-[22px] text-[15px] my-10`}>
                     {data.content}
                 </div>
             </div>

@@ -13,7 +13,7 @@ const MemberCard = ({name,position,department,linkedin,pic}) => {
     <div>
       <div className='flex flex-col justify-center sm:w-[20rem] w-[20rem] h-[25rem] items-center  p-3 bg-black bg-opacity-80 backdrop-blur-sm rounded-lg m-2 hover:scale-105 duration-300 gap-10 animate-[fadeInDown_1s_ease-in-out]' data-aos="fade-up" data-aos-duration='1000'>
         <div className={`w-60 h-60 text-center ${styles.flexCenter} flex-col z-0 `} >
-          <img alt={name} src={`https://drive.google.com/uc?export=view&id=${photo[5]}`} className='w-52 h-48 rounded-xl border-2 border-white rounded'/>
+          <img alt={name} src={pic} className='w-52 h-48 rounded-xl '/>
           <span className='font-semibold text-lg text-gradient'>{name}</span>
         </div>
         

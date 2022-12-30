@@ -11,6 +11,19 @@ const Events = () => {
   const [error,setError]=useState(null);
   let isAvailable=1;
 
+  let year=(new Date().getFullYear());
+  let month=new Date().getMonth();
+  console.log((new Date().getMonth()));
+  if(month>=5)
+  {
+    year=(year).toString()+' - '+(year+1-2000).toString();
+  }
+  else
+  {
+    year=(year-1).toString()+' - '+(year-2000).toString();
+  }
+  console.log(year);
+
   useEffect(()=>{
     axios.get('https://foss-backend.onrender.com/api/events')
       .then((res)=>{setData(res.data);setLoading(false);})
@@ -19,11 +32,10 @@ const Events = () => {
         setError(err.message);
         setLoading(false);
       });
-    setActive((new Date().getFullYear()).toString());
+    setActive(year);
   },[]);
   
   const years=new Set(data?.map((x)=>x.eventYear));
-  years.add((new Date().getFullYear()).toString());
   const Years=[...years]?.sort().reverse();
   const selectYear=data?.filter(x=>{return x.eventYear === active});
   if (selectYear == 0){isAvailable=0;}
@@ -60,7 +72,7 @@ const Events = () => {
               )}
 
               {isAvailable === 0 && <div className='flex'><span className={`${styles.heading2} text-center`}>Events Conducted in {active} are Yet to be Updated...</span></div>}
-              {loading && <div className='flex '> 
+              {loading && <div className='flex my-10'> 
                 <RingLoader color={'#eecc21'} loading={loading} size={150}/>
               </div>}
               {error && <div className='flex'><span className={`${styles.heading2} text-center`}>{error}!</span></div>}
@@ -70,7 +82,7 @@ const Events = () => {
         </section>
         
         <section id={'gallery'} className={`flex-1 ${styles.flexStart} ${styles.paddingY} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up" data-aos-duration='1000'>
-          <h2 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[22px] text-white ss:leading-[100.8px] leading-[75px]">
+          <h2 className="flex-1 font-poppins font-semibold ss:text-[42px] text-gradient text-[22px] text-white ss:leading-[100.8px] leading-[75px]">
             Events Gallery
           </h2>
           <p>
