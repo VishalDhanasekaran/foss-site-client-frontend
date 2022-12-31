@@ -64,10 +64,6 @@ const Contact = () => {
               <span className='mx-5 cursor-pointer' onClick={event => handleClick(event, 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore, Tamil Nadu 641014 </span>
             </div>
             <div className='flex flex-row my-4'>
-              <img src={phone} className='w-[23px] h-[23px] object-contain'/>
-              <span className='mx-5'>+91 98765 43210 </span>
-            </div>
-            <div className='flex flex-row my-4'>
               <img src={mail} className='w-[23px] h-[23px] object-contain'/>
               <span className='mx-5'>fosscit@gmail.com </span>
             </div>

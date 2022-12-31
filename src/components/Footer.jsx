@@ -37,10 +37,9 @@ return (
 
         <div className={`font-poppins font-normal text-dimWhite text-[14px] leading-[30.8px] ss:w-[30%] text-justify px-10 flex flex-col`}>
           <h4 className='flex text-[20px] font-medium text-white mt-4 underline underline-offset-2'>Contact</h4>
-          <h4 className='flex text-[18px] font-medium text-white mt-4'>Computing Block</h4>
-          <span className='flex ss:mx-5 cursor-pointer ' onClick={event => handleClick(event, 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>Coimbatore Institute of Technology,</span>
-          <span className='flex ss:mx-5'>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore, Tamil Nadu 641014</span>
-          <span className='flex ss:mx-5'>+91 98765 43210 </span>
+          <div className='cursor-pointer ' onClick={event => handleClick(event, 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}><h4 className='flex ss:mx-5'>Computing Block,</h4>
+          <span className='flex ss:mx-5'>Coimbatore Institute of Technology,</span>
+          <span className='flex ss:mx-5'>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore, Tamil Nadu 641014</span></div>
           <span className='flex text-[18px] font-medium text-white mt-4'>fosscit@gmail.com </span>
         </div>
         
