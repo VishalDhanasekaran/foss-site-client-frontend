@@ -20,7 +20,7 @@ const Members = () => {
   }
   else
   {
-    year=(year-1).toString()+' - '+(year).toString()/slice(2);
+    year=(year-1).toString()+' - '+(year).toString().slice(2);
   }
   // console.log(year);
 
