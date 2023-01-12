@@ -7,7 +7,7 @@ const FounderCard = ({img,name,working,department,linkedin,content,rev,sno}) => 
       }
   return (
     <div className='flex justify-center items-center p-5'>
-        <div className={`flex ${sno%2==0?'ss:flex-row-reverse flex-col':'ss:flex-row flex-col'} w-[80%] rounded-lg bg-black`}>
+        <div className={`flex ${sno%2==0?'ss:flex-row-reverse flex-col':'ss:flex-row flex-col'} ss:w-[80%] rounded-lg bg-black`}>
             <div className='flex w-60 justify-center items-center ss:w-[50%]'>
                 <img src={img} alt={name} className='w-52 h-48 rounded-xl m-3'/>
             </div>
