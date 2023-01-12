@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '../../style';
 import GetStarted from '../GetStarted';
+import { founders } from '../../constants';
+import FounderCard from '../FounderCard';
 
 const AboutUs = () => {
   return (
@@ -26,10 +28,11 @@ const AboutUs = () => {
         <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
           Founders
         </h1>
-        <p className={`${styles.paragraph} mt-5 text-justify`}>
-              Fugiat quis nostrud eiusmod nostrud enim in. Do eiusmod in sunt consequat elit nostrud do Lorem. Ullamco eu cupidatat sint aliquip veniam minim.
-              Qui incididunt sunt eu excepteur nostrud deserunt do. Occaecat minim culpa ea veniam laborum do id sit officia dolore eiusmod. Voluptate culpa dolor proident pariatur aliqua elit minim nulla occaecat. Nostrud minim sunt irure elit adipisicing pariatur velit pariatur. 
-          </p>
+        <div className='w-full'>
+          {founders.map((user)=>(
+            <FounderCard key={user.id} {...user}/>
+          ))}
+        </div>
       </section>
 
       <section id={'categories'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>

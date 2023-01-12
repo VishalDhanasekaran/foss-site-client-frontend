@@ -351,3 +351,36 @@ export const event=
     poster:'https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg',
     description:'Minim nisi consequat laboris aliquip dolore dolor commodo. Amet non excepteur duis nisi cillum deserunt sit labore laborum minim esse duis veniam laboris. Exercitation enim ex occaecat eiusmod.Laboris consequat magna quis nostrud occaecat proident est duis nulla proident mollit nostrud. Minim culpa labore consequat et occaecat nulla irure tempor sint proident cupidatat ad reprehenderit. Qui sit veniam excepteur nulla fugiat amet enim minim fugiat. Non laboris voluptate excepteur exercitation irure. Culpa commodo eiusmod dolor elit consequat.',
   }
+
+export const founders = [
+    {
+      id:3001,
+      sno:1,
+      img: "https://img.icons8.com/plasticine/512/user.png",
+      name: "Dhileepan Thangamanimaran",
+      working: "Senior Member Technical at D. E. Shaw Group",
+      department: "M.Sc. Software Systems (2016 - 2021)",
+      linkedin: "https://www.linkedin.com/in/dhileepan/",
+      content: "Fugiat quis nostrud eiusmod nostrud enim in. Do eiusmod in sunt consequat elit nostrud do Lorem. Ullamco eu cupidatat sint aliquip veniam minim."
+    },
+    {
+      id:3002,
+      sno:2,
+      img: "https://img.icons8.com/plasticine/512/user.png",
+      name: "Sibi Bose",
+      working: "Software Engineer 2 at KLA Tencor",
+      department: "M.Sc. Software Systems (2017 - 2022)",
+      linkedin: "https://www.linkedin.com/in/sibi-bose/",
+      content: "Fugiat quis nostrud eiusmod nostrud enim in. Do eiusmod in sunt consequat elit nostrud do Lorem. Ullamco eu cupidatat sint aliquip veniam minim."
+    },
+    {
+      id:3003,
+      sno:3,
+      img: "https://img.icons8.com/plasticine/512/user.png",
+      name: "Sai Adarsh S",
+      working: "Software Engineer at Cisco",
+      department: "M.Sc. Software Systems (2016 - 2021)",
+      linkedin: "https://www.linkedin.com/in/sai-adarsh/",
+      content: "Fugiat quis nostrud eiusmod nostrud enim in. Do eiusmod in sunt consequat elit nostrud do Lorem. Ullamco eu cupidatat sint aliquip veniam minim."
+    }
+  ]

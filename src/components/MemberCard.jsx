@@ -20,7 +20,7 @@ const MemberCard = ({name,position,department,linkedin,pic}) => {
         <div className={`flex flex-col font-poppins justify-center items-center text-justify text-white text-base animate-[zoomIn_1s_ease-in-out] mt-[-2rem]`} >
           <span className='text-gradient'>{position}</span>
           <span className='text-gradient'>{department}</span>
-          <div className={`flex justify-end items-end w-full mt-5`}><img src={linkedinLogo} onClick={event => handleClick(event, linkedin)}/></div>
+          <div className={`flex justify-end items-end w-full mt-5 cursor-pointer`}><img src={linkedinLogo} onClick={event => handleClick(event, linkedin)}/></div>
         </div>
       </div>
     </div>
