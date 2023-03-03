@@ -4,6 +4,10 @@ import MemberCard from '../MemberCard';
 import styles from '../../style';
 import axios from 'axios';
 
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
 const Members = () => {
   const [active,setActive]=useState('1');
   const [loading,setLoading]=useState(true);
@@ -35,20 +39,32 @@ const Members = () => {
     setActive(year);
   },[]);
 
-  const years=new Set(data?.map((x)=>x.period));
-  const Years=[...years]?.sort().reverse();
+  let years=new Set(data?.map((x)=>x.period));
+  years=[...years]?.sort().reverse();
+  console.log(years);
   const selectYear=data?.filter(x=>{return x.period === active});
   if (selectYear == 0){isAvailable=0;}
+
+  const handleChange = (event) => {
+    setActive(event.target.value);
+  };
   
   return (
     <div className='flex flex-col'>
       
       <div className={`${styles.paddingY} ${styles.flexCenter} animate-[zoomIn_1s_ease-in-out]`}>
-          <select className='cursor-pointer bg-primary h-10 font-poppins text-2xl rounded-lg outline-none' value={active} onChange={(e)=>{setActive(e.target.value)}}>
-          {Years?.map((x)=>(
+          {/* <select className='cursor-pointer bg-primary h-10 font-poppins text-2xl rounded-lg outline-none' value={active} onChange={(e)=>{setActive(e.target.value)}}>
+          {years?.map((x)=>(
             <option className={`my-4 font-poppins text-2xl`} value={x}>{x}</option>
           ))}
-          </select>
+          </select> */}
+          <FormControl className='flex w-[10rem]'>
+          <Select value={active} onChange={handleChange} >
+            {years?.map((x)=>(
+              <MenuItem value={x}>{x}</MenuItem>
+            ))}
+          </Select>
+        </FormControl>
       </div>
       
       <div>

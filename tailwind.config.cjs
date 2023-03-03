@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        roboto: ['Roboto Condensed', 'sans-serif'],
       },
       keyframes:{
         fadeInLeft:{

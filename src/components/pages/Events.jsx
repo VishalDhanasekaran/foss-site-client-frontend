@@ -4,6 +4,10 @@ import AnnounceCard from '../AnnounceCard'
 import { RingLoader } from 'react-spinners';
 import axios from 'axios';
 
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
 const Events = () => {
   const [active,setActive]=useState('1');
   const [data,setData]=useState(null);
@@ -22,11 +26,11 @@ const Events = () => {
   {
     year=(year-1).toString()+' - '+(year-2000).toString();
   }
-  console.log(year);
+  console.log('year;',year);
 
   useEffect(()=>{
     axios.get('https://foss-backend.onrender.com/api/events')
-      .then((res)=>{setData(res.data);setLoading(false);})
+      .then((res)=>{setData(res.data);setLoading(false);console.log('data',data);})
       .catch((err)=>{
         console.log("error:",err.message);
         setError(err.message);
@@ -35,20 +39,27 @@ const Events = () => {
     setActive(year);
   },[]);
   
-  const years=new Set(data?.map((x)=>x.eventYear));
-  const Years=[...years]?.sort().reverse();
+  let years=new Set(data?.map((x)=>x.eventYear));
+  years=[...years]?.sort().reverse();
+  console.log('Years',years);
   const selectYear=data?.filter(x=>{return x.eventYear === active});
   if (selectYear == 0){isAvailable=0;}
+
+  const handleChange = (event) => {
+    setActive(event.target.value);
+  };
 
   return (
     <div className='flex flex-col'>
       
       <div className={`${styles.paddingY} ${styles.flexCenter} animate-[zoomIn_1s_ease-in-out]`}>
-        <select className='cursor-pointer bg-primary h-10 font-poppins text-2xl rounded-lg outline-none' onChange={(e)=>{setActive(e.target.value)}}>
-          {Years?.map((x)=>(
-            <option className={`my-4 font-poppins text-2xl`} value={x}>{x}</option>
-          ))}
-        </select>
+        <FormControl className='flex w-[10rem]'>
+          <Select value={active} onChange={handleChange} >
+            {years?.map((x)=>(
+              <MenuItem value={x}>{x}</MenuItem>
+            ))}
+          </Select>
+        </FormControl>
       </div>
 
       <div className={`flex flex-col`}>

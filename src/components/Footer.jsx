@@ -39,18 +39,21 @@ return (
           <h4 className='flex text-[20px] font-medium text-white mt-4 underline underline-offset-2'>Contact</h4>
           <div className='cursor-pointer ' onClick={event => handleClick(event, 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}><h4 className='flex ss:mx-5'>Computing Block,</h4>
           <span className='flex ss:mx-5'>Coimbatore Institute of Technology,</span>
-          <span className='flex ss:mx-5'>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore, Tamil Nadu 641014</span></div>
+          <span className='flex ss:mx-5'>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore,<br/>Tamil Nadu 641014</span></div>
           <span className='flex text-[18px] font-medium text-white mt-4'>fosscit@gmail.com </span>
         </div>
         
         <div className='ss:w-[20%] flex flex-col flex-wrap md:mt-0 mt-5 justify-start px-10'>
           <h4 className='font-poppins font-medium text-[20px] leading-[27px] text-white mt-4  underline underline-offset-2'>Contributors</h4>
-          {contributors.map((footerLinks)=>(
-            <div key={footerLinks.id} className='flex my-0 min-w-[150px] justify-start items-center'>
+          {contributors.map((item)=>(
+            <div key={item.id} className='flex my-0 min-w-[150px] justify-start items-center'>
                 <ul className='list-none mt-4 mx-3'>
-                    <div className='flex'><li className={`font-poppins font-normal text-[16px] leading-[24px] text-white hover:text-secondary cursor-pointer mb-1`}>
-                      <a onClick={event => handleClick(event, footerLinks.link)}>{footerLinks.name}</a>
-                    </li></div>
+                    <div className='flex'>
+                      <li className={`font-poppins font-normal`}>
+                        <a className='flex text-[16px] text-white hover:text-secondary cursor-pointer mb-1' onClick={event => handleClick(event, item.link)}>{item.name}</a>
+                        <span className='flex text-[12px]'>{item.role}</span>
+                      </li>
+                    </div>
                 </ul>
             </div>
           ))}

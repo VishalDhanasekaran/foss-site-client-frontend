@@ -6,48 +6,51 @@ export const navLinks =[
     { id:'/members',title:'Members'},
     { id:'/events',title:'Events'},
     { id:'/contact',title:'Contact Us'},
-    { id:'/login',title:'Log In'},
+    // { id:'/login',title:'Log In'},
 ];
 
 
 export const footerLinks = [
-       {
-          id:1011,
-          name: "Home",
-          link: "./",
-        },
-        {
-          id:1012,
-          name: "About Us",
-          link: "about",
-        },
-        {
-          id:1013,
-          name: "Events",
-          link: "events",
-        },
-        {
-          id:1014,
-          name: "Contact Us",
-          link: "contact",
-        }
+  {
+    id:1011,
+    name: "Home",
+    link: "./",
+  },
+  {
+    id:1012,
+    name: "About Us",
+    link: "about",
+  },
+  {
+    id:1013,
+    name: "Events",
+    link: "events",
+  },
+  {
+    id:1014,
+    name: "Contact Us",
+    link: "contact",
+  }
 
-      ];
+];
 export const contributors=    [
        {
           id:1051,
           name: "Tharun Kailash K",
           link: "https://linkedin.com/in/tharun-kailash/",
-        },
-        {
-          id:1052,
-          name: "Shriram R",
-          link: "https://www.linkedin.com/in/shriram-r-20841421a/",
+          role: "Team Lead",
         },
         {
           id:1053,
           name: "Vignaraj D",
           link: "https://linkedin.com/in/vignaraj-d/",
+          role: "Frontend Developer",
+        },
+        {
+          id:1052,
+          name: "Shriram R",
+          link: "https://www.linkedin.com/in/shriram-r-20841421a/",
+          role: "Backend Developer",
         },
       ];
   

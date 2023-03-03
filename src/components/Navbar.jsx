@@ -6,18 +6,31 @@ import {logo,menu,close} from '../assets'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
+
+    // console.log(logged,toggled,(toggled || logged));
+
+    // const handleClick = () => {
+    //     console.log('handleClick');
+    //     handler(true);
+    // }
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
         <img src={logo} alt='FOSS-CIT Logo' className='w-[70px] h-[70px]' />
         <span className='font-poppins font-semibold text-4xl mx-10'>FOSS CIT</span>
         <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
             {navLinks.map((nav,index)=>(
-                <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index===navLinks.length-1? 'mr-0' : 'mr-10'} text-white hover:text-secondary`}>
+                <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] px-5 text-white hover:text-secondary`}>
                     <a href={`${nav.id}`}>
                         {nav.title}
                     </a>
                 </li>
+                
             ))}
+            {/* {(toggled || !logged) &&  <li className={`font-poppins font-normal cursor-pointer text-[16px] px-5 text-white hover:text-secondary`}>
+                <div onClick={handleClick}>
+                    Login
+                </div>
+            </li>} */}
         </ul>
         <div className='sm:hidden flex justify-center items-center'>
             <img src={toggle? close : menu} alt='menu' className='w-[28px] h=[28px] object-contain' onClick={()=>setToggle((prev)=>!prev)} />
@@ -34,7 +47,6 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-                
             </div>
         </div>
     </nav>
