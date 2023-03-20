@@ -43,7 +43,7 @@ const HomePage = () => {
       
       <section id={'upcomingevents'} className={`flex md:flex-row flex-col ${styles.paddingY} my-6`}>
         <div className={`flex-1 ${styles.flexStart} flex-col ss:ml-40 mx-4`} data-aos="fade-up-right" data-aos-duration='2000'>
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[60.8px]  text-justify">
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[60.8px]  ">
             Few Words About FOSS-CIT
           </h1>
           <p className={`${styles.paragraph} text-justify`}>

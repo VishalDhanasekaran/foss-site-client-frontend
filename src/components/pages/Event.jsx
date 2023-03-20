@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import styles from '../../style';
 import axios from 'axios';
 import {RingLoader} from 'react-spinners';
+import BoltLoader from '../BoltLoader'
 
 const Event = () => {
 
@@ -12,8 +13,8 @@ const Event = () => {
     const [error,setError]=useState(null);
 
     useEffect(()=>{
-        axios.get(`https://foss-backend.onrender.com/api/events/${eventId.id}`)
-        .then((res)=>{setData(res.data);setLoading(false);})
+        axios.get(`https://foss-backend.onrender.com/api/events/event/${eventId.id}`)
+        .then((res)=>{setData(res.data);setLoading(false);console.log(res.data);})
         .catch((err)=>{
             console.log("error:",err.message);
             setError(err.message);
@@ -46,7 +47,8 @@ const Event = () => {
             </div>
         </section>}
         {loading && <div className='flex justify-center items-center'> 
-            <RingLoader color={'#eecc21'} loading={loading} size={150}/>
+            {/* <RingLoader color={'#eecc21'} loading={loading} size={150}/> */}
+            <BoltLoader/>
             </div>}
         {error && <div className='flex'><span className={`${styles.heading2} text-center`}>{error}!</span></div>}
     </div>

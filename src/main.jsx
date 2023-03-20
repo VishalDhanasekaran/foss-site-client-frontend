@@ -7,6 +7,7 @@ import RingLoader from "react-spinners/RingLoader";
 import { BrowserRouter } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { BoltLoader } from './components';
 
 const Loader=() =>{
   const [loading,setLoading]=useState(false);
@@ -14,7 +15,7 @@ const Loader=() =>{
       setLoading(true);
       setTimeout(()=>{
           setLoading(false)
-      },1500);
+      },2500);
   },[]);
 
   AOS.init();
@@ -24,7 +25,8 @@ return(
       {
       loading?
         <div className='flex justify-center items-center w-full h-[100vh] bg-[#2e2c2c]'> 
-          <RingLoader color={'#eecc21'} loading={loading} size={150}/>
+          {/* <RingLoader color={'#eecc21'} loading={loading} size={150}/> */}
+          <BoltLoader/>
         </div>
       :<App />
       }

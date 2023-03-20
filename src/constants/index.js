@@ -387,3 +387,24 @@ export const founders = [
       content: "Fugiat quis nostrud eiusmod nostrud enim in. Do eiusmod in sunt consequat elit nostrud do Lorem. Ullamco eu cupidatat sint aliquip veniam minim."
     }
   ]
+
+
+export const eventYears={
+  "years": [
+      {
+          "id": "1",
+          "year": "2018-19",
+          "count": 13
+      },
+      {
+          "id": "2",
+          "year": "2020-21",
+          "count": 12
+      },
+      {
+          "id": "3",
+          "year": "2022-23",
+          "count": 1
+      }
+  ]
+}

@@ -67,12 +67,12 @@ const Login = ({handler,logHandler}) => {
                                 <span className={`${styles.paragraph} mx-3 text-base`}>Log in with Apple ID</span>
                             </div> */}
                         </div>
-                        <div className='flex items-center w-full mt-8 z-[1]'>
+                        {/* <div className='flex items-center w-full mt-8 z-[1]'>
                             <div className='flex flex-1 bg-white h-[1px]'/>
                             <p className='flex'>or</p>
                             <div className='flex flex-1 bg-white h-[1px]'/>
 
-                        </div>
+                        </div> */}
                         <form method='post' autoComplete='off'>
                             
                             <div className={` mt-10`}>

@@ -9,7 +9,8 @@ import Error from "./pages/Error";
 import Login from "./pages/Login";
 import Register from './pages/Register';
 import Event from "./pages/Event";
+import BoltLoader from "./BoltLoader";
 
 export{
-    Navbar, Footer, HomePage,AboutUs,Members,Contact,Events,Error,Login,Register,Event
+    Navbar, Footer, HomePage,AboutUs,Members,Contact,Events,Error,Login,Register,Event, BoltLoader
 };

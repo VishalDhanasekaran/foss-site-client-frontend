@@ -7,10 +7,9 @@ import * as yup from 'yup';
 const Contact = () => {
 
   const [name, setName] = useState('')
-  const [dept, setDept] = useState('')
   const [email, setEmail] = useState('')
-  const [contact, setContact] = useState('')
   const [message, setMessage] = useState('')
+  const [subject, setSubject] = useState('')
 
   const handleClick=(event,link)=>{
     window.open(link, '_blank', 'noopener,noreferrer');
@@ -18,22 +17,20 @@ const Contact = () => {
 
   const data=yup.object().shape({
       name:yup.string().required(), 
-      dept:yup.string().required(),
       email:yup.string().email().required(),
-      contact:yup.number().required().test(val=>val.toString().length===10),
-      message:yup.string().required()
+      message:yup.string().required(),
+      subject:yup.string()
     })
 
   const handleSubmit= async event=>{
     event.preventDefault();
-    console.log(name,dept,email,contact,message);
+    console.log(name,email,message);
 
     let formData={
       name:name, 
-      dept:dept,
       email:email,
-      contact:contact,
-      message:message
+      message:message,
+      subject:subject
     }
     const isValid=await data.isValid(formData);
     console.log(formData,isValid);
@@ -87,17 +84,17 @@ const Contact = () => {
         <div className="flex justify-center items-center w-full z-[1]">
           <div className='flex flex-col justify-center items-center ss:w-[50%] w-[95%] p-4 bg-[#212015] bg-opacity-80 backdrop-blur-sm rounded-3xl m-2 object-fit'>
             <div className=' flex flex-col justify-center items-center font-poppins text-justify text-white text-base '>
-              <form method='post' autoComplete='off'>
+              <form method='post' autoComplete='off' onSubmit={handleSubmit}>
                 <div className='my-5 mx-10'>
                   <input type='text' name={'name'} placeholder={'Name'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setName(e.target.value)}/>
-                  <input type='text' name={'dept'} placeholder={'Department'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setDept(e.target.value)}/>
+                  {/* <input type='text' name={'dept'} placeholder={'Department'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setDept(e.target.value)}/> */}
                 
                   <input type='text' name={'mail'} placeholder={'Mail ID'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setEmail(e.target.value)}/>
-                  <input type='text' name={'contact'} placeholder={'Contact'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setContact(e.target.value)}/>
+                  <input type='text' name={'subject'} placeholder={'Subject'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setSubject(e.target.value)}/>
                 
                   <textarea name={'message'} placeholder={'Message'} className={`${styles.flexStart} mx-5 w-[75%] my-3`} onChange={e=>setMessage(e.target.value)}/>
                 
-                  <div className='flex w-full justify-center items-center my-10'><button className='bg-white text-black ss:w-80 w-40 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300' onClick={handleSubmit}>SUBMIT</button></div>
+                  <div className='flex w-full justify-center items-center my-10'><input type='submit' className='bg-white text-black ss:w-80 w-40 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300'/></div>
                 </div>
               </form>
             </div>
