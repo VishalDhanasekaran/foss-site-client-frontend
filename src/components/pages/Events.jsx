@@ -81,7 +81,7 @@ const Events = () => {
         </div>
         <FormControl className='flex w-[10rem]'>
           <Select value={active} onChange={handleChange} >
-            {years?.years?.map((x)=>(
+            {years?.map((x)=>(
               <MenuItem key={x.id} value={x.year}>{x.year}</MenuItem>
             ))}
           </Select>
