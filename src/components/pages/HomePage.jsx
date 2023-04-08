@@ -8,7 +8,7 @@ import Typewriter from 'typewriter-effect';
 const HomePage = () => {
   
   return (
-    <div className='ss:mx-28'>
+    <div className='ss:mx-20'>
       <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} `}>
         <div className={`flex-1 ${styles.flexStart} flex-col ss:ml-20 mx-3 animate-[fadeInLeft_1s_ease-in-out]`}>
           <div className="flex flex-row justify-between items-center w-full h-[16rem]">
