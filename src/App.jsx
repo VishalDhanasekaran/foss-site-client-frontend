@@ -20,7 +20,7 @@ const App = () => {
 
   return (
   <>
-    <div className='bg-primary  w-full overflow-hidden'>
+    <div className=' bg-neutral-900 w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter} fixed w-full z-[14] bg-header animate-[fadeInUp_0.5s_ease-in-out]`}>
         <div className={`${styles.boxWidth} text-white `}>
           <Navbar/>

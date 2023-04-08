@@ -45,7 +45,7 @@ const Login = ({handler,logHandler}) => {
     <div className={`flex flex-col my-60 z-30`}>
         <section id={'history'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 animate-[fadeInDown_1s_ease-in-out]`}>
             <div className="flex justify-center items-center w-full z-[1]">
-                <div className='flex flex-col justify-center items-center ss:w-[30%] w-[95%] p-4 bg-[#212015] backdrop-blur-sm rounded-3xl m-auto object-fit'>
+                <div className='flex flex-col justify-center items-center ss:w-[30%] w-[95%] p-4 bg-primary backdrop-blur-sm rounded-3xl m-auto object-fit'>
                     <div className='flex flex-col justify-center items-center font-poppins text-justify text-white text-base'>
                         <div className="w-full flex justify-between items-center md:flex-row flex-col py-8 relative z-[1]">
                             <h2 className={`font-poppins font-semibold xs:text-[35px] text-[30x] w-full xs:leading-[75px] leading-[65px] text-center text-gradient`}>

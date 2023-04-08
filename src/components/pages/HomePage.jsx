@@ -8,7 +8,7 @@ import Typewriter from 'typewriter-effect';
 const HomePage = () => {
   
   return (
-    <div>
+    <div className='ss:mx-28'>
       <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} `}>
         <div className={`flex-1 ${styles.flexStart} flex-col ss:ml-20 mx-3 animate-[fadeInLeft_1s_ease-in-out]`}>
           <div className="flex flex-row justify-between items-center w-full h-[16rem]">
@@ -42,7 +42,7 @@ const HomePage = () => {
       </section>
       
       <section id={'upcomingevents'} className={`flex md:flex-row flex-col ${styles.paddingY} my-6`}>
-        <div className={`flex-1 ${styles.flexStart} flex-col ss:ml-40 mx-4`} data-aos="fade-up-right" data-aos-duration='2000'>
+        <div className={`flex-1 ${styles.flexStart} flex-col mx-4`} data-aos="fade-up-right" data-aos-duration='2000'>
           <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[60.8px]  ">
             Few Words About FOSS-CIT
           </h1>
@@ -52,7 +52,7 @@ const HomePage = () => {
  
             </p>
         </div>
-        <div className={`flex-1 ${styles.flexCenter} flex-col ss:mr-44 mx-4 ss:mt-2 mt-5`} data-aos="fade-up-left" data-aos-duration='2000'>
+        <div className={`flex-1 ${styles.flexCenter} flex-col mx-4 ss:mt-2 mt-5`} data-aos="fade-up-left" data-aos-duration='2000'>
           <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
             Current Event
           </h1>
@@ -71,12 +71,9 @@ const HomePage = () => {
                 what we do...
             </h1>
             <p className={`${styles.paragraph} mt-5 text-justify`}>
-            We encourage students creativity and innovation by making their academia more dynamic and full of learning.
             We assist students in learning how to work with various open source platforms as well as all necessary technical skills for the future.
             The list of preliminary activities we conduct to ensure a smooth learning curve for new entrants to the world of open-source includes the following: Bootcamps, workshops, hackathons, and talk shows.
             Through our contests and events, students can enhance their skillset not only in computer science fields but also in all necessary professional skills.
-            Apart from our own activities, FOSS Club invites other foundations to also conduct their own events on behalf of our club.
-
             </p>
         </section>
         <section id={'achievements'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
