@@ -358,33 +358,24 @@ export const event=
 export const founders = [
     {
       id:3001,
-      sno:1,
       img: "https://img.icons8.com/plasticine/512/user.png",
       name: "Dhileepan Thangamanimaran",
       working: "Senior Member Technical at D. E. Shaw Group",
-      department: "M.Sc. Software Systems (2016 - 2021)",
       linkedin: "https://www.linkedin.com/in/dhileepan/",
-      content: "Fugiat quis nostrud eiusmod nostrud enim in. Do eiusmod in sunt consequat elit nostrud do Lorem. Ullamco eu cupidatat sint aliquip veniam minim."
     },
     {
       id:3002,
-      sno:2,
       img: "https://img.icons8.com/plasticine/512/user.png",
       name: "Sibi Bose",
       working: "Software Engineer 2 at KLA Tencor",
-      department: "M.Sc. Software Systems (2017 - 2022)",
       linkedin: "https://www.linkedin.com/in/sibi-bose/",
-      content: "Fugiat quis nostrud eiusmod nostrud enim in. Do eiusmod in sunt consequat elit nostrud do Lorem. Ullamco eu cupidatat sint aliquip veniam minim."
     },
     {
       id:3003,
-      sno:3,
       img: "https://img.icons8.com/plasticine/512/user.png",
       name: "Sai Adarsh S",
       working: "Software Engineer at Cisco",
-      department: "M.Sc. Software Systems (2016 - 2021)",
       linkedin: "https://www.linkedin.com/in/sai-adarsh/",
-      content: "Fugiat quis nostrud eiusmod nostrud enim in. Do eiusmod in sunt consequat elit nostrud do Lorem. Ullamco eu cupidatat sint aliquip veniam minim."
     }
   ]
 
@@ -408,3 +399,21 @@ export const eventYears={
       }
   ]
 }
+
+export const what_we_do=[
+  {
+    id: 6001,
+    img:'https://amfoss.in/illus/mentor.svg',
+    tagline:'Mentor & train students to take on the world'
+  },
+  {
+    id: 6002,
+    img:'https://amfoss.in/illus/promote.svg',
+    tagline:'Promote Open Source and Computer Science'
+  },
+  {
+    id: 6003,
+    img:'https://amfoss.in/illus/contribute.svg',
+    tagline:'Contribute to Open Source Projects & Communities'
+  }
+]

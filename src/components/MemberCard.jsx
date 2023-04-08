@@ -1,30 +1,16 @@
 import React from 'react'
-import GetStarted from './GetStarted';
-import styles from '../style';
-import { linkedin as linkedinLogo } from '../assets';
 
-const MemberCard = ({name,position,department,linkedin,pic}) => {
-  const photo=pic.split('/');
+const MemberCard = ({name,position,linkedin,pic}) => {
   const handleClick=(event,link)=>{
     window.open(link, '_blank', 'noopener,noreferrer');
   }
   
   return (
-    <div>
-      <div className='flex flex-col justify-center items-center p-3 bg-black bg-opacity-80 backdrop-blur-sm rounded-lg hover:scale-105 duration-300 animate-[fadeInDown_1s_ease-in-out]' data-aos="fade-up" data-aos-duration='1000'>
-        <div className={` text-center ${styles.flexCenter} flex-col p-4 z-0`} >
-          <img alt={name} src={pic} className='flex aspect-square rounded-xl'/>
-        </div>
-        
-        <div className={`flex flex-col font-poppins w-full justify-center items-center text-justify text-white text-base animate-[zoomIn_1s_ease-in-out]`} >
-          <span className='font-semibold text-xl text-gradient'>{name}</span>
-          <div className='flex flex-row w-full justify-between items-center'>
-            <div className='flex w-5 h-5'></div>
-            <span className='flex text-gradient text-xl'>{position}</span>
-            {/* <span className='text-gradient'>{department}</span> */}
-            <div className={`flex cursor-pointer h-5 w-5`}><img src={linkedinLogo} onClick={event => handleClick(event, linkedin)}/></div>
-          </div>
-        </div>
+    <div onClick={e=>handleClick(e,linkedin)} className='flex flex-col justify-center items-center sm:w-[33rem] w-[20rem]   p-4 bg-black bg-opacity-80 backdrop-blur-sm rounded-lg m-2 hover:scale-105 duration-300 cursor-pointer gap-10 z-0 animate-[fadeInDown_1s_ease-in-out]' >
+      <div className={`flex flex-col text-center justify-center items-center`}>
+        <img alt={name} src={pic} className='flex aspect-video rounded-xl object-contain'/>
+        <span className='flex font-bold text-gradient font-roboto text-center text-2xl py-5 '>{name}</span>
+        <span className='flex text-xl text-gradient'>{position}</span>
       </div>
     </div>
   )

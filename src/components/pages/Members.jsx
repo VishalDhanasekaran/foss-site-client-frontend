@@ -74,32 +74,29 @@ const Members = () => {
   return (
     <div className='flex flex-col'>
       
-      <div className={`py-10 ${styles.flexCenter} flex-col animate-[zoomIn_1s_ease-in-out]`}>
-          {/* <select className='cursor-pointer bg-primary h-10 font-poppins text-2xl rounded-lg outline-none' value={active} onChange={(e)=>{setActive(e.target.value)}}>
-          {years?.map((x)=>(
-            <option className={`my-4 font-poppins text-2xl`} value={x}>{x}</option>
-          ))}
-          </select> */}
-          <div className=" flex justify-between items-center md:flex-row flex-col relative z-[1] animate-[zoomIn_1s_ease-in-out]">
-            <h2 className={`${styles.heading2} text-gradient`}>
-              Board Members
-            </h2>
-          </div>
-          <FormControl className='flex w-[10rem]'>
-            <Select value={active} onChange={handleChange} >
-              {years?.years.map((x)=>(
-                <MenuItem key={x.id} value={x.year}>{x.year}</MenuItem>
-              ))}
-            </Select>
+      <div className={`py-10 justify-center items-center gap-10 flex flex-row w-full animate-[zoomIn_1s_ease-in-out]`}>
+        <div className=" flex items-center relative z-[1]">
+          <h2 className={`${styles.heading2} text-gradient`}>
+            Board Members
+          </h2>
+        </div>
+        <FormControl className='flex w-[10rem]'>
+          <Select value={active} onChange={handleChange} >
+            {years?.map((x)=>(
+              <MenuItem key={x.id} value={x.year}>{x.year}</MenuItem>
+            ))}
+          </Select>
         </FormControl>
       </div>
+
+      
       
       <div>
         <section id="current" className={` ${styles.flexCenter} flex-col relative `}>
           <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
 
 
-          <div className="flex flex-wrap justify-center p-3  sm:w-[25rem] w-full z-[1]">
+          <div className="flex flex-wrap justify-center w-full z-[1]">
             {data?.map((card) => 
               <div data-aos="fade-up" data-aos-duration='1000'>
                 <MemberCard key={card._id} {...card} />
@@ -113,7 +110,7 @@ const Members = () => {
               {error && <div className='flex'><span className={`${styles.heading2} text-center`}>{error}!</span></div>}
           </div>
           
-        </section>        
+        </section>    
       </div>
     
     </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { event } from '../../constants';
+import { event, what_we_do } from '../../constants';
 import GetStarted from '../GetStarted';
 import {linux} from '../../assets';
 import styles from '../../style';
@@ -68,13 +68,25 @@ const HomePage = () => {
       <div className={`flex flex-col ${styles.paddingY} my-6`}>
         <section id={'whatwedo'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
-                what we do...
+                Our Mission...
             </h1>
-            <p className={`${styles.paragraph} mt-5 text-justify`}>
-            We assist students in learning how to work with various open source platforms as well as all necessary technical skills for the future.
-            The list of preliminary activities we conduct to ensure a smooth learning curve for new entrants to the world of open-source includes the following: Bootcamps, workshops, hackathons, and talk shows.
-            Through our contests and events, students can enhance their skillset not only in computer science fields but also in all necessary professional skills.
-            </p>
+            <div className='flex sm:flex-row flex-col justify-between w-full items-center'>
+              <p className={`${styles.paragraph} flex text-justify lg:w-[50%]`}>
+              We assist students in learning how to work with various open source platforms as well as all necessary technical skills for the future.
+              The list of preliminary activities we conduct to ensure a smooth learning curve for new entrants to the world of open-source includes the following: Bootcamps, workshops, hackathons, and talk shows.
+              Through our contests and events, students can enhance their skillset not only in computer science fields but also in all necessary professional skills.
+              </p>
+              <img className='flex sm:w-[50%]' src='https://amfoss.in/illus/what_we_do.svg' alt='whatwedo'/>
+            </div>
+            <div className='flex flex-wrap w-full gap-10 justify-center items-end py-10'>
+              {what_we_do.map((item)=>(
+                <div key={item.id}>
+                  <img src={item.img} alt={item.tagline}/>
+                  <p className='flex text-lg text-gradient font-semibold text-center'>{item.tagline}</p>
+
+                </div>
+              ))}
+            </div>
         </section>
         <section id={'achievements'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
