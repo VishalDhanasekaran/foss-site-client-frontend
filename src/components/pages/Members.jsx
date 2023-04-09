@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from 'react'
-import { RingLoader } from 'react-spinners';
 import {BoltLoader} from "..";
 import MemberCard from '../MemberCard';
 import styles from '../../style';
@@ -74,7 +73,7 @@ const Members = () => {
   return (
     <div className='flex flex-col'>
       
-      <div className={`py-10 justify-center items-center gap-10 flex flex-row w-full animate-[zoomIn_1s_ease-in-out]`}>
+      <div className={`py-10 justify-center items-center px-4 gap-10 flex flex-row w-full animate-[zoomIn_1s_ease-in-out]`}>
         <div className=" flex items-center relative z-[1]">
           <h2 className={`${styles.heading2} text-gradient`}>
             Board Members
@@ -96,15 +95,19 @@ const Members = () => {
           <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
 
 
-          <div className="flex flex-wrap justify-center w-full z-[1]">
-            {data?.map((card) => 
-              <div data-aos="fade-up" data-aos-duration='1000'>
-                <MemberCard key={card._id} {...card} />
+          <div className="flex flex-wrap justify-center w-full z-[1]" data-aos="fade-up" data-aos-duration='1000'>
+            {data?.map((item) => 
+              <div className='flex' key={item.id}  data-aos="fade-up" data-aos-duration='1000'>
+                {/* <span className='flex'>{item.id}</span> */}
+                  <div className='flex flex-wrap justify-center items-center'>
+                    {item.members.map((member)=>(
+                        <MemberCard key={member._id} {...member} />
+                    ))}
+                  </div>
               </div>
             )}
             {isAvailable === 0 && <div className='flex'><span className={`${styles.heading2} text-center`}>Members of {active} are Yet to be Updated...</span></div>}
               {loading && <div className='flex my-10'> 
-                {/* <RingLoader color={'#eecc21'} loading={loading} size={150}/> */}
                 <BoltLoader/>
               </div>}
               {error && <div className='flex'><span className={`${styles.heading2} text-center`}>{error}!</span></div>}

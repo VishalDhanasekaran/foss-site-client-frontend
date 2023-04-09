@@ -43,7 +43,7 @@ const AboutUs = () => {
         <h2 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[22px] text-white ss:leading-[100.8px] leading-[75px]">
           Join Our Community
         </h2>
-        <GetStarted text={'Telegram'}/>
+        <GetStarted text={'LinkedIn'} link={'https://www.linkedin.com/company/foss-cit/'}/>
       </section>
     </div>
   )
