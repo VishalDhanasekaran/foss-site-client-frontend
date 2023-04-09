@@ -56,10 +56,11 @@ const Login = ({handler,logHandler}) => {
                         </div>
                         <form method='post' autoComplete='off'>
                             
-                            <div className={` mt-10 flex flex-row`}>
+                            <div className={` mt-10 flex flex-row gap-4 justify-end items-center`}>
                                 <input type={'email'} name={'email'} placeholder={'E-Mail'} className=' sm:w-[17rem] w-full my-3' onChange={e=>setEmail(e.target.value)}/>
-                                {/* <button className='bg-white text-black rounded-3xl w-4 p-1 justify-center items-center hover:scale-105 ease-in-out duration-300' onClick={handleSubmit}>{">"}</button> */}
-                                <img src={right_arrow} className='flex hover:scale-125 ease-in-out duration-300 mx-3' onClick={handleSubmit}/>
+                                <div className='flex bg-white justify-center items-center rounded-full hover:scale-125 ease-in-out duration-300 absolute w-6 p-1 translate-x-9'>
+                                    <img src={right_arrow} className='flex  mx-3' onClick={handleSubmit}/>
+                                </div>
                             </div>
 
                         </form>
