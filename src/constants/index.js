@@ -400,7 +400,7 @@ export const eventYears={
   ]
 }
 
-export const what_we_do=[
+export const missions=[
   {
     id: 6001,
     img:'https://amfoss.in/illus/mentor.svg',
@@ -416,4 +416,72 @@ export const what_we_do=[
     img:'https://amfoss.in/illus/contribute.svg',
     tagline:'Contribute to Open Source Projects & Communities'
   }
+]
+
+import { presentation } from "../assets";
+
+export const activities=[
+  {
+    id:7001,
+    title:'Bootcamps',
+    icon:presentation,
+    desc:'Nulla irure eiusmod mollit aute in aute aute. Eu laboris duis excepteur magna eiusmod nulla exercitation cupidatat dolor veniam commodo sit culpa. Consectetur amet sunt labore duis sint laboris. Ex culpa ipsum aliquip eiusmod qui occaecat esse consequat nulla officia culpa laborum. Anim nulla consectetur ut Lorem dolore anim reprehenderit nulla adipisicing cupidatat officia cillum laboris incididunt.',
+    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
+  },
+  {
+    id:7002,
+    title:'Workshops',
+    icon:presentation,
+    desc:'Non proident et eiusmod aliquip excepteur non deserunt ea laborum consequat sunt. Veniam velit voluptate ut et enim. Quis do officia proident elit non laborum voluptate consectetur sunt consectetur nostrud. Est aliquip cupidatat commodo amet adipisicing amet nisi nulla. Pariatur anim pariatur magna magna laborum sunt laborum proident. Incididunt pariatur ullamco fugiat deserunt enim cupidatat ex do est commodo culpa est proident sit.',
+    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
+  },
+  {
+    id:7003,
+    title:'Coding Contests',
+    icon:presentation,
+    desc:'Ex quis deserunt qui eu nostrud qui id est in ut ullamco nisi. Labore officia ea adipisicing duis ipsum. Veniam deserunt qui tempor ipsum sit adipisicing duis est irure nulla non laborum labore nisi. Elit incididunt cillum officia nostrud culpa excepteur amet sunt voluptate aliquip Lorem dolor. Duis pariatur cupidatat ad exercitation. Est culpa Lorem aliqua pariatur ipsum mollit exercitation fugiat amet non pariatur aliquip. Laborum culpa id ullamco mollit labore reprehenderit adipisicing consequat et fugiat fugiat.',
+    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
+  },
+  {
+    id:7004,
+    title:'Designing Contests',
+    icon:presentation,
+    desc:'Consectetur minim quis in pariatur incididunt anim eiusmod nostrud ad aute labore non aliqua. Dolor velit aliquip nulla exercitation nostrud ullamco nostrud nisi culpa laboris non incididunt aliqua aute. Commodo aliquip eu excepteur labore in do quis dolore quis veniam incididunt aliquip laboris. Enim aute deserunt veniam tempor aliquip adipisicing irure sunt. Nisi non anim proident quis aliqua tempor adipisicing officia. Aliqua nulla occaecat ipsum aliqua aliqua pariatur elit non commodo aliquip non veniam eu. Labore anim voluptate excepteur incididunt labore est nostrud ad cillum.',
+    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
+  },
+  {
+    id:7005,
+    title:'Group Discussions',
+    icon:presentation,
+    desc:'Anim deserunt irure minim mollit. In in ut cillum nostrud reprehenderit veniam nisi aute exercitation incididunt excepteur non. Ex culpa nostrud duis ullamco ut non occaecat fugiat ullamco. Tempor culpa minim nostrud aute esse ipsum officia magna ipsum occaecat elit. Reprehenderit ad sit aliquip dolor commodo laboris. Deserunt anim esse aliquip veniam ad sunt.',
+    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
+  },
+  {
+    id:7006,
+    title:'Interview Preparations',
+    icon:presentation,
+    desc:'Nisi irure deserunt sit proident. Nisi veniam aute reprehenderit ipsum voluptate occaecat veniam irure sunt elit duis minim culpa nostrud. Ea ipsum nostrud non duis ipsum proident.',
+    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
+  },
+  {
+    id:7007,
+    title:'SocialMedia Events',
+    icon:presentation,
+    desc:'Minim aute proident quis exercitation nostrud. Mollit anim ipsum sint deserunt occaecat deserunt excepteur ipsum cupidatat reprehenderit exercitation. Commodo ad ut esse commodo veniam. Laborum nostrud mollit laboris eiusmod sunt duis nisi. Occaecat do anim dolor incididunt amet officia ut excepteur ex deserunt incididunt labore pariatur.',
+    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
+  },
+  {
+    id:7008,
+    title:'Quiz',
+    icon:presentation,
+    desc:'Lorem eu fugiat adipisicing voluptate tempor eiusmod occaecat nulla sit id Lorem. Laboris officia eiusmod voluptate esse velit aliquip consectetur. Culpa commodo enim magna ullamco do laboris cupidatat cupidatat. Tempor adipisicing commodo in commodo mollit mollit officia incididunt velit ad ipsum pariatur. Irure sit eu do cillum esse deserunt cillum.',
+    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
+  },
+  {
+    id:7009,
+    title:'Fun Events',
+    icon:presentation,
+    desc:'Cupidatat ut cupidatat labore deserunt magna minim nostrud ipsum occaecat anim magna velit. Amet est duis non deserunt enim ex ullamco fugiat commodo ullamco veniam commodo et. Aliqua proident culpa mollit enim ut et ea do nulla. Adipisicing incididunt officia quis et voluptate cupidatat fugiat. Minim culpa enim sint nostrud mollit sunt velit excepteur.',
+    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
+  },
 ]

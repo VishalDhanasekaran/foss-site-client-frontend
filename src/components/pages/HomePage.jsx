@@ -1,9 +1,11 @@
 import React from 'react'
-import { event, what_we_do } from '../../constants';
+import { event, missions } from '../../constants';
 import GetStarted from '../GetStarted';
 import {linux} from '../../assets';
 import styles from '../../style';
 import Typewriter from 'typewriter-effect';
+import WhatWeDo from '../WhatWeDo';
+
 
 const HomePage = () => {
   
@@ -13,16 +15,12 @@ const HomePage = () => {
         <div className={`flex-1 ${styles.flexStart} flex-col ss:ml-20 mx-3 animate-[fadeInLeft_1s_ease-in-out]`}>
           <div className="flex flex-row justify-between items-center w-full h-[16rem]">
             <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] text-gradient">
-              {/* <span className="text-gradient">Free & Open Source Software</span> */}
-              {/* <Typewriter onInit={(typewriter)=> {
-              typewriter.typeString("FOSS").pauseFor(1000).deleteAll().typeString("Free & Open Source Software").start();}} className={`text-gradient`} /> */}
               <Typewriter options={{strings: ['FOSS', 'Free & Open Source Software'], autoStart: true, loop: true,}}/>
             </h1>
           </div>
           <p className={`${styles.paragraph} max-w-[600px] mt-5 text-justify`}>
-          FOSS-CIT is an integral framework that addresses the unmet needs of emerging technologists, ranging from novices to resource people.
-          We aid students development in both fundamental and contemporary technological trends.
- 
+            FOSS-CIT is an integral framework that addresses the unmet needs of emerging technologists, ranging from novices to resource people.
+            We aid students development in both fundamental and contemporary technological trends.
           </p>
           <div className="ss:flex hidden md:mr-4 mr-0 mt-8 ml-[25%]">
             <GetStarted text={'Get Started'}/>
@@ -66,7 +64,7 @@ const HomePage = () => {
       </section>
       
       <div className={`flex flex-col ${styles.paddingY} my-6`}>
-        <section id={'whatwedo'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
+        <section id={'mission'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
                 Our Mission...
             </h1>
@@ -76,10 +74,10 @@ const HomePage = () => {
               The list of preliminary activities we conduct to ensure a smooth learning curve for new entrants to the world of open-source includes the following: Bootcamps, workshops, hackathons, and talk shows.
               Through our contests and events, students can enhance their skillset not only in computer science fields but also in all necessary professional skills.
               </p>
-              <img className='flex sm:w-[50%]' src='https://amfoss.in/illus/what_we_do.svg' alt='whatwedo'/>
+              <img className='flex sm:w-[50%]' src='https://amfoss.in/illus/what_we_do.svg' alt='mission'/>
             </div>
-            <div className='flex flex-wrap w-full gap-10 justify-center items-end py-10'>
-              {what_we_do.map((item)=>(
+            <div className='flex flex-wrap w-full gap-10 justify-center items-end py-10' data-aos="fade-up" data-aos-duration='2000'>
+              {missions.map((item)=>(
                 <div key={item.id}>
                   <img src={item.img} alt={item.tagline}/>
                   <p className='flex text-lg text-gradient font-semibold text-center'>{item.tagline}</p>
@@ -87,6 +85,12 @@ const HomePage = () => {
                 </div>
               ))}
             </div>
+        </section>
+        <section id={'whatwedo'}className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
+            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
+              What We Do...
+            </h1>
+          <WhatWeDo/>
         </section>
         <section id={'achievements'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">

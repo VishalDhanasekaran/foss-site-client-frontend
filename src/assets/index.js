@@ -18,7 +18,8 @@ import right_arrow from "./right_arrow.svg";
 import google from "./google.svg";
 import apple from "./apple.svg";
 import outlook from "./outlook.svg";
+import presentation from "./presentation.svg";
 
 export {
-    logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google,apple,outlook
+    logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google,apple,outlook,presentation
 };
