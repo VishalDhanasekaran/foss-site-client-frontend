@@ -13,7 +13,7 @@ const AboutUs = () => {
             About FOSS CIT
           </h2>
         </div>
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
+        <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] leading-[75px]">
             History Of FOSS-CIT
         </h1>
         <p className={`${styles.paragraph} mt-5 text-justify`}>
@@ -25,7 +25,7 @@ const AboutUs = () => {
 
       <section id={'founders'} className={`flex-1 ${styles.flexStart} items-center justify-center sm:flex-row flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
         <div className='flex flex-col sm:w-1/3'>
-          <h1 className="flex-1 font-poppins text-gradient font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
+          <h1 className="flex-1 font-poppins text-gradient font-semibold ss:text-[52px] text-[32px] ss:leading-[100.8px] leading-[75px]">
             Initiators Of <br/> <span className='text-[60px]'>FOSS CIT</span>
           </h1>
           <p className={`${styles.paragraph} mt-5 text-justify`}>
@@ -40,7 +40,7 @@ const AboutUs = () => {
       </section>
       
       <section id={'community'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 mt-4 `} data-aos="fade-up" data-aos-duration='2000'>
-        <h2 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[22px] text-white ss:leading-[100.8px] leading-[75px]">
+        <h2 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[22px] text-gradient ss:leading-[100.8px] leading-[75px]">
           Join Our Community
         </h2>
         <GetStarted text={'LinkedIn'} link={'https://www.linkedin.com/company/foss-cit/'}/>

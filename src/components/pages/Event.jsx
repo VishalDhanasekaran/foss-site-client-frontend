@@ -4,6 +4,7 @@ import styles from '../../style';
 import axios from 'axios';
 import {RingLoader} from 'react-spinners';
 import BoltLoader from '../BoltLoader'
+import GetStarted from '../GetStarted';
 
 const Event = () => {
 
@@ -45,6 +46,7 @@ const Event = () => {
                     {data.content}
                 </div>
             </div>
+            <GetStarted text={'View More'} link={data?.link}/>
         </section>}
         {loading && <div className='flex justify-center items-center'> 
             {/* <RingLoader color={'#eecc21'} loading={loading} size={150}/> */}

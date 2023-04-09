@@ -19,7 +19,15 @@ import google from "./google.svg";
 import apple from "./apple.svg";
 import outlook from "./outlook.svg";
 import presentation from "./presentation.svg";
+import careerGuidence from "./careerGuidence.png";
+import codingContest from "./codingContest.png";
+import groupDiscussions from "./groupDiscussions.png";
+import quizz from "./quizz.png";
+import socialMediaIcon from "./socialMedia.png";
+import webinar from "./webinar.png";
+import workshop from "./workshop.png";
 
 export {
-    logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google,apple,outlook,presentation
+    logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google,apple,outlook,
+    presentation,careerGuidence,codingContest,groupDiscussions,quizz,socialMediaIcon,webinar,workshop
 };
