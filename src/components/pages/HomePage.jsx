@@ -1,5 +1,5 @@
 import React from 'react'
-import { event, missions } from '../../constants';
+import { achievements, event, missions } from '../../constants';
 import GetStarted from '../GetStarted';
 import {linux} from '../../assets';
 import styles from '../../style';
@@ -94,37 +94,21 @@ const HomePage = () => {
         </section>
         <section id={'achievements'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
-                what we have achieved...
+                What we have achieved...
             </h1>
             <p className={`${styles.paragraph} mt-5 text-justify`} >
               We conducted various training sessions for web technologies, competitive programming, recreational programming, and GNU/Linux tools and frameworks.
               We established successful collaborations with Newton schools, Mozilla Campus Clubs, Google Developer Groups in Coimbatore, and FOSS Wave.
-              <li className={`flex-1 font-poppins font-semibold ss:text-[32px] text-[22px] text-white ss:leading-[100.8px] `}>
-                Mozilla Campus Clubs
-              </li>
-              <span className={`${styles.paddingX}`}>
-                It is a Mozilla program that engages students all over the world, building campus groups that each have hundreds of passionate volunteers contributing to open source as advocates, technologists, and innovators. 
-              </span>
-
-              <li className={`flex-1 font-poppins font-semibold ss:text-[32px] text-[22px] text-white ss:leading-[100.8px] `}>
-                Google Developer Groups - Coimbatore
-              </li>    
-              <span className={`${styles.paddingX}`}>
-                It is a non-profit developer group for developers interested in Google's developer technology, including the Android, App Engine, and Google Chrome platforms and APIs. 
-              </span>
-              <li className={`flex-1 font-poppins font-semibold ss:text-[32px] text-[22px] text-white ss:leading-[100.8px] `}>
-                FOSS Wave
-              </li>
-              <span className={`${styles.paddingX}`}>
-                It is a not-for-profit organization/community to connect college students and professionals to the ecosystem of continuous innovation, enriching their skillset, and paving the pathway for being industry-ready.
-              </span>
-              <li className={`flex-1 font-poppins font-semibold ss:text-[32px] text-[22px] text-white ss:leading-[100.8px] `}>
-                Newton school
-              </li>    
-              <span className={`${styles.paddingX}`}>
-                Newton School is a neo-university that provides highly immersive learning to millions of students and working professionals to tap into new-age technology.
-              </span>
             </p>
+            <div className='flex p-3 flex-row w-full gap-32 py-10 justify-center items-center'>
+              {achievements.map((item)=>(
+                <div className='flex flex-col gap-5 justify-center items-center text-justify' key={item.id}>
+                  <img src={item.img} alt={item.title} className='flex'/>
+                  <span className='flex text-gradient text-2xl font-semibold'>{item.title}</span>
+                  <span className='flex'>{item.desc}</span>
+                </div>
+              ))}
+            </div>
         </section>
       </div>
     </div>

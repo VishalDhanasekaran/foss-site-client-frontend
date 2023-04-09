@@ -485,3 +485,30 @@ export const activities=[
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
 ]
+
+export const achievements =[
+  {
+    id:8001,
+    title:'150+ Million',
+    desc:'downloads',
+    img:'https://cdn1.byjus.com/byjusweb/img/home/svg/ic_downloads.svg'
+  },
+  {
+    id:8002,
+    title:'4.7+ Star',
+    desc:'app rating',
+    img:'https://cdn1.byjus.com/byjusweb/img/home/svg/ic-app%20rating.svg'
+  },
+  {
+    id:8003,
+    title:'1701+ Cities',
+    desc:'worldwide',
+    img:'https://cdn1.byjus.com/byjusweb/img/home/svg/ic-cities.svg'
+  },
+  {
+    id:8004,
+    title:'71 mins avg.',
+    desc:'time spent daily',
+    img:'https://cdn1.byjus.com/byjusweb/img/home/svg/ic-time.svg'
+  },
+]
