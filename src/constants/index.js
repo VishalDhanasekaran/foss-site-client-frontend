@@ -367,7 +367,7 @@ export const founders = [
       id:3002,
       img: "https://img.icons8.com/plasticine/512/user.png",
       name: "Sibi Bose",
-      working: "Software Engineer 2 at KLA Tencor",
+      working: "Software Engineer at KLA Tencor",
       linkedin: "https://www.linkedin.com/in/sibi-bose/",
     },
     {
