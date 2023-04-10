@@ -32,6 +32,10 @@ module.exports = {
           'from':{opacity: '0', transform: 'translateY(200px)'},
           'to':{opacity: '1'}
         },
+        fadeOut:{
+          'from':{opacity: '1'},
+          'to':{opacity: '0'}
+        },
         zoomIn:{
           '0%': {transform:'scale(0.5,0.5)'},
           '100%':{transform:'scale(1,1)'}

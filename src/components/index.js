@@ -11,6 +11,7 @@ import Register from './pages/Register';
 import Event from "./pages/Event";
 import BoltLoader from "./BoltLoader";
 import WhatWeDo from "./WhatWeDo";
+import Activity from "./Activity";
 export{
-    Navbar, Footer, HomePage,AboutUs,Members,Contact,Events,Error,Login,Register,Event, BoltLoader,WhatWeDo
+    Navbar, Footer, HomePage,AboutUs,Members,Contact,Events,Error,Login,Register,Event, BoltLoader,WhatWeDo,Activity
 };

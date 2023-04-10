@@ -15,7 +15,7 @@ const HomePage = () => {
         <div className={`flex-1 ${styles.flexStart} flex-col ss:ml-20 mx-3 animate-[fadeInLeft_1s_ease-in-out]`}>
           <div className="flex flex-row justify-between items-center w-full h-[16rem]">
             <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] text-gradient">
-              <Typewriter options={{strings: ['FOSS', 'Free & Open Source Software'], autoStart: true, loop: true,}}/>
+              <Typewriter options={{strings: ['FOSS', 'Free Open Source Software'], autoStart: true, loop: true,}}/>
             </h1>
           </div>
           <p className={`${styles.paragraph} max-w-[600px] mt-5 text-justify`}>
@@ -100,7 +100,7 @@ const HomePage = () => {
               We conducted various training sessions for web technologies, competitive programming, recreational programming, and GNU/Linux tools and frameworks.
               We established successful collaborations with Newton schools, Mozilla Campus Clubs, Google Developer Groups in Coimbatore, and FOSS Wave.
             </p>
-            <div className='flex p-3 flex-row w-full gap-32 py-10 justify-center items-center'>
+            <div className='flex p-3 flex-wrap w-full ss:gap-32 gap-10 py-10 justify-center items-center'>
               {achievements.map((item)=>(
                 <div className='flex flex-col gap-5 justify-center items-center text-justify' key={item.id}>
                   <img src={item.img} alt={item.title} className='flex'/>

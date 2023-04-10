@@ -77,23 +77,19 @@ const Contact = () => {
       
       <section id="mailform" className={`flex md:flex-col flex-col ${styles.paddingY}`} data-aos="fade-up" data-aos-duration='2000'>
         <div>
-          <h1 className="flex-1 font-poppins font-semibold text-center ss:text-[42px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]">
+          <h1 className="flex-1 font-poppins font-semibold text-center ss:text-[42px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] text-gradient">
             Mail Us Your Message
           </h1>
         </div>
         <div className="flex justify-center items-center w-full z-[1]">
-          <div className='flex flex-col justify-center items-center ss:w-[50%] w-[95%] p-4 bg-[#212015] bg-opacity-80 backdrop-blur-sm rounded-3xl m-2 object-fit'>
+          <div className='flex flex-col justify-center items-center ss:w-[50%] w-[95%] p-4 bg-black bg-opacity-80 backdrop-blur-sm rounded-3xl m-2 object-fit'>
             <div className=' flex flex-col justify-center items-center font-poppins text-justify text-white text-base '>
               <form method='post' autoComplete='off' onSubmit={handleSubmit}>
                 <div className='my-5 mx-10'>
                   <input type='text' name={'name'} placeholder={'Name'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setName(e.target.value)}/>
-                  {/* <input type='text' name={'dept'} placeholder={'Department'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setDept(e.target.value)}/> */}
-                
                   <input type='text' name={'mail'} placeholder={'Mail ID'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setEmail(e.target.value)}/>
                   <input type='text' name={'subject'} placeholder={'Subject'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setSubject(e.target.value)}/>
-                
                   <textarea name={'message'} placeholder={'Message'} className={`${styles.flexStart} mx-5 w-[75%] my-3`} onChange={e=>setMessage(e.target.value)}/>
-                
                   <div className='flex w-full justify-center items-center my-10'><input type='submit' className='bg-white text-black ss:w-80 w-40 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300'/></div>
                 </div>
               </form>
