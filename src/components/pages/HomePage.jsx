@@ -1,13 +1,24 @@
-import React from 'react'
-import { achievements, event, missions } from '../../constants';
+import React,{useEffect,useState} from 'react'
+import { achievements, missions } from '../../constants';
 import GetStarted from '../GetStarted';
 import {linux} from '../../assets';
 import styles from '../../style';
 import Typewriter from 'typewriter-effect';
 import WhatWeDo from '../WhatWeDo';
+import axios from 'axios';
 
 
 const HomePage = () => {
+
+  const [event,setEvent]=useState();
+
+  useEffect(() => {
+    axios.get('https://foss-backend.onrender.com/api/events/event/current')
+    .then((response)=>{console.log(response.data);setEvent(response.data);})
+    .catch((error)=>{console.log(error);});
+  }, []);
+
+    console.log(event)
   
   return (
     <div className='ss:mx-20'>
@@ -54,9 +65,9 @@ const HomePage = () => {
           <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
             Current Event
           </h1>
-          <a href={`/events/${event.id}`}>
+          <a href={`/events/${event?._id}`}>
             <div >
-              <img src={event.poster} className='shadow-lg shadow-[#b0a854] w-full h-[20rem]'/>
+              <img src={event?.pic} className='aspect-video object-contain'/>
             </div>
           </a>
          
