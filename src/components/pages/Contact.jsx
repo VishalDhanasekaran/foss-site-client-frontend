@@ -1,8 +1,11 @@
 import React,{useState} from 'react'
 import { location, mail, phone } from '../../assets';
 import styles from '../../style';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import * as yup from 'yup';
+import axios from 'axios';
 
 const Contact = () => {
 
@@ -34,10 +37,35 @@ const Contact = () => {
     }
     const isValid=await data.isValid(formData);
     console.log(formData,isValid);
+     
+    axios.post('https://foss-backend.onrender.com/api/messages',formData)
+    .then((response)=>{console.log(response);
+      toast.success('Message Send Successfully!', {
+        position: "top-right",
+        autoClose: 3500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });})
+    .catch((error)=>{console.log(error);
+      toast.error('Some Internal Error! Couldn\'t Deliver the Message!', {
+        position: "top-right",
+        autoClose: 3500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });});
 
   }
   return (
     <div className={`flex flex-col ${styles.paddingY}`}>
+    <ToastContainer />
       <div className={`w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1] animate-[zoomIn_0.75s_ease-in-out]`}>
         <h2 className={`${styles.heading2} text-center text-gradient`}>
           Contact Us
