@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { location, mail, phone } from '../../assets';
+import { location, mail as ml, phone } from '../../assets';
 import styles from '../../style';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,7 +10,7 @@ import axios from 'axios';
 const Contact = () => {
 
   const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
+  const [mail, setMail] = useState('')
   const [message, setMessage] = useState('')
   const [subject, setSubject] = useState('')
 
@@ -20,18 +20,18 @@ const Contact = () => {
 
   const data=yup.object().shape({
       name:yup.string().required(), 
-      email:yup.string().email().required(),
+      mail:yup.string().email().required(),
       message:yup.string().required(),
       subject:yup.string()
     })
 
   const handleSubmit= async event=>{
     event.preventDefault();
-    console.log(name,email,message);
+    console.log(name,mail,message);
 
     let formData={
       name:name, 
-      email:email,
+      mail:mail,
       message:message,
       subject:subject
     }
@@ -89,7 +89,7 @@ const Contact = () => {
               <span className='mx-5 cursor-pointer' onClick={event => handleClick(event, 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore, Tamil Nadu 641014 </span>
             </div>
             <div className='flex flex-row my-4'>
-              <img src={mail} className='w-[23px] h-[23px] object-contain'/>
+              <img src={ml} className='w-[23px] h-[23px] object-contain'/>
               <span className='mx-5'>fosscit@gmail.com </span>
             </div>
           </div>
@@ -115,7 +115,7 @@ const Contact = () => {
               <form method='post' autoComplete='off' onSubmit={handleSubmit}>
                 <div className='my-5 mx-10'>
                   <input type='text' name={'name'} placeholder={'Name'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setName(e.target.value)}/>
-                  <input type='text' name={'mail'} placeholder={'Mail ID'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setEmail(e.target.value)}/>
+                  <input type='text' name={'mail'} placeholder={'Mail ID'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setMail(e.target.value)}/>
                   <input type='text' name={'subject'} placeholder={'Subject'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setSubject(e.target.value)}/>
                   <textarea name={'message'} placeholder={'Message'} className={`${styles.flexStart} mx-5 w-[75%] my-3`} onChange={e=>setMessage(e.target.value)}/>
                   <div className='flex w-full justify-center items-center my-10'><input type='submit' className='bg-white text-black ss:w-80 w-40 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300'/></div>
