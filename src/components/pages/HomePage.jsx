@@ -6,7 +6,7 @@ import styles from '../../style';
 import Typewriter from 'typewriter-effect';
 import WhatWeDo from '../WhatWeDo';
 import axios from 'axios';
-
+import { UilLink } from '@iconscout/react-unicons'
 
 const HomePage = () => {
 
@@ -19,13 +19,17 @@ const HomePage = () => {
   }, []);
 
     console.log(event)
+
+    const handleClick=(link)=>{
+      window.open(link,'_blank','noopener,noreferrer');
+    }
   
   return (
     <div className='ss:mx-20'>
       <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} `}>
         <div className={`flex-1 ${styles.flexStart} flex-col ss:ml-20 mx-3 animate-[fadeInLeft_1s_ease-in-out]`}>
           <div className="flex flex-row justify-between items-center w-full h-[16rem]">
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] text-gradient">
+            <h1 className="flex-1 font-poppins font-semibold text-[3rem] text-white text-gradient">
               <Typewriter options={{strings: ['FOSS', 'Free Open Source Software'], autoStart: true, loop: true,}}/>
             </h1>
           </div>
@@ -51,26 +55,45 @@ const HomePage = () => {
       </section>
       
       <section id={'upcomingevents'} className={`flex md:flex-row flex-col ${styles.paddingY} my-6`}>
-        <div className={`flex-1 ${styles.flexStart} flex-col mx-4`} data-aos="fade-up-right" data-aos-duration='2000'>
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[60.8px]  ">
-            Few Words About FOSS-CIT
-          </h1>
-          <p className={`${styles.paragraph} text-justify`}>
-          It is an open-source club that strives to create a powerful developer community in CIT. Our club members are involved in accomplishing the team goals.
-          We divide responsibilities among us to ensure succession planning. The vision of FOSSCIT is to create a community of successful developers who realise and utilise the potential of open-source technologies. 
- 
-            </p>
-        </div>
-        <div className={`flex-1 ${styles.flexCenter} flex-col mx-4 ss:mt-2 mt-5`} data-aos="fade-up-left" data-aos-duration='2000'>
+        <div className={`flex-1 flex justify-start items-center flex-col mx-4 w-1/2`} data-aos="fade-up-right" data-aos-duration='2000'>
           <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
             Current Event
           </h1>
           <a href={`/events/${event?._id}`}>
-            <div >
+            <div className='flex'>
               <img src={event?.pic} className='aspect-video object-contain'/>
             </div>
           </a>
-         
+        </div>
+        <div className={`flex-1 flex justify-center flex-col mx-4 w-1/2 gap-10`} data-aos="fade-up-left" data-aos-duration='2000'>
+          <div className='flex flex-col'>
+            <span className='flex font-semibold text-gradient text-3xl'>Description:</span>
+            <span className={`${styles.paragraph} `}>{event?.content}</span>
+          </div>
+          <div className='flex flex-row justify-start gap-12 items-center w-full'>
+            <div className='flex flex-col'>
+              <span className='flex font-semibold text-gradient text-3xl'>Date:</span>
+              <span className={`${styles.paragraph} `}>{event?.eventDate.slice(0,10)}</span>
+            </div>
+            <div className='flex flex-col'>
+              <span className='flex font-semibold text-gradient text-3xl'>Venue:</span>
+              <span className={`${styles.paragraph} `}>{event?.venue}</span>
+            </div>
+          </div>
+          <div className='flex flex-row justify-start gap-24 items-center w-full'>
+            <div className='flex flex-col'>
+              <span className='flex font-semibold text-gradient text-3xl'>Time:</span>
+              <span className={`${styles.paragraph} `}>{event?.time}</span>
+            </div>
+            <div className='flex flex-col'>
+              <span className='flex font-semibold text-gradient text-3xl'>Speaker:</span>
+              <span className={`${styles.paragraph} `}>{event?.speaker}</span>
+            </div>
+          </div>
+          <div className='flex flex-row cursor-pointer justify-start items-center gap-3' onClick={()=>{handleClick(event?.link)}}>
+            <UilLink/>
+            <span className={`${styles.paragraph} `}>Learn More</span>
+          </div>
         </div>
       </section>
       
@@ -89,10 +112,9 @@ const HomePage = () => {
             </div>
             <div className='flex flex-wrap w-full gap-10 justify-center items-end py-10' data-aos="fade-up" data-aos-duration='2000'>
               {missions.map((item)=>(
-                <div key={item.id}>
-                  <img src={item.img} alt={item.tagline}/>
-                  <p className='flex text-lg text-gradient font-semibold text-center'>{item.tagline}</p>
-
+                <div key={item.id} className='flex justify-center items-center flex-col'>
+                  <img src={item.img} alt={item.tagline} className='flex aspect-square object-contain h-80 w-80'/>
+                  <p className='flex text-xl text-gradient font-semibold text-center'>{item.tagline}</p>
                 </div>
               ))}
             </div>

@@ -26,8 +26,9 @@ import quizz from "./quizz.png";
 import socialMediaIcon from "./socialMedia.png";
 import webinar from "./webinar.png";
 import workshop from "./workshop.png";
+import bootcamp from "./bootcamp.png";
 
 export {
     logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google,apple,outlook,
-    presentation,careerGuidence,codingContest,groupDiscussions,quizz,socialMediaIcon,webinar,workshop
+    presentation,careerGuidence,codingContest,groupDiscussions,quizz,socialMediaIcon,webinar,workshop,bootcamp
 };

@@ -101,7 +101,7 @@ const Members = () => {
                 {/* <span className='flex'>{item.id}</span> */}
                   <div className='flex flex-wrap justify-center items-center'>
                     {item.members.map((member)=>(
-                        <MemberCard key={member._id} {...member} />
+                        <MemberCard key={member._id} {...member} className='flex '/>
                     ))}
                   </div>
               </div>

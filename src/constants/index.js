@@ -1,4 +1,4 @@
-import { careerGuidence, codingContest, discord, github, groupDiscussions, instagram, linkedin, quizz, webinar, workshop, youtube, socialMediaIcon  } from "../assets";
+import { careerGuidence, codingContest, discord, github, groupDiscussions, instagram, linkedin, quizz, webinar, workshop, youtube, socialMediaIcon, bootcamp  } from "../assets";
 
 export const navLinks =[
     { id:'/',title:'Home'},
@@ -414,7 +414,7 @@ export const missions=[
   {
     id: 6003,
     img:'https://amfoss.in/illus/contribute.svg',
-    tagline:'Contribute to Open Source Projects & Communities'
+    tagline:'Promote Open Source in Academics'
   }
 ]
 
@@ -433,7 +433,7 @@ export const activities=[
     id:7001,
     slide:1,
     title:'Bootcamps',
-    icon:presentation,
+    icon:bootcamp,
     desc:'Nulla irure eiusmod mollit aute in aute aute. Eu laboris duis excepteur magna eiusmod nulla exercitation cupidatat dolor veniam commodo sit culpa. Consectetur amet sunt labore duis sint laboris. Ex culpa ipsum aliquip eiusmod qui occaecat esse consequat nulla officia culpa laborum. Anim nulla consectetur ut Lorem dolore anim reprehenderit nulla adipisicing cupidatat officia cillum laboris incididunt.',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
