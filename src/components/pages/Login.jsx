@@ -7,6 +7,8 @@ import { apple, google, outlook, right_arrow } from '../../assets';
 
 // import {useGoogleLogin,GoogleLogin} from '@react-oauth/google';
 
+import Cookies from 'js-cookie';
+
 
 const Login = ({handler,logHandler}) => {
     const [email,setEmail]=useState();
@@ -22,18 +24,22 @@ const Login = ({handler,logHandler}) => {
     // console.log(googleId,googleSecret);
     
     const handleSubmit= async event=>{
-      event.preventDefault();
-      console.log(email);
-  
-      let formData={
-        email:email,
-        
-      }
-      const isValid=await data.isValid(formData);
-      console.log(formData);
-      console.log(isValid);
-      handler(false);
-      logHandler(true);
+        event.preventDefault();
+        console.log(email);
+    
+        let formData={
+            email:email,
+            
+        }
+        const isValid=await data.isValid(formData);
+        console.log(formData);
+        console.log(isValid);
+        if(isValid)
+        {
+            Cookies.set("email",formData.email);
+            handler(false);
+            logHandler(true);
+        }
   
     }
     
@@ -50,7 +56,7 @@ const Login = ({handler,logHandler}) => {
                             </div>
                         </div>
                         <span className='flex'>Or</span>
-                        <form method='post' autoComplete='off'>
+                        <form autoComplete='off' onSubmit={handleSubmit}>
                             
                             <div className={`flex flex-row gap-4 justify-end items-center`}>
                                 <input type={'email'} name={'email'} placeholder={'E-Mail'} className=' sm:w-[17rem] w-full my-3' onChange={e=>setEmail(e.target.value)}/>

@@ -3,6 +3,7 @@ import styles from './style';
 
 import { Navbar,Footer,HomePage, AboutUs, Members, Contact,Error, Events,Login,Register,Event } from './components'; 
 import { Route, Routes } from 'react-router-dom';
+import Cookies from 'js-cookie';
 
 
 const App = () => {
@@ -11,6 +12,12 @@ const App = () => {
   console.log(showOverlay);
 
   useEffect(() => {
+    const cookie=Cookies.get("email");
+    console.log(cookie);
+    if(cookie)
+    {
+      setLoggedIn(true);
+    }
     const timeoutId = setTimeout(() => {
       setShowOverlay(true);
     }, 2500);
