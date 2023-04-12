@@ -7,6 +7,7 @@ import axios from 'axios';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { API } from '../../constants';
 
 // import { eventYears } from '../../constants'; 
 
@@ -32,7 +33,7 @@ const Members = () => {
   const [active,setActive]=useState(year.replace('-',' - '));
   
   useEffect(()=>{
-    axios.get(`https://foss-backend.onrender.com/api/members/years`)
+    axios.get(`${API}/members/years`)
     .then((res)=>{console.log(res);setYears(res.data);setLoading(false);})
     .catch((err)=>{
       console.log("error:",err.message);
@@ -46,7 +47,7 @@ const Members = () => {
   useEffect(()=>{
     // console.log('active: ',active)
     
-    axios.get(`https://foss-backend.onrender.com/api/members/year/${active.replace(' - ','-')}`)
+    axios.get(`${API}/members/year/${active.replace(' - ','-')}`)
       .then((res)=>{console.log(res);setData(res.data);setLoading(false);})
       .catch((err)=>{
         console.log("error:",err.message);

@@ -7,13 +7,14 @@ import Typewriter from 'typewriter-effect';
 import WhatWeDo from '../WhatWeDo';
 import axios from 'axios';
 import { UilLink } from '@iconscout/react-unicons'
+import { API } from '../../constants';
 
 const HomePage = () => {
 
   const [event,setEvent]=useState(null);
 
   useEffect(() => {
-    axios.get('https://foss-backend.onrender.com/api/events/event/current')
+    axios.get(`${API}/events/event/current`)
     .then((response)=>{console.log(response.data);setEvent(response.data);})
     .catch((error)=>{console.log(error);});
   }, []);

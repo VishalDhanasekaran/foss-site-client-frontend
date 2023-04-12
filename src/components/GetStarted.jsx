@@ -2,7 +2,7 @@ import React from 'react'
 import {arrowUp } from '../assets';
 import styles from '../style';
 const GetStarted = ({text,link}) => {
-  const handleClick=event=>{ 
+  const handleClick=()=>{ 
     window.open(link, '_blank', 'noopener,noreferrer');
   }
   return (

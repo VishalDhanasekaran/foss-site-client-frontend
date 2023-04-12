@@ -3,6 +3,7 @@ import { location, mail as ml, phone } from '../../assets';
 import styles from '../../style';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { API } from '../../constants';
 
 import * as yup from 'yup';
 import axios from 'axios';
@@ -38,7 +39,7 @@ const Contact = () => {
     const isValid=await data.isValid(formData);
     console.log(formData,isValid);
      
-    axios.post('https://foss-backend.onrender.com/api/messages',formData)
+    axios.post(`${API}/messages`,formData)
     .then((response)=>{console.log(response);
       toast.success('Message Send Successfully!', {
         position: "top-right",

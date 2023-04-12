@@ -6,7 +6,7 @@ import {RingLoader} from 'react-spinners';
 import BoltLoader from '../BoltLoader'
 import GetStarted from '../GetStarted';
 
-import { UilLink } from '@iconscout/react-unicons'
+import { API } from '../../constants';
 
 const Event = () => {
 
@@ -16,7 +16,7 @@ const Event = () => {
     const [error,setError]=useState(null);
 
     useEffect(()=>{
-        axios.get(`https://foss-backend.onrender.com/api/events/event/${eventId.id}`)
+        axios.get(`${API}/events/event/${eventId.id}`)
         .then((res)=>{setData(res.data);setLoading(false);console.log(res.data);})
         .catch((err)=>{
             console.log("error:",err.message);

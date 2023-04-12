@@ -9,6 +9,7 @@ export const navLinks =[
     // { id:'/login',title:'Log In'},
 ];
 
+export const API='https://foss-backend.onrender.com/api';
 
 export const footerLinks = [
   {

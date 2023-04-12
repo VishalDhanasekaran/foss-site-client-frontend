@@ -6,19 +6,21 @@ import FounderCard from '../FounderCard';
 import { UilArrowLeft,UilArrowRight } from '@iconscout/react-unicons'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import axios from 'axios';
+import { API } from '../../constants';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+import { EffectCoverflow, Pagination, Navigation,Autoplay } from 'swiper';
 
 const AboutUs = () => {
 
   const [data,setData]=useState(null);
   useEffect(()=>{
-    axios.get(`https://foss-backend.onrender.com/api/events/year/2022-23`)
+    axios.get(`${API}/events/year/2022-23`)
       .then((res)=>{console.log(res);setData(res.data);})
       .catch((err)=>{
         console.log("error:",err.message);
@@ -71,6 +73,10 @@ const AboutUs = () => {
               grabCursor={true}
               loop={true}
               slidesPerView={3}
+              autoplay={{
+                delay:2000,
+                disableOnInteraction: false
+              }}
               
               coverflowEffect={{
                 rotate: 0,
@@ -84,7 +90,7 @@ const AboutUs = () => {
                 prevEl: '.swiper-button-prev',
                 clickable: true,
               }}
-              modules={[EffectCoverflow, Pagination, Navigation]}
+              modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className='sm:flex hidden w-full p-10'
         >
           {data?.map((item)=>(
@@ -109,6 +115,10 @@ const AboutUs = () => {
               grabCursor={true}
               loop={true}
               slidesPerView={1}
+              autoplay={{
+                delay:2000,
+                disableOnInteraction: false
+              }}
               
               coverflowEffect={{
                 rotate: 0,
@@ -122,7 +132,7 @@ const AboutUs = () => {
                 prevEl: '.swiper-button-prev',
                 clickable: true,
               }}
-              modules={[EffectCoverflow, Pagination, Navigation]}
+              modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className='flex sm:hidden w-full p-10'
         >
           {data?.map((item)=>(
