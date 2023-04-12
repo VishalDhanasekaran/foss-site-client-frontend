@@ -44,8 +44,6 @@ const Events = () => {
   
   // console.log(active)
   useEffect(()=>{
-    // console.log('active: ',active)
-    
     axios.get(`https://foss-backend.onrender.com/api/events/year/${active.replace(' - ','-')}`)
       .then((res)=>{console.log(res);setData(res.data);setLoading(false);})
       .catch((err)=>{
@@ -112,15 +110,6 @@ const Events = () => {
             </div>
           </div>
 
-        </section>
-        
-        <section id={'gallery'} className={`flex-1 ${styles.flexStart} ${styles.paddingY} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up" data-aos-duration='1000'>
-          <h2 className="flex-1 font-poppins font-semibold ss:text-[42px] text-gradient text-[22px] text-white ss:leading-[100.8px] leading-[75px]">
-            Events Gallery
-          </h2>
-          <p>
-            Events Picture can be displayed here...
-          </p>
         </section>
       </div>
     </div>

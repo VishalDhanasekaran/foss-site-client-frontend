@@ -1,4 +1,4 @@
-import { careerGuidence, codingContest, discord, github, groupDiscussions, instagram, linkedin, quizz, webinar, workshop, youtube, socialMediaIcon, bootcamp  } from "../assets";
+import { careerGuidence, codingContest, discord, github, groupDiscussions, instagram, linkedin, quizz, webinar, workshop, youtube, socialMediaIcon, bootcamp, designing  } from "../assets";
 
 export const navLinks =[
     { id:'/',title:'Home'},
@@ -423,90 +423,79 @@ import { presentation } from "../assets";
 export const activities=[
   {
     id:7000,
-    slide:0,
     title:'Webinar',
     icon:webinar,
-    desc:'Nulla irure eiusmod mollit aute in aute aute. Eu laboris duis excepteur magna eiusmod nulla exercitation cupidatat dolor veniam commodo sit culpa. Consectetur amet sunt labore duis sint laboris. Ex culpa ipsum aliquip eiusmod qui occaecat esse consequat nulla officia culpa laborum. Anim nulla consectetur ut Lorem dolore anim reprehenderit nulla adipisicing cupidatat officia cillum laboris incididunt.',
+    desc:'<Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity>',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7001,
-    slide:1,
     title:'Bootcamps',
     icon:bootcamp,
-    desc:'Nulla irure eiusmod mollit aute in aute aute. Eu laboris duis excepteur magna eiusmod nulla exercitation cupidatat dolor veniam commodo sit culpa. Consectetur amet sunt labore duis sint laboris. Ex culpa ipsum aliquip eiusmod qui occaecat esse consequat nulla officia culpa laborum. Anim nulla consectetur ut Lorem dolore anim reprehenderit nulla adipisicing cupidatat officia cillum laboris incididunt.',
+    desc:'<Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity>',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7002,
-    slide:2,
     title:'Workshops',
     icon:workshop,
-    desc:'Non proident et eiusmod aliquip excepteur non deserunt ea laborum consequat sunt. Veniam velit voluptate ut et enim. Quis do officia proident elit non laborum voluptate consectetur sunt consectetur nostrud. Est aliquip cupidatat commodo amet adipisicing amet nisi nulla. Pariatur anim pariatur magna magna laborum sunt laborum proident. Incididunt pariatur ullamco fugiat deserunt enim cupidatat ex do est commodo culpa est proident sit.',
+    desc:'<Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity>',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7003,
-    slide:3,
     title:'Coding Contests',
     icon:codingContest,
-    desc:'Ex quis deserunt qui eu nostrud qui id est in ut ullamco nisi. Labore officia ea adipisicing duis ipsum. Veniam deserunt qui tempor ipsum sit adipisicing duis est irure nulla non laborum labore nisi. Elit incididunt cillum officia nostrud culpa excepteur amet sunt voluptate aliquip Lorem dolor. Duis pariatur cupidatat ad exercitation. Est culpa Lorem aliqua pariatur ipsum mollit exercitation fugiat amet non pariatur aliquip. Laborum culpa id ullamco mollit labore reprehenderit adipisicing consequat et fugiat fugiat.',
+    desc:'<Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity>',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7004,
-    slide:4,
     title:'Designing Contests',
-    icon:presentation,
-    desc:'Consectetur minim quis in pariatur incididunt anim eiusmod nostrud ad aute labore non aliqua. Dolor velit aliquip nulla exercitation nostrud ullamco nostrud nisi culpa laboris non incididunt aliqua aute. Commodo aliquip eu excepteur labore in do quis dolore quis veniam incididunt aliquip laboris. Enim aute deserunt veniam tempor aliquip adipisicing irure sunt. Nisi non anim proident quis aliqua tempor adipisicing officia. Aliqua nulla occaecat ipsum aliqua aliqua pariatur elit non commodo aliquip non veniam eu. Labore anim voluptate excepteur incididunt labore est nostrud ad cillum.',
+    icon:designing,
+    desc:'<Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity>',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7005,
-    slide:5,
     title:'Group Discussions',
     icon:groupDiscussions,
-    desc:'Anim deserunt irure minim mollit. In in ut cillum nostrud reprehenderit veniam nisi aute exercitation incididunt excepteur non. Ex culpa nostrud duis ullamco ut non occaecat fugiat ullamco. Tempor culpa minim nostrud aute esse ipsum officia magna ipsum occaecat elit. Reprehenderit ad sit aliquip dolor commodo laboris. Deserunt anim esse aliquip veniam ad sunt.',
+    desc:'<Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity>',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7006,
-    slide:6,
     title:'Interview Preparations',
     icon:presentation,
-    desc:'Nisi irure deserunt sit proident. Nisi veniam aute reprehenderit ipsum voluptate occaecat veniam irure sunt elit duis minim culpa nostrud. Ea ipsum nostrud non duis ipsum proident.',
+    desc:'<Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity>',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7007,
-    slide:7,
     title:'SocialMedia Events',
     icon:socialMediaIcon,
-    desc:'Minim aute proident quis exercitation nostrud. Mollit anim ipsum sint deserunt occaecat deserunt excepteur ipsum cupidatat reprehenderit exercitation. Commodo ad ut esse commodo veniam. Laborum nostrud mollit laboris eiusmod sunt duis nisi. Occaecat do anim dolor incididunt amet officia ut excepteur ex deserunt incididunt labore pariatur.',
+    desc:'<Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity>',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7008,
-    slide:8,
     title:'Quiz',
     icon:quizz,
-    desc:'Lorem eu fugiat adipisicing voluptate tempor eiusmod occaecat nulla sit id Lorem. Laboris officia eiusmod voluptate esse velit aliquip consectetur. Culpa commodo enim magna ullamco do laboris cupidatat cupidatat. Tempor adipisicing commodo in commodo mollit mollit officia incididunt velit ad ipsum pariatur. Irure sit eu do cillum esse deserunt cillum.',
+    desc:'<Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity>',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7009,
-    slide:0,
     title:'Fun Events',
     icon:presentation,
-    desc:'Cupidatat ut cupidatat labore deserunt magna minim nostrud ipsum occaecat anim magna velit. Amet est duis non deserunt enim ex ullamco fugiat commodo ullamco veniam commodo et. Aliqua proident culpa mollit enim ut et ea do nulla. Adipisicing incididunt officia quis et voluptate cupidatat fugiat. Minim culpa enim sint nostrud mollit sunt velit excepteur.',
+    desc:'<Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity>',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7010,
-    slide:10,
     title:'Career Guidence',
     icon:careerGuidence,
-    desc:'Cupidatat ut cupidatat labore deserunt magna minim nostrud ipsum occaecat anim magna velit. Amet est duis non deserunt enim ex ullamco fugiat commodo ullamco veniam commodo et. Aliqua proident culpa mollit enim ut et ea do nulla. Adipisicing incididunt officia quis et voluptate cupidatat fugiat. Minim culpa enim sint nostrud mollit sunt velit excepteur.',
+    desc:'<Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity><Thre Line Content for this Activity>',
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
 ]
@@ -536,4 +525,38 @@ export const achievements =[
     desc:'time spent daily',
     img:'https://cdn1.byjus.com/byjusweb/img/home/svg/ic-time.svg'
   },
+]
+
+export const gallery =[
+  {
+    id:9001,
+    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
+    name:"Sample Picture 1"
+  },
+  {
+    id:9002,
+    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
+    name:"Sample Picture 2"
+  },
+  {
+    id:9003,
+    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
+    name:"Sample Picture 3"
+  },
+  {
+    id:9004,
+    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
+    name:"Sample Picture 4"
+  },
+  {
+    id:9005,
+    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
+    name:"Sample Picture 5"
+  },
+  {
+    id:9006,
+    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
+    name:"Sample Picture"
+  },
+
 ]

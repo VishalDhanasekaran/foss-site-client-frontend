@@ -27,8 +27,8 @@ import socialMediaIcon from "./socialMedia.png";
 import webinar from "./webinar.png";
 import workshop from "./workshop.png";
 import bootcamp from "./bootcamp.png";
-
+import designing from "./designing.png";
 export {
     logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google,apple,outlook,
-    presentation,careerGuidence,codingContest,groupDiscussions,quizz,socialMediaIcon,webinar,workshop,bootcamp
+    presentation,careerGuidence,codingContest,groupDiscussions,quizz,socialMediaIcon,webinar,workshop,bootcamp,designing
 };

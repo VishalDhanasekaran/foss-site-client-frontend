@@ -11,12 +11,9 @@ const Activity = ({data,setData}) => {
                     <span className='flex text-gradient text-[45px] font-semibold '>{data?.title}</span>
                     <span className='flex text-[20px] text-justify'>{data?.desc}</span>
                 </div>
-                {/* <div className='flex -skew-x-12 object-contain border-l-[35px] border-zinc-800 z-30'/>
-                <div className='flex -skew-x-12 object-contain border-l-[35px] border-zinc-800 z-30'/>
-                <div className='flex -skew-x-12 object-contain border-l-[35px] border-zinc-800 z-30'/> */}
-                <div className='flex z-10 relative'>
-                    <img src={data?.img} alt={data?.title} className='flex aspect-square'/>
-                </div>
+                {/* <div className='flex z-10 relative'>
+                    <img src={data?.img} alt={data?.title} className='flex aspect-square '/>
+                </div> */}
             </div>
         </section>
     </div>

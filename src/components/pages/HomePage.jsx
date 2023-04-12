@@ -10,7 +10,7 @@ import { UilLink } from '@iconscout/react-unicons'
 
 const HomePage = () => {
 
-  const [event,setEvent]=useState();
+  const [event,setEvent]=useState(null);
 
   useEffect(() => {
     axios.get('https://foss-backend.onrender.com/api/events/event/current')
@@ -43,7 +43,7 @@ const HomePage = () => {
         </div>
 
         <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 ss:mr-20 relative animate-[fadeInRight_1s_ease-in-out]`}>
-          <img src={linux} alt="billing" className="w-[60%] h-[60%] relative z-[5] md:w-[85%] md:h-[85%]" />
+          <img src={linux} alt="billing" className="w-[60%] h-[60%] relative z-[5] md:w-[85%] md:h-[85%] bg-transparent" />
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
           <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
@@ -54,48 +54,48 @@ const HomePage = () => {
         </div>
       </section>
       
-      <section id={'upcomingevents'} className={`flex md:flex-row flex-col ${styles.paddingY} my-6`}>
-        <div className={`flex-1 flex justify-start items-center flex-col mx-4 w-1/2`} data-aos="fade-up-right" data-aos-duration='2000'>
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
+      {event&&<section id={'upcomingevents'} className={`flex flex-col ${styles.paddingY} mx-3 my-6 justify-center items-center bg-zinc-800 rounded-2xl`} data-aos="fade-up" data-aos-duration='2000'>
+        <div>
+          <h1 className=" flex font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px]">
             Current Event
           </h1>
-          <a href={`/events/${event?._id}`}>
-            <div className='flex'>
-              <img src={event?.pic} className='aspect-video object-contain'/>
-            </div>
-          </a>
         </div>
-        <div className={`flex-1 flex justify-center flex-col mx-4 w-1/2 gap-10`} data-aos="fade-up-left" data-aos-duration='2000'>
-          <div className='flex flex-col'>
-            <span className='flex font-semibold text-gradient text-3xl'>Description:</span>
-            <span className={`${styles.paragraph} `}>{event?.content}</span>
+        <div className='flex sm:flex-row flex-col'>
+
+          <div className={`flex justify-center items-center flex-col mx-4`} data-aos="fade-up-right" data-aos-duration='2000'>
+            <a href={`/events/${event?._id}`}>
+              <div className='flex'>
+                <img src={event?.pic} className='aspect-video object-contain'/>
+              </div>
+            </a>
           </div>
-          <div className='flex flex-row justify-start gap-12 items-center w-full'>
-            <div className='flex flex-col'>
-              <span className='flex font-semibold text-gradient text-3xl'>Date:</span>
-              <span className={`${styles.paragraph} `}>{event?.eventDate.slice(0,10)}</span>
+          <div className={` grid grid-cols-2 grid-rows-4 justify-center flex-col p-4 w-full gap-5`} data-aos="fade-up-left" data-aos-duration='2000'>
+            <div className='flex flex-col col-span-2'>
+              <span className={`${styles.paragraph} text-xl `}>{event?.content}</span>
             </div>
             <div className='flex flex-col'>
-              <span className='flex font-semibold text-gradient text-3xl'>Venue:</span>
-              <span className={`${styles.paragraph} `}>{event?.venue}</span>
-            </div>
-          </div>
-          <div className='flex flex-row justify-start gap-24 items-center w-full'>
-            <div className='flex flex-col'>
-              <span className='flex font-semibold text-gradient text-3xl'>Time:</span>
-              <span className={`${styles.paragraph} `}>{event?.time}</span>
+              <span className='flex font-semibold text-gradient text-2xl'>Date:</span>
+              <span className={`${styles.paragraph} text-xl `}>{event?.eventDate.slice(0,10)}</span>
             </div>
             <div className='flex flex-col'>
-              <span className='flex font-semibold text-gradient text-3xl'>Speaker:</span>
-              <span className={`${styles.paragraph} `}>{event?.speaker}</span>
+              <span className='flex font-semibold text-gradient text-2xl'>Venue:</span>
+              <span className={`${styles.paragraph} text-xl `}>{event?.venue}</span>
             </div>
-          </div>
-          <div className='flex flex-row cursor-pointer justify-start items-center gap-3' onClick={()=>{handleClick(event?.link)}}>
-            <UilLink/>
-            <span className={`${styles.paragraph} `}>Learn More</span>
+            <div className='flex flex-col'>
+              <span className='flex font-semibold text-gradient text-2xl'>Time:</span>
+              <span className={`${styles.paragraph} text-xl `}>{event?.time}</span>
+            </div>
+            <div className='flex flex-col'>
+              <span className='flex font-semibold text-gradient text-2xl'>Speaker:</span>
+              <span className={`${styles.paragraph} text-xl `}>{event?.speaker}</span>
+            </div>
+            <div className='flex flex-row col-span-2 cursor-pointer justify-start items-center gap-3' onClick={()=>{handleClick(event?.link)}}>
+              <UilLink/>
+              <span className={`${styles.paragraph} text-xl text-gradient`}>See More</span>
+            </div>
           </div>
         </div>
-      </section>
+      </section>}
       
       <div className={`flex flex-col ${styles.paddingY} my-6`}>
         <section id={'mission'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>

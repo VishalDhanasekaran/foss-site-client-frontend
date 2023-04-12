@@ -61,7 +61,7 @@ return (
       </div>
       
       <div className='w-full flex justify-center md:flex-row flex-col pt-2 border-t-[1px] border-t-[#f7f2cb] h-2'>
-        <p className='font-poppins font-normal text-center text-[10px] leading-[27px] text-white'> &#169; 2022 FOSS CIT. All Rights Reserved.</p>
+        <p className='font-poppins font-normal text-center text-[10px] leading-[27px] text-white'> &#169; 2023 FOSS CIT. All Rights Reserved.</p>
       </div>
     
     </section>

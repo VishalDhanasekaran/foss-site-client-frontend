@@ -6,6 +6,8 @@ import {RingLoader} from 'react-spinners';
 import BoltLoader from '../BoltLoader'
 import GetStarted from '../GetStarted';
 
+import { UilLink } from '@iconscout/react-unicons'
+
 const Event = () => {
 
     const eventId=useParams();
@@ -32,19 +34,31 @@ const Event = () => {
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] text-gradient my-4 ">
             { data.title}
             </h1>
-            <div className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6 font-poppins font-semibold ss:text-[22px] text-[15px] `}>
+            <div className={`flex-1 flex justify-center items-center flex-col gap-4 xl:px-0 sm:px-16 px-6 font-poppins font-semibold ss:text-[22px] text-[15px] `}>
                 <div className={`${styles.flexCenter}`}>
-                    <img src={data.pic} alt={data.content} className='shadow-lg shadow-[#b0a854] ss:h-[25rem] w-[40rem] '/>
+                    <img src={data.pic} alt={data.content} className='shadow-lg shadow-[#b0a854] aspect-video object-contain'/>
                 </div>
-                <div className={`${styles.flexCenter} flex flex-col my-7 leading-10 `}>
-                    <div>Date: {data.eventDate.slice(0,10)}</div>
-                    <div>Time: {data.time}</div>
-                    <div>Venue: {data.venue}</div>
-                    <div>Speaker: {data.speaker}</div>
+                <div className={` grid grid-cols-2 grid-rows-2 justify-center flex-col p-4 w-1/2 gap-5`} data-aos="fade-up-left" data-aos-duration='2000'>
+                    <div className='flex flex-col'>
+                        <span className='flex font-semibold text-gradient text-2xl'>Date:</span>
+                        <span className={`${styles.paragraph} text-xl `}>{data?.eventDate.slice(0,10)}</span>
+                    </div>
+                    <div className='flex flex-col'>
+                        <span className='flex font-semibold text-gradient text-2xl'>Venue:</span>
+                        <span className={`${styles.paragraph} text-xl `}>{data?.venue}</span>
+                    </div>
+                    <div className='flex flex-col'>
+                        <span className='flex font-semibold text-gradient text-2xl'>Time:</span>
+                        <span className={`${styles.paragraph} text-xl `}>{data?.time}</span>
+                    </div>
+                    <div className='flex flex-col'>
+                        <span className='flex font-semibold text-gradient text-2xl'>Speaker:</span>
+                        <span className={`${styles.paragraph} text-xl `}>{data?.speaker}</span>
+                    </div>
                 </div>
-                <div className={`${styles.paragraph} text-justify ss:text-[22px] text-[15px] my-10`}>
-                    {data.content}
-                </div>
+            </div>
+            <div className={`${styles.paragraph} text-justify ss:text-[22px] text-[15px] my-10`}>
+                {data.content}
             </div>
             <GetStarted text={'View More'} link={data?.link}/>
         </section>}
