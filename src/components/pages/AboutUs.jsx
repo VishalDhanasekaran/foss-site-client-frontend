@@ -20,7 +20,7 @@ const AboutUs = () => {
 
   const [data,setData]=useState(null);
   useEffect(()=>{
-    axios.get(`${API}/events/year/2022-23`)
+    axios.get(`${API}/gallery`)
       .then((res)=>{console.log(res);setData(res.data);})
       .catch((err)=>{
         console.log("error:",err.message);
