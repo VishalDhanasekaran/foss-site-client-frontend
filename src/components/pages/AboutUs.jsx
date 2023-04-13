@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import styles from '../../style';
 import GetStarted from '../GetStarted';
-import { founders, gallery } from '../../constants';
+import { founders } from '../../constants';
 import FounderCard from '../FounderCard';
 import { UilArrowLeft,UilArrowRight } from '@iconscout/react-unicons'
 import { Swiper, SwiperSlide } from 'swiper/react';
