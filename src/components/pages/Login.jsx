@@ -8,6 +8,9 @@ import { google, right_arrow } from '../../assets';
 // import {useGoogleLogin,GoogleLogin} from '@react-oauth/google';
 
 import Cookies from 'js-cookie';
+import axios from 'axios';
+
+import { API } from '../../constants';
 
 
 const Login = ({handler,logHandler}) => {
@@ -32,13 +35,20 @@ const Login = ({handler,logHandler}) => {
             
         }
         const isValid=await data.isValid(formData);
-        // console.log(formData);
-        // console.log(isValid);
         if(isValid)
         {
-            Cookies.set("email",formData.email);
-            handler(false);
-            logHandler(true);
+            axios.post(`${API}/visits`,formData)
+            .then((res=>{
+                console.log(res);
+                Cookies.set("email",formData.email);
+                handler(false);
+                logHandler(true);
+            }))
+            .catch((err=>{
+                console.log(err);
+                alert("ERROR in Logging In!");
+            }));
+            
         }
   
     }
