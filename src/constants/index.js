@@ -223,30 +223,27 @@ export const activities=[
     img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
 ]
+import { UilUser } from '@iconscout/react-unicons'
+import { UilPresentation } from '@iconscout/react-unicons'
+import { UilYoutube } from '@iconscout/react-unicons'
 
 export const achievements =[
   {
     id:8001,
-    title:'150+ Million',
-    desc:'downloads',
-    img:'https://cdn1.byjus.com/byjusweb/img/home/svg/ic_downloads.svg'
+    title:'500+',
+    desc:'Active Members',
+    img:UilUser
   },
   {
     id:8002,
-    title:'4.7+ Star',
-    desc:'app rating',
-    img:'https://cdn1.byjus.com/byjusweb/img/home/svg/ic-app%20rating.svg'
+    title:'1000+',
+    desc:'Events',
+    img:UilPresentation
   },
   {
     id:8003,
-    title:'1701+ Cities',
-    desc:'worldwide',
-    img:'https://cdn1.byjus.com/byjusweb/img/home/svg/ic-cities.svg'
-  },
-  {
-    id:8004,
-    title:'71 mins avg.',
-    desc:'time spent daily',
-    img:'https://cdn1.byjus.com/byjusweb/img/home/svg/ic-time.svg'
+    title:'1M+',
+    desc:'Youtube Views',
+    img:UilYoutube
   },
 ]

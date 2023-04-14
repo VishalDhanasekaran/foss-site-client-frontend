@@ -138,7 +138,7 @@ const HomePage = () => {
             <div className='flex p-3 flex-wrap w-full ss:gap-32 gap-10 py-10 justify-center items-center'>
               {achievements.map((item)=>(
                 <div className='flex flex-col gap-5 justify-center items-center text-justify' key={item.id}>
-                  <img src={item.img} alt={item.title} className='flex'/>
+                  <item.img className='flex h-16 w-16'/>
                   <span className='flex text-gradient text-2xl font-semibold'>{item.title}</span>
                   <span className='flex'>{item.desc}</span>
                 </div>
