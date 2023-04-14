@@ -99,7 +99,7 @@ const Events = () => {
                   <a href={`/events/${card._id}`}><AnnounceCard  {...card} /></a>
                   
                 </div>
-              )}
+              ).reverse()}
 
               {isAvailable === 0 && <div className='flex'><span className={`${styles.heading2} text-center`}>Events Conducted in {active} are Yet to be Updated...</span></div>}
               {loading && <div className='flex my-10'> 

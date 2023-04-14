@@ -1,4 +1,4 @@
-import { careerGuidence, codingContest, discord, github, groupDiscussions, instagram, linkedin, quizz, webinar, workshop, youtube, socialMediaIcon, bootcamp, designing  } from "../assets";
+import { careerGuidence, codingContest, discord, github, groupDiscussions, instagram, linkedin, quizz, webinar, workshop, youtube, socialMediaIcon, bootcamp, designing, Aruna, Umarani } from "../assets";
 
 export const navLinks =[
     { id:'/',title:'Home'},
@@ -86,24 +86,41 @@ export const socialMedia = [
 export const founders = [
     {
       id:3001,
-      img: "https://img.icons8.com/plasticine/512/user.png",
+      img: "https://media.licdn.com/dms/image/C5603AQGVctuHByJqMg/profile-displayphoto-shrink_800_800/0/1590764796771?e=1686787200&v=beta&t=pQImnPY1kPzFOnxTzzIWHnASQlK5m9lfDZOjPaS3rNM",
       name: "Dhileepan Thangamanimaran",
       working: "Senior Member Technical at D. E. Shaw Group",
       linkedin: "https://www.linkedin.com/in/dhileepan/",
     },
     {
       id:3002,
-      img: "https://img.icons8.com/plasticine/512/user.png",
+      img: "https://media.licdn.com/dms/image/C5603AQGj-HGaA_i29A/profile-displayphoto-shrink_200_200/0/1584255198813?e=1686787200&v=beta&t=EUy3k0bqOtbaz5EubirvU8dDdhx8Qy935JSDNVKp4sE",
       name: "Sibi Bose",
       working: "Software Engineer at KLA Tencor",
       linkedin: "https://www.linkedin.com/in/sibi-bose/",
     },
     {
       id:3003,
-      img: "https://img.icons8.com/plasticine/512/user.png",
+      img: "https://media.licdn.com/dms/image/D5603AQEr1cFWs1eD4A/profile-displayphoto-shrink_200_200/0/1672553593610?e=1686787200&v=beta&t=F9hYdsWqyCelM-0YDmbvf-sQb6LYdrbL7fOfPq5vZpo",
       name: "Sai Adarsh S",
       working: "Software Engineer at Cisco",
       linkedin: "https://www.linkedin.com/in/sai-adarsh/",
+    }
+  ]
+
+  export const advisors = [
+    {
+      id:4001,
+      img: Aruna,
+      name: "Dr. Aruna P",
+      working: "Assistant Professor, Department of Computing, CIT",
+      mail: "paruna@cit.edu.in",
+    },
+    {
+      id:4002,
+      img: Umarani,
+      name: "Dr. Umarani M",
+      working: "Assistant Professor, Department of Computing, CIT",
+      mail: "umarani@cit.edu.in",
     }
   ]
 
@@ -111,12 +128,12 @@ export const missions=[
   {
     id: 6001,
     img:'https://amfoss.in/illus/mentor.svg',
-    tagline:'Mentor & train students to take on the world'
+    tagline:'Mentor & train students to face real-world challenges'
   },
   {
     id: 6002,
     img:'https://amfoss.in/illus/promote.svg',
-    tagline:'Promote Open Source and Computer Science'
+    tagline:'Promote Open Source and Computer Science in Academics'
   },
   {
     id: 6003,
@@ -232,38 +249,4 @@ export const achievements =[
     desc:'time spent daily',
     img:'https://cdn1.byjus.com/byjusweb/img/home/svg/ic-time.svg'
   },
-]
-
-export const gallery =[
-  {
-    id:9001,
-    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
-    name:"Sample Picture 1"
-  },
-  {
-    id:9002,
-    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
-    name:"Sample Picture 2"
-  },
-  {
-    id:9003,
-    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
-    name:"Sample Picture 3"
-  },
-  {
-    id:9004,
-    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
-    name:"Sample Picture 4"
-  },
-  {
-    id:9005,
-    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
-    name:"Sample Picture 5"
-  },
-  {
-    id:9006,
-    pic:"https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk=",
-    name:"Sample Picture"
-  },
-
 ]

@@ -65,8 +65,9 @@ const HomePage = () => {
 
           <div className={`flex justify-center items-center flex-col mx-4`} data-aos="fade-up-right" data-aos-duration='2000'>
             <a href={`/events/${event?._id}`}>
-              <div className='flex'>
+              <div className='flex flex-col justify-center items-center gap-3'>
                 <img src={event?.pic} className='aspect-video object-contain'/>
+                <span className={`${styles.paragraph} text-2xl text-center font-bold text-gradient`}>{event?.title}</span>
               </div>
             </a>
           </div>

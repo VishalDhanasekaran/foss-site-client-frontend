@@ -73,7 +73,7 @@ const Contact = () => {
         </h2>
       </div>
       <section id="location" className={`flex md:flex-row flex-col `}>
-        <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 ss:mx-14 animate-[fadeInLeft_0.75s_ease-in-out]`}>
+        <div className={`flex-1 ${styles.flexStart} flex-col animate-[fadeInLeft_0.75s_ease-in-out]`}>
           <div className="flex flex-row justify-between items-center w-full">
             <h1 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[32px] text-white ss:leading-[55px] leading-[45px]">
               <span>Our Office</span><br className="sm:block" />{" "}
@@ -96,7 +96,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative animate-[fadeInRight_0.75s_ease-in-out] mx-20`}>
+        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative animate-[fadeInRight_0.75s_ease-in-out]`}>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.143871172457!2d77.02472797478232!3d11.027830589136626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8570bbbdef6f1%3A0x3d2892336503d775!2sFOSS(Free%20and%20Open%20Source%20Software)%20CIT!5e0!3m2!1sen!2sin!4v1671453029041!5m2!1sen!2sin" className='ss:h-[30rem] h-[15rem] ss:w-[40rem] w-[20rem] z-[10] rounded-2xl' ></iframe>
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
@@ -118,7 +118,7 @@ const Contact = () => {
                   <input type='text' name={'name'} placeholder={'Name'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setName(e.target.value)}/>
                   <input type='text' name={'mail'} placeholder={'Mail ID'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setMail(e.target.value)}/>
                   <input type='text' name={'subject'} placeholder={'Subject'} className='flex mx-5 sm:w-[20rem] w-[75%] my-6' onChange={e=>setSubject(e.target.value)}/>
-                  <textarea name={'message'} placeholder={'Message'} className={`${styles.flexStart} mx-5 w-[75%] my-3`} onChange={e=>setMessage(e.target.value)}/>
+                  <textarea name={'message'} placeholder={'Message'} className={`${styles.flexStart} mx-5 w-[75%] my-3 h-20`} onChange={e=>setMessage(e.target.value)}/>
                   <div className='flex w-full justify-center items-center my-10'><input type='submit' className='bg-white text-black ss:w-80 w-40 rounded-3xl h-10 hover:scale-105 ease-in-out duration-300'/></div>
                 </div>
               </form>

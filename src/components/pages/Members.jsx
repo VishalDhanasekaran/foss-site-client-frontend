@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-import {BoltLoader} from "..";
+import {BoltLoader, Gallery} from "..";
 import MemberCard from '../MemberCard';
 import styles from '../../style';
 import axios from 'axios';
@@ -70,6 +70,18 @@ const Members = () => {
   // console.log("Data: ",data)
   // console.log("Years: ",years)
   // console.log("Active Years: ",active)
+
+  const [dataM,setDataM]=useState(null);
+  useEffect(()=>{
+    axios.get(`${API}/gallery`)
+      .then((res)=>{setDataM(res.data);})
+      .catch((err)=>{
+        console.log("error:",err.message);
+      }); 
+
+  },[]);
+
+
   
   return (
     <div className='flex flex-col'>
@@ -113,9 +125,11 @@ const Members = () => {
               </div>}
               {error && <div className='flex'><span className={`${styles.heading2} text-center`}>{error}!</span></div>}
           </div>
+
           
         </section>    
       </div>
+      {/* <Gallery data={dataM} name={'Member'} className='flex'/> */}
     
     </div>
   )

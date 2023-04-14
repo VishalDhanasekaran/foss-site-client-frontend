@@ -12,6 +12,7 @@ import Event from "./pages/Event";
 import BoltLoader from "./BoltLoader";
 import WhatWeDo from "./WhatWeDo";
 import Activity from "./Activity";
+import Gallery from "./Gallery";
 export{
-    Navbar, Footer, HomePage,AboutUs,Members,Contact,Events,Error,Login,Register,Event, BoltLoader,WhatWeDo,Activity
+    Navbar, Footer, HomePage,AboutUs,Members,Contact,Events,Error,Login,Register,Event, BoltLoader,WhatWeDo,Activity,Gallery
 };
