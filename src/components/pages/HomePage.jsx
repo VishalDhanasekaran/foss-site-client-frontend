@@ -88,7 +88,7 @@ const HomePage = () => {
             </div>
             <div className='flex flex-col'>
               <span className='flex font-semibold text-gradient text-2xl'>Speaker:</span>
-              <span className={`${styles.paragraph} text-xl `}>{event?.speaker}</span>
+              <span className={`${styles.paragraph} text-xl truncate`}>{event?.speaker}</span>
             </div>
             <div className='flex flex-row col-span-2 cursor-pointer justify-start items-center gap-3' onClick={()=>{handleClick(event?.link)}}>
               <UilLink/>

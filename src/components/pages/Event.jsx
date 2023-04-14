@@ -2,7 +2,6 @@ import React,{useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import styles from '../../style';
 import axios from 'axios';
-import {RingLoader} from 'react-spinners';
 import BoltLoader from '../BoltLoader'
 import GetStarted from '../GetStarted';
 
@@ -30,7 +29,7 @@ const Event = () => {
   return (
     <div className={`flex flex-col ${styles.paddingY} animate-[zoomIn_1s_ease-in-out]`}>
         
-        {data && <section id={'event'} className={`flex-1 ${styles.flexCenter} ${styles.paragraph} flex-col xl:px-0 sm:px-16 px-6`}>
+        {data && <section id={'event'} className={`flex-1 ${styles.flexCenter} ${styles.paragraph} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up" data-aos-duration='1000'>
             <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] text-gradient my-4 ">
             { data.title}
             </h1>
@@ -38,7 +37,7 @@ const Event = () => {
                 <div className={`${styles.flexCenter}`}>
                     <img src={data.pic} alt={data.content} className='shadow-lg shadow-[#b0a854] aspect-video object-contain'/>
                 </div>
-                <div className={` grid grid-cols-2 grid-rows-2 justify-center flex-col p-4 w-1/2 gap-5`} data-aos="fade-up-left" data-aos-duration='2000'>
+                <div className={` grid grid-cols-2 grid-rows-2 justify-center flex-col p-4 ss:w-4/6 gap-5`} data-aos="fade-up" data-aos-duration='1000'>
                     <div className='flex flex-col'>
                         <span className='flex font-semibold text-gradient text-2xl'>Date:</span>
                         <span className={`${styles.paragraph} text-xl `}>{data?.eventDate.slice(0,10)}</span>
@@ -53,17 +52,16 @@ const Event = () => {
                     </div>
                     <div className='flex flex-col'>
                         <span className='flex font-semibold text-gradient text-2xl'>Speaker:</span>
-                        <span className={`${styles.paragraph} text-xl `}>{data?.speaker}</span>
+                        <span className={`${styles.paragraph} text-xl truncate`}>{data?.speaker}</span>
                     </div>
                 </div>
             </div>
-            <div className={`${styles.paragraph} text-justify ss:text-[22px] text-[15px] my-10`}>
+            <div className={`${styles.paragraph} text-justify ss:text-[22px] text-[15px] my-10`} data-aos="fade-up" data-aos-duration='1000'>
                 {data.content}
             </div>
             <GetStarted text={'View More'} link={data?.link}/>
         </section>}
         {loading && <div className='flex justify-center items-center'> 
-            {/* <RingLoader color={'#eecc21'} loading={loading} size={150}/> */}
             <BoltLoader/>
             </div>}
         {error && <div className='flex'><span className={`${styles.heading2} text-center`}>{error}!</span></div>}
