@@ -6,18 +6,14 @@ import { Route, Routes } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import axios from 'axios';
 
-import { G_AUTH } from './constants';
 
 
 const App = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [loggedIn,setLoggedIn] = useState(false);
-  const [user,setUser] = useState(null);
-  // console.log(showOverlay);
 
   useEffect(() => {
     const cookie=Cookies.get("email");
-    // console.log(cookie);
     if(cookie)
     {
       setLoggedIn(true);
@@ -29,28 +25,14 @@ const App = () => {
     return () => clearTimeout(timeoutId);}
   }, []);
 
-  const getUser = async () => {
-		try {
-			const url = `${G_AUTH}/auth/login/success`;
-		  await axios.get(url, { withCredentials: true })
-      .then((res)=>{
-        console.log(res.data.user);
-        Cookies.set('email',res.data.user.email[0].value);
-      });
-		} catch (err) {
-			console.log(err);
-		}
-	};
-  useEffect(() => {
-		getUser();
-	}, []);
+
 
   return (
   <>
     <div className=' bg-neutral-900 w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter} fixed w-full z-[14] bg-header animate-[fadeInUp_0.5s_ease-in-out]`}>
         <div className={`${styles.boxWidth} text-white `}>
-          <Navbar/>
+          <Navbar loggedIn={loggedIn}/>
         </div>
       </div>
 

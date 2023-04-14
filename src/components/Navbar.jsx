@@ -2,10 +2,13 @@ import {useState} from 'react';
 import {navLinks} from '../constants'
 
 import {logo,menu,close} from '../assets'
-
+import { UilUser } from '@iconscout/react-unicons'
+import Cookies from 'js-cookie';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
+    const pic=Cookies.get('pic')
+    const email=Cookies.get('email')
 
     // console.log(logged,toggled,(toggled || logged));
 
@@ -13,6 +16,8 @@ const Navbar = () => {
     //     console.log('handleClick');
     //     handler(true);
     // }
+
+    // console.log(pic);
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
         <img src={logo} alt='FOSS-CIT Logo' className='w-[70px] h-[70px]' />
@@ -26,6 +31,12 @@ const Navbar = () => {
                 </li>
                 
             ))}
+            {pic&&
+                <img src={pic} alt={email} className='flex rounded-full h-10 w-10 m-5'/>
+            }
+            {!pic&&
+                <UilUser className='flex h-10 w-10 m-5'/>
+            }
             {/* {(toggled || !logged) &&  <li className={`font-poppins font-normal cursor-pointer text-[16px] px-5 text-white hover:text-secondary`}>
                 <div onClick={handleClick}>
                     Login

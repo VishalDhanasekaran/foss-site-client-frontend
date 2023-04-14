@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 import {useEffect, useState} from 'react';
-import RingLoader from "react-spinners/RingLoader";
 import { BrowserRouter } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { BoltLoader } from './components';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const Loader=() =>{
   const [loading,setLoading]=useState(false);
@@ -25,7 +25,6 @@ return(
       {
       loading?
         <div className='flex justify-center items-center w-full h-[100vh] bg-primary'> 
-          {/* <RingLoader color={'#eecc21'} loading={loading} size={150}/> */}
           <BoltLoader/>
         </div>
       :<App />
@@ -36,8 +35,10 @@ return(
 }
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Loader />
-    </BrowserRouter>
+    <GoogleOAuthProvider clientId= {import.meta.env.VITE_CLIENTID}>
+      <BrowserRouter>
+        <Loader />
+      </BrowserRouter>
+    </GoogleOAuthProvider>
   </React.StrictMode>
 )
