@@ -32,9 +32,11 @@ const App = () => {
   const getUser = async () => {
 		try {
 			const url = `${G_AUTH}/auth/login/success`;
-			const { data } = await axios.get(url, { withCredentials: true });
-			console.log(data.user);
-      Cookies.set('email',data.user.email[0].value);
+		  await axios.get(url, { withCredentials: true })
+      .then((res)=>{
+        console.log(res.data.user);
+        Cookies.set('email',res.data.user.email[0].value);
+      });
 		} catch (err) {
 			console.log(err);
 		}
