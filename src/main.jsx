@@ -35,7 +35,7 @@ return(
 }
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <GoogleOAuthProvider clientId= {import.meta.env.VITE_CLIENTID}>
+    <GoogleOAuthProvider clientId={import.meta.env.VITE_CLIENTID}>
       <BrowserRouter>
         <Loader />
       </BrowserRouter>
