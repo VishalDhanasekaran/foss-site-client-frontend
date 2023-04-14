@@ -4,11 +4,15 @@ import styles from './style';
 import { Navbar,Footer,HomePage, AboutUs, Members, Contact,Error, Events,Login,Register,Event } from './components'; 
 import { Route, Routes } from 'react-router-dom';
 import Cookies from 'js-cookie';
+import axios from 'axios';
+
+import { G_AUTH } from './constants';
 
 
 const App = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [loggedIn,setLoggedIn] = useState(false);
+  const [user,setUser] = useState(null);
   // console.log(showOverlay);
 
   useEffect(() => {
@@ -24,6 +28,20 @@ const App = () => {
     if(loggedIn) {
     return () => clearTimeout(timeoutId);}
   }, []);
+
+  const getUser = async () => {
+		try {
+			const url = `${G_AUTH}/auth/login/success`;
+			const { data } = await axios.get(url, { withCredentials: true });
+			console.log(data.user);
+      Cookies.set('email',data.user.email[0].value);
+		} catch (err) {
+			console.log(err);
+		}
+	};
+  useEffect(() => {
+		getUser();
+	}, []);
 
   return (
   <>

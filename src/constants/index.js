@@ -10,6 +10,7 @@ export const navLinks =[
 ];
 
 export const API='https://foss-web-server.onrender.com/api';
+export const G_AUTH='https://foss-ga.onrender.com';
 
 export const footerLinks = [
   {
@@ -24,6 +25,11 @@ export const footerLinks = [
   },
   {
     id:1013,
+    name: "Members",
+    link: "members",
+  },
+  {
+    id:1014,
     name: "Events",
     link: "events",
   },
