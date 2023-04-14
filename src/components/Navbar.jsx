@@ -10,15 +10,7 @@ const Navbar = () => {
     const pic=Cookies.get('pic')
     const email=Cookies.get('email')
 
-    // console.log(logged,toggled,(toggled || logged));
-
-    // const handleClick = () => {
-    //     console.log('handleClick');
-    //     handler(true);
-    // }
-
-    // console.log(pic);
-  return (
+      return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
         <img src={logo} alt='FOSS-CIT Logo' className='w-[70px] h-[70px]' />
         <span className='font-poppins font-semibold text-4xl mx-10'>FOSS CIT</span>
@@ -32,16 +24,11 @@ const Navbar = () => {
                 
             ))}
             {pic&&
-                <img src={pic} alt={email} className='flex rounded-full h-10 w-10 m-5'/>
+                <img src={pic} alt={email} className='flex rounded-full h-10 w-10 m-5 cursor-pointer'/>
             }
             {!pic&&
-                <UilUser className='flex h-10 w-10 m-5'/>
+                <UilUser className='flex h-10 w-10 m-5 cursor-pointer hover:fill-secondary'/>
             }
-            {/* {(toggled || !logged) &&  <li className={`font-poppins font-normal cursor-pointer text-[16px] px-5 text-white hover:text-secondary`}>
-                <div onClick={handleClick}>
-                    Login
-                </div>
-            </li>} */}
         </ul>
         <div className='sm:hidden flex justify-center items-center'>
             <img src={toggle? close : menu} alt='menu' className='w-[28px] h=[28px] object-contain' onClick={()=>setToggle((prev)=>!prev)} />
@@ -57,6 +44,12 @@ const Navbar = () => {
                             </a>
                         </li>
                     ))}
+                    {pic&&
+                        <img src={pic} alt={email} className='flex rounded-full h-10 w-10 m-5  cursor-pointer'/>
+                    }
+                    {!pic&&
+                        <UilUser className='flex h-10 w-10 m-5 cursor-pointer hover:fill-secondary'/>
+                    }
                 </ul>
             </div>
         </div>
