@@ -21,14 +21,14 @@ const AboutUs = () => {
   const [data,setData]=useState(null);
   useEffect(()=>{
     axios.get(`${API}/gallery`)
-      .then((res)=>{console.log(res);setData(res.data);})
+      .then((res)=>{setData(res.data);})
       .catch((err)=>{
         console.log("error:",err.message);
       }); 
 
   },[]);
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className={`flex flex-col ${styles.paddingY}`}>
@@ -94,7 +94,7 @@ const AboutUs = () => {
           className='sm:flex hidden w-full p-10'
         >
           {data?.map((item)=>(
-            <SwiperSlide>
+            <SwiperSlide key={item._id}>
               <img src={item.pic} className='flex aspect-square object-contain'/>
             </SwiperSlide>
           ))}
@@ -136,7 +136,7 @@ const AboutUs = () => {
           className='flex sm:hidden w-full p-10'
         >
           {data?.map((item)=>(
-            <SwiperSlide>
+            <SwiperSlide key={item._id}>
               <img src={item.pic} className='flex aspect-square object-contain'/>
             </SwiperSlide>
           ))}

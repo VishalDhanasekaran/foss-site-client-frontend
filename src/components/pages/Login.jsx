@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../../style'
 import * as yup from 'yup';
 import { useState } from 'react';
-import { apple, google, outlook, right_arrow } from '../../assets';
+import { google, right_arrow } from '../../assets';
 // import process from 'dotenv'
 
 // import {useGoogleLogin,GoogleLogin} from '@react-oauth/google';
@@ -25,15 +25,15 @@ const Login = ({handler,logHandler}) => {
     
     const handleSubmit= async event=>{
         event.preventDefault();
-        console.log(email);
+        // console.log(email);
     
         let formData={
             email:email,
             
         }
         const isValid=await data.isValid(formData);
-        console.log(formData);
-        console.log(isValid);
+        // console.log(formData);
+        // console.log(isValid);
         if(isValid)
         {
             Cookies.set("email",formData.email);

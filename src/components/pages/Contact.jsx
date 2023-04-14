@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { location, mail as ml, phone } from '../../assets';
+import { location, mail as ml } from '../../assets';
 import styles from '../../style';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -28,7 +28,7 @@ const Contact = () => {
 
   const handleSubmit= async event=>{
     event.preventDefault();
-    console.log(name,mail,message);
+    // console.log(name,mail,message);
 
     let formData={
       name:name, 
@@ -37,7 +37,7 @@ const Contact = () => {
       subject:subject
     }
     const isValid=await data.isValid(formData);
-    console.log(formData,isValid);
+    // console.log(formData,isValid);
      
     axios.post(`${API}/messages`,formData)
     .then((response)=>{console.log(response);

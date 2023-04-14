@@ -24,7 +24,7 @@ const Event = () => {
         });
     },[]);
 
-    console.log(data);
+    // console.log(data);
     
   return (
     <div className={`flex flex-col ${styles.paddingY} animate-[zoomIn_1s_ease-in-out]`}>

@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import styles from '../../style';
 import AnnounceCard from '../AnnounceCard'
-import { RingLoader } from 'react-spinners';
 import {BoltLoader} from "..";
 import axios from 'axios';
 
@@ -35,7 +34,7 @@ const Events = () => {
   
   useEffect(()=>{
     axios.get(`${API}/events/years`)
-    .then((res)=>{console.log(res);setYears(res.data);setLoading(false);})
+    .then((res)=>{setYears(res.data);setLoading(false);})
     .catch((err)=>{
       console.log("error:",err.message);
       setError(err.message);
@@ -44,10 +43,9 @@ const Events = () => {
     
   },[]);
   
-  // console.log(active)
   useEffect(()=>{
     axios.get(`${API}/events/year/${active.replace(' - ','-')}`)
-      .then((res)=>{console.log(res);setData(res.data);setLoading(false);})
+      .then((res)=>{setData(res.data);setLoading(false);})
       .catch((err)=>{
         console.log("error:",err.message);
         setError(err.message);
@@ -97,7 +95,7 @@ const Events = () => {
         
             <div className="flex flex-wrap justify-center w-full z-[1]" >
               {data?.map((card) => 
-                <div data-aos="fade-up" data-aos-duration='1000' key={card.id}>
+                <div data-aos="fade-up" data-aos-duration='1000' key={card._id}>
                   <a href={`/events/${card._id}`}><AnnounceCard  {...card} /></a>
                   
                 </div>

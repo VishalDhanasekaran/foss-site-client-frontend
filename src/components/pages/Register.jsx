@@ -14,15 +14,15 @@ const Register = () => {
   
     const handleSubmit= async event=>{
       event.preventDefault();
-      console.log(email);
+    //   console.log(email);
   
       let formData={
         name:name,
         email:email,
       }
       const isValid=await data.isValid(formData);
-      console.log(formData);
-      console.log(isValid);
+    //   console.log(formData);
+    //   console.log(isValid);
   
     }
     

@@ -15,11 +15,11 @@ const HomePage = () => {
 
   useEffect(() => {
     axios.get(`${API}/events/event/current`)
-    .then((response)=>{console.log(response.data);setEvent(response.data);})
+    .then((response)=>{setEvent(response.data);})
     .catch((error)=>{console.log(error);});
   }, []);
 
-    console.log(event)
+    // console.log(event)
 
     const handleClick=(link)=>{
       window.open(link,'_blank','noopener,noreferrer');

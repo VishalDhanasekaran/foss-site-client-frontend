@@ -34,7 +34,7 @@ const Members = () => {
   
   useEffect(()=>{
     axios.get(`${API}/members/years`)
-    .then((res)=>{console.log(res);setYears(res.data);setLoading(false);})
+    .then((res)=>{setYears(res.data);setLoading(false);})
     .catch((err)=>{
       console.log("error:",err.message);
       setError(err.message);
@@ -48,7 +48,7 @@ const Members = () => {
     // console.log('active: ',active)
     
     axios.get(`${API}/members/year/${active.replace(' - ','-')}`)
-      .then((res)=>{console.log(res);setData(res.data);setLoading(false);})
+      .then((res)=>{setData(res.data);setLoading(false);})
       .catch((err)=>{
         console.log("error:",err.message);
         setError(err.message);

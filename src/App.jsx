@@ -9,11 +9,11 @@ import Cookies from 'js-cookie';
 const App = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [loggedIn,setLoggedIn] = useState(false);
-  console.log(showOverlay);
+  // console.log(showOverlay);
 
   useEffect(() => {
     const cookie=Cookies.get("email");
-    console.log(cookie);
+    // console.log(cookie);
     if(cookie)
     {
       setLoggedIn(true);

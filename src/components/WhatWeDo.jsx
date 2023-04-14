@@ -1,7 +1,6 @@
-import React,{useRef} from 'react'
+import React from 'react'
 import { activities } from '../constants'
 import { useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'; 
 import 'swiper/css';
 import 'swiper/swiper-bundle.css';
 import Activity from './Activity';
