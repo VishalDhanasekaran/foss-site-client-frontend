@@ -9,7 +9,7 @@ const FounderCard = ({img,name,working,mail,linkedin}) => {
     }
 
   return (
-        <div className={`flex flex-col justify-center items-center rounded-lg bg-black p-5 w-60 h-[24rem]`}>
+        <div className={`flex flex-col  justify-center items-center rounded-lg bg-black p-5 w-60 h-96`}>
             <img src={img} alt={name} className='flex aspect-square object-contain rounded-xl m-3'/>
             <span className='flex text-gradient text-center'>{name}</span>
             <span className='flex text-gradient text-center'>{working}</span>

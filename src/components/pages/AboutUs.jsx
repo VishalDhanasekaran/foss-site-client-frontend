@@ -71,7 +71,9 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* <Gallery data={data} name={'Event'}/> */}
+      {data&&<div className='flex'>
+        <Gallery data={data} name={'Event'}/>
+      </div>}
       
       <section id={'community'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:p-16 p-6 `} data-aos="fade-up" data-aos-duration='2000'>
         <h2 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[22px] text-gradient ss:leading-[100.8px] leading-[75px]">

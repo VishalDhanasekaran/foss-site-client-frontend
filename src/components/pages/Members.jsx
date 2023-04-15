@@ -73,7 +73,7 @@ const Members = () => {
 
   const [dataM,setDataM]=useState(null);
   useEffect(()=>{
-    axios.get(`${API}/gallery`)
+    axios.get(`${API}/membersgallery`)
       .then((res)=>{setDataM(res.data);})
       .catch((err)=>{
         console.log("error:",err.message);
@@ -129,7 +129,9 @@ const Members = () => {
           
         </section>    
       </div>
-      {/* <Gallery data={dataM} name={'Member'} className='flex'/> */}
+      {dataM && <div className='flex'>
+        <Gallery data={dataM} name={'Members'}/>
+      </div>}
     
     </div>
   )
