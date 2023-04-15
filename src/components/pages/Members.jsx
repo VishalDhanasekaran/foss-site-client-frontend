@@ -96,7 +96,7 @@ const Members = () => {
           <Select value={active} onChange={handleChange} >
             {years?.map((x)=>(
               <MenuItem key={x.id} value={x.year}>{x.year}</MenuItem>
-            ))}
+            )).reverse()}
           </Select>
         </FormControl>
       </div>

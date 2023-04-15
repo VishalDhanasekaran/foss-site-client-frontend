@@ -12,8 +12,8 @@ const Navbar = () => {
 
       return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-        <img src={logo} alt='FOSS-CIT Logo' className='w-[70px] h-[70px]' />
-        <span className='font-poppins font-semibold text-4xl mx-10'>FOSS CIT</span>
+        <a href='/' className='flex flex-row justify-center items-center'><img src={logo} alt='FOSS-CIT Logo' className='w-[70px] h-[70px]' />
+        <span className='font-poppins font-semibold text-4xl mx-10'>FOSS CIT</span></a>
         <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
             {navLinks.map((nav,index)=>(
                 <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] px-5 text-white hover:text-secondary`}>

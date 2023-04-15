@@ -79,7 +79,17 @@ const AboutUs = () => {
         <h2 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[22px] text-gradient ss:leading-[100.8px] leading-[75px]">
           Join Our Community
         </h2>
-        <GetStarted text={'Discord'} link={'https://discord.com/invite/zAqY6nqQ8H'}/>
+        <div className='flex flex-row gap-10'>
+            <div className='flex flex-col justify-between'>
+              <span className={`flex ${styles.paragraph}`}>Sunt ad do id ullamco officia aliquip laboris id do esse voluptate voluptate et ullamco. Exercitation laboris pariatur anim nostrud fugiat ut elit laborum anim reprehenderit nulla incididunt Lorem tempor. Veniam qui non culpa id.</span>
+              <div className='flex m-12'>
+                <GetStarted text={'Discord'} link={'https://discord.com/invite/zAqY6nqQ8H'}/>
+              </div>
+            </div>
+            <div className='flex'>
+              <img className='flex aspect-square' src='https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk='/>
+            </div>
+        </div>
       </section>
     </div>
   )
