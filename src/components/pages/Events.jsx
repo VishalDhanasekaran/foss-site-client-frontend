@@ -91,19 +91,16 @@ const Events = () => {
         <section id={"events"} className={` ${styles.flexCenter} flex-col relative `}>
           <div data-aos="fade-up" data-aos-duration='1000'>
             
-            <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
-        
-            <div className="flex flex-wrap justify-center w-full z-[1]" >
+            <div className="flex flex-wrap justify-center items-center w-full z-[1] gap-5" >
               {data?.map((card) => 
-                <div data-aos="fade-up" data-aos-duration='1000' key={card._id}>
-                  <a href={`/events/${card._id}`}><AnnounceCard  {...card} /></a>
+                <div data-aos="fade-up" data-aos-duration='1000' key={card._id} >
+                  <a href={`/events/${card._id}`} className='flex justify-center items-center'><AnnounceCard  {...card} /></a>
                   
                 </div>
               ).reverse()}
 
               {isAvailable === 0 && <div className='flex'><span className={`${styles.heading2} text-center`}>Events Conducted in {active} are Yet to be Updated...</span></div>}
               {loading && <div className='flex my-10'> 
-                {/* <RingLoader color={'#eecc21'} loading={loading} size={150}/> */}
                 <BoltLoader/>
               </div>}
               {error && <div className='flex'><span className={`${styles.heading2} text-center`}>{error}!</span></div>}

@@ -65,7 +65,7 @@ const Contact = () => {
 
   }
   return (
-    <div className={`flex flex-col ${styles.paddingY}`}>
+    <div className={`flex flex-col p-10`}>
     <ToastContainer />
       <div className={`w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1] animate-[zoomIn_0.75s_ease-in-out]`}>
         <h2 className={`${styles.heading2} text-center text-gradient`}>

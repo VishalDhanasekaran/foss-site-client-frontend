@@ -235,7 +235,7 @@ import { UilYoutube } from '@iconscout/react-unicons'
 export const achievements =[
   {
     id:8001,
-    title:'500',
+    title:'500+',
     desc:'Active Members',
     img:UilUser
   },

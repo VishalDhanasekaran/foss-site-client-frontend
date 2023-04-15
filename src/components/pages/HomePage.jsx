@@ -64,7 +64,7 @@ const HomePage = () => {
         </div>
       </section>
       
-      {event&&<section id={'upcomingevents'} className={`flex flex-col ${styles.paddingY} mx-3 my-6 justify-center items-center bg-zinc-800 rounded-2xl`} data-aos="fade-up" data-aos-duration='2000'>
+      {event&&<section id={'upcomingevents'} className={`flex flex-col mx-3 justify-center items-center bg-zinc-800 rounded-2xl`} data-aos="fade-up" data-aos-duration='2000'>
         <div>
           <h1 className=" flex font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px]">
             Current Event
@@ -148,7 +148,7 @@ const HomePage = () => {
               {achievements.map((item)=>(
                 <div className='flex flex-col gap-5 justify-center items-center text-justify' key={item.id}>
                   <item.img className='flex h-16 w-16'/>
-                  <span className='flex text-gradient text-2xl font-semibold'>{item.title}+</span>
+                  <span className='flex text-gradient text-2xl font-semibold'>{item.title}</span>
                   <span className='flex'>{item.desc}</span>
                 </div>
               ))}

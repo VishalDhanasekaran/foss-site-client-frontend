@@ -105,13 +105,10 @@ const Members = () => {
       
       <div>
         <section id="current" className={` ${styles.flexCenter} flex-col relative `}>
-          <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
-
 
           <div className="flex flex-wrap justify-center w-full z-[1]" data-aos="fade-up" data-aos-duration='1000'>
             {data?.map((item) => 
               <div className='flex' key={item.id}  data-aos="fade-up" data-aos-duration='1000'>
-                {/* <span className='flex'>{item.id}</span> */}
                   <div className='flex flex-wrap justify-center items-center'>
                     {item.members.map((member)=>(
                         <MemberCard key={member._id} {...member} className='flex '/>

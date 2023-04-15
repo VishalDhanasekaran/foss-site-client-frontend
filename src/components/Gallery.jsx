@@ -23,7 +23,7 @@ const Gallery = ({name,data}) => {
             <h2 className="flex font-poppins font-semibold ss:text-[42px] text-gradient text-[22px] text-white ss:leading-[100.8px] leading-[75px]">
             {name} Gallery
             </h2>
-            <div className='flex flex-row w-full overflow-y-auto cursor-grab'>
+            <div className='flex flex-row w-full overflow-y-auto cursor-grab bg-yellow-500 bg-opacity-5 rounded-2xl'>
                 <Swiper slidesPerView={slide}
                 autoplay={{
                     delay: 2000,
