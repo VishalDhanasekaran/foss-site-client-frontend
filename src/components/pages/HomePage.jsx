@@ -22,7 +22,7 @@ const HomePage = () => {
     .then((response)=>{
       console.log("Yes");
       achievements[1].title=response.data.events_count;
-      achievements[2].title=response.data.yt_count;
+      achievements[2].title=response.data.yt_views;
     })
     .catch((error)=>{console.log(error);});
   }, []);
@@ -75,7 +75,7 @@ const HomePage = () => {
           <div className={`flex justify-center items-center flex-col mx-4`} data-aos="fade-up-right" data-aos-duration='2000'>
             <a href={`/events/${event?._id}`}>
               <div className='flex flex-col justify-center items-center gap-3'>
-                <img src={event?.pic} className='aspect-video object-contain'/>
+                <img src={event?.pic} className='aspect-video object-contain h-72'/>
                 <span className={`${styles.paragraph} text-2xl text-center font-bold text-gradient`}>{event?.title}</span>
               </div>
             </a>
