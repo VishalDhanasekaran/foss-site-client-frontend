@@ -103,7 +103,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className='flex p-5'>
+        <div className='flex p-5' data-aos="fade-up" data-aos-duration='2000'>
           <span className={`${styles.paragraph} w-full text-xl`}>{event?.content}</span>
         </div>
       </section>}
