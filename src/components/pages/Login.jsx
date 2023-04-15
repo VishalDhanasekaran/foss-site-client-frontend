@@ -22,9 +22,9 @@ const Login = ({handler,logHandler}) => {
     const loginUser=(data)=>{axios.post(`${API}/visits`,data)
             .then((res=>{
                 // console.log(res);
-                Cookies.set("email",data.email);
+                Cookies.set("email",data.email,{expires:1});
                 if(data.pic){
-                    Cookies.set("pic",data.pic);
+                    Cookies.set("pic",data.pic,{expires:1});
                 }
                 handler(false);
                 logHandler(true);
