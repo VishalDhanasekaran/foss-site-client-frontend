@@ -40,7 +40,7 @@ const Event = () => {
                 <div className={` grid grid-cols-2 grid-rows-2 justify-center flex-col p-4 ss:w-4/6 gap-5`} data-aos="fade-up" data-aos-duration='1000'>
                     <div className='flex flex-col'>
                         <span className='flex font-semibold text-gradient text-2xl'>Date:</span>
-                        <span className={`${styles.paragraph} text-xl `}>{data?.eventDate.slice(0,10)}</span>
+                        <span className={`${styles.paragraph} text-xl `}>{data?.eventDate.slice(0,10).split('-').reverse().join('-')}</span>
                     </div>
                     <div className='flex flex-col'>
                         <span className='flex font-semibold text-gradient text-2xl'>Venue:</span>

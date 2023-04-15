@@ -61,7 +61,7 @@ const HomePage = () => {
             Current Event
           </h1>
         </div>
-        <div className='flex sm:flex-row flex-col'>
+        <div className='flex sm:flex-row flex-col p-5 gap-5'>
 
           <div className={`flex justify-center items-center flex-col mx-4`} data-aos="fade-up-right" data-aos-duration='2000'>
             <a href={`/events/${event?._id}`}>
@@ -71,23 +71,20 @@ const HomePage = () => {
               </div>
             </a>
           </div>
-          <div className={` grid grid-cols-2 grid-rows-4 justify-center flex-col p-4 w-full gap-5`} data-aos="fade-up-left" data-aos-duration='2000'>
-            <div className='flex flex-col col-span-2'>
-              <span className={`${styles.paragraph} text-xl `}>{event?.content}</span>
-            </div>
-            <div className='flex flex-col'>
+          <div className={` grid grid-cols-2 grid-rows-3 justify-center flex-col w-full gap-5`} data-aos="fade-up-left" data-aos-duration='2000'>
+            <div className='flex flex-col justify-center'>
               <span className='flex font-semibold text-gradient text-2xl'>Date:</span>
-              <span className={`${styles.paragraph} text-xl `}>{event?.eventDate.slice(0,10)}</span>
+              <span className={`${styles.paragraph} text-xl `}>{event?.eventDate.slice(0,10).split('-').reverse().join('-')}</span>
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col justify-center'>
               <span className='flex font-semibold text-gradient text-2xl'>Venue:</span>
               <span className={`${styles.paragraph} text-xl `}>{event?.venue}</span>
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col justify-center'>
               <span className='flex font-semibold text-gradient text-2xl'>Time:</span>
               <span className={`${styles.paragraph} text-xl `}>{event?.time}</span>
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col justify-center'>
               <span className='flex font-semibold text-gradient text-2xl'>Speaker:</span>
               <span className={`${styles.paragraph} text-xl truncate`}>{event?.speaker}</span>
             </div>
@@ -96,6 +93,9 @@ const HomePage = () => {
               <span className={`${styles.paragraph} text-xl text-gradient`}>See More</span>
             </div>
           </div>
+        </div>
+        <div className='flex p-5'>
+          <span className={`${styles.paragraph} w-full text-xl`}>{event?.content}</span>
         </div>
       </section>}
       
