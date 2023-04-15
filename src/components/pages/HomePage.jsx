@@ -17,9 +17,18 @@ const HomePage = () => {
     axios.get(`${API}/events/event/current`)
     .then((response)=>{setEvent(response.data);})
     .catch((error)=>{console.log(error);});
+
+    axios.get(`${API}/achievements`)
+    .then((response)=>{
+      console.log("Yes");
+      achievements[1].title=response.data.events_count;
+      achievements[2].title=response.data.yt_count;
+    })
+    .catch((error)=>{console.log(error);});
   }, []);
 
     // console.log(event)
+    console.log(achievements);
 
     const handleClick=(link)=>{
       window.open(link,'_blank','noopener,noreferrer');
@@ -139,7 +148,7 @@ const HomePage = () => {
               {achievements.map((item)=>(
                 <div className='flex flex-col gap-5 justify-center items-center text-justify' key={item.id}>
                   <item.img className='flex h-16 w-16'/>
-                  <span className='flex text-gradient text-2xl font-semibold'>{item.title}</span>
+                  <span className='flex text-gradient text-2xl font-semibold'>{item.title}+</span>
                   <span className='flex'>{item.desc}</span>
                 </div>
               ))}

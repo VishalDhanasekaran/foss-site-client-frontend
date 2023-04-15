@@ -235,19 +235,19 @@ import { UilYoutube } from '@iconscout/react-unicons'
 export const achievements =[
   {
     id:8001,
-    title:'500+',
+    title:'500',
     desc:'Active Members',
     img:UilUser
   },
   {
     id:8002,
-    title:'1000+',
+    title:0,
     desc:'Events',
     img:UilPresentation
   },
   {
     id:8003,
-    title:'1M+',
+    title:0,
     desc:'Youtube Views',
     img:UilYoutube
   },
