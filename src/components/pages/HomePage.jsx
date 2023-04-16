@@ -41,8 +41,7 @@ const HomePage = () => {
             </h1>
           </div>
           <p className={`${styles.paragraph} max-w-[600px] mt-5 text-justify`}>
-            FOSS-CIT is an integral framework that addresses the unmet needs of emerging technologists, ranging from novices to resource people.
-            We aid students development in both fundamental and contemporary technological trends.
+          FOSS-CIT is an integral framework that addresses the unmet needs of emerging technologists, ranging from novices to resource people. Our team aids student development in both fundamental and contemporary technological trends.
           </p>
           <div className="ss:flex hidden md:mr-4 mr-0 mt-8 ml-[25%]">
             <GetStarted text={'Get Started'} link={'/about'} target={'_self'}/>
@@ -112,9 +111,7 @@ const HomePage = () => {
             </h1>
             <div className='flex sm:flex-row flex-col justify-between w-full items-center'>
               <p className={`${styles.paragraph} flex text-justify lg:w-[50%]`}>
-              We assist students in learning how to work with various open source platforms as well as all necessary technical skills for the future.
-              The list of preliminary activities we conduct to ensure a smooth learning curve for new entrants to the world of open-source includes the following: Bootcamps, workshops, hackathons, and talk shows.
-              Through our contests and events, students can enhance their skillset not only in computer science fields but also in all necessary professional skills.
+              FOSS-CIT aims to assist students in learning how to work with various open-source platforms, as well as essential technical skills for the future. Our preliminary activities include bootcamps, workshops, hackathons, and talk shows to ensure a smooth learning curve for newcomers to the world of open-source. Through our contests and events, students can enhance their skillset not only in the field of computer science, but also in all necessary professional skills.
               </p>
               <img className='flex sm:w-[50%]' src='https://amfoss.in/illus/what_we_do.svg' alt='mission'/>
             </div>
@@ -138,8 +135,7 @@ const HomePage = () => {
                 What we have achieved...
             </h1>
             <p className={`${styles.paragraph} mt-5 text-justify`} >
-              We conducted various training sessions for web technologies, competitive programming, recreational programming, and GNU/Linux tools and frameworks.
-              We established successful collaborations with Newton schools, Mozilla Campus Clubs, Google Developer Groups in Coimbatore, and FOSS Wave.
+            FOSS-CIT has conducted various training sessions on web technology, competitive programming, game development, and specific GNU/Linux tools and frameworks. Our club also established successful collaborations with Newton school, Mozilla Campus Clubs, and Google Developer Groups in Coimbatore, as well as with FOSS Wave, an open-source software community.
             </p>
             <div className='flex p-3 flex-wrap w-full ss:gap-32 gap-10 py-10 justify-center items-center'>
               {achievements.map((item)=>(

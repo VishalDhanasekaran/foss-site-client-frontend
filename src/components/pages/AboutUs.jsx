@@ -33,8 +33,7 @@ const AboutUs = () => {
             History
         </h1>
         <p className={`${styles.paragraph} mt-5 text-justify`}>
-        Our college's FOSS club was founded with the intention of introducing students to the world of open-source software, where they can learn and create new software. 
-        The only pupils who will actually benefit from such a group are those who actively participate in it. Indirectly, the college gains from these initiatives since they make our students' talents known to prospective employers.
+          The FOSS club of our college, CIT, was established with the intention of introducing students to the world of open-source software, where they can learn and create new software. Students who are actively involved and express a keen interest in the club can benefit immensely from the activities conducted. For example, they can gain valuable skills and experience, and exhibit their talents to prospective employers. As a result, the college indirectly benefits from the club's initiatives.
         </p>
       </section>
       
@@ -45,7 +44,7 @@ const AboutUs = () => {
             Initiators 
           </h1>
           <p className={`${styles.paragraph} mt-5 text-justify`}>
-            Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose launched FOSS in 2018 while they were second-year students studying software systems at the Coimbatore Institute of Technology in Coimbatore.
+          Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose launched FOSS in 2018 when they were second-years students pursuing their degree in Software Systems at Coimbatore Institute Of Technology, Coimbatore.
           </p>
         </div>
         <div className=' flex flex-wrap w-2/3 gap-10 justify-center items-center'>
