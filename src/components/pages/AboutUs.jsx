@@ -61,7 +61,7 @@ const AboutUs = () => {
             Staff Advisors 
           </h1>
           <p className={`${styles.paragraph} mt-5 text-justify`}>
-            Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose launched FOSS in 2018 while they were second-year students studying software systems at the Coimbatore Institute of Technology in Coimbatore.
+            Our club is supported by our two staff advisers. They act as a mentor, offering encouragement, direction, and leadership to our club members and ensuring that the club adheres to college regulations and procedures.
           </p>
         </div>
         <div className=' flex flex-wrap w-2/3 gap-10 justify-center items-center'>
@@ -81,7 +81,7 @@ const AboutUs = () => {
         </h2>
         <div className='flex flex-row gap-10'>
             <div className='flex flex-col justify-between'>
-              <span className={`flex ${styles.paragraph}`}>Sunt ad do id ullamco officia aliquip laboris id do esse voluptate voluptate et ullamco. Exercitation laboris pariatur anim nostrud fugiat ut elit laborum anim reprehenderit nulla incididunt Lorem tempor. Veniam qui non culpa id.</span>
+              <span className={`flex ${styles.paragraph}`}>Join our Discord community for additional exclusive updates. You can learn about our forthcoming events, cutting-edge technological advancements, and our continuous conversations with those who share our enthusiasm for supporting open source here.</span>
               <div className='flex m-12'>
                 <GetStarted text={'Discord'} link={'https://discord.com/invite/zAqY6nqQ8H'}/>
               </div>

@@ -20,15 +20,12 @@ const HomePage = () => {
 
     axios.get(`${API}/achievements`)
     .then((response)=>{
-      console.log("Yes");
       achievements[1].title=response.data.events_count;
       achievements[2].title=response.data.yt_views;
     })
     .catch((error)=>{console.log(error);});
   }, []);
 
-    // console.log(event)
-    console.log(achievements);
 
     const handleClick=(link)=>{
       window.open(link,'_blank','noopener,noreferrer');
