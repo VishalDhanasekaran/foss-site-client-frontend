@@ -15,7 +15,7 @@ const Contact = () => {
   const [message, setMessage] = useState('')
   const [subject, setSubject] = useState('')
 
-  const handleClick=(event,link)=>{
+  const handleClick=(link)=>{
     window.open(link, '_blank', 'noopener,noreferrer');
   }
 
@@ -28,7 +28,6 @@ const Contact = () => {
 
   const handleSubmit= async event=>{
     event.preventDefault();
-    // console.log(name,mail,message);
 
     let formData={
       name:name, 
@@ -37,7 +36,6 @@ const Contact = () => {
       subject:subject
     }
     const isValid=await data.isValid(formData);
-    // console.log(formData,isValid);
      
     axios.post(`${API}/messages`,formData)
     .then((response)=>{console.log(response);
@@ -73,25 +71,25 @@ const Contact = () => {
         </h2>
       </div>
       <section id="location" className={`flex md:flex-row flex-col `}>
-        <div className={`flex-1 ${styles.flexStart} flex-col animate-[fadeInLeft_0.75s_ease-in-out] p-5`}>
+        <div className={`flex-1 ${styles.flexStart} flex-col animate-[fadeInLeft_0.75s_ease-in-out] p-5 gap-5`}>
           <div className="flex flex-row justify-between items-center w-full">
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[32px] text-white ss:leading-[55px] leading-[45px]">
-              <span>Our Office</span><br className="sm:block" />{" "}
-              <span className="text-gradient sm:text-[22px] text-[15px] leading-tight">FOSS Club at Coimbatore Institute of Technology</span>{" "}
+            <h1 className="flex gap-5 flex-col font-poppins font-semibold text-4xl text-white ">
+              <span className='flex'>Our Office</span>
+              <span className="text-gradient text-2xl">FOSS Club at Coimbatore Institute of Technology</span>{" "}
             </h1>
           </div>
 
-          <h1 className="font-poppins font-semibold ss:text-[40px] text-[30px] text-white ss:leading-[100.8px] leading-[75px] w-full">
+          <h1 className="font-poppins font-semibold text-2xl text-white w-full">
             Location:
           </h1>
-          <div className={`font-poppins font-normal text-dimWhite text-[1.5rem] leading-[30.8px] max-w-[470px] text-justify`}>
-            <div className='flex flex-row my-4'>
+          <div className={`font-poppins font-normal text-dimWhite text-xl max-w-[470px] text-justify`}>
+            <div className='flex flex-row p-4'>
               <img src={location} className='w-6 h-6 object-contain'/>
-              <span className='mx-5 cursor-pointer' onClick={event => handleClick(event, 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore, Tamil Nadu 641014 </span>
+              <span className='px-5 cursor-pointer' onClick={() => handleClick( 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore, Tamil Nadu 641014 </span>
             </div>
-            <div className='flex flex-row my-4'>
+            <div className='flex flex-row p-4'>
               <img src={ml} className='w-6 h-6 object-contain'/>
-              <span className='mx-5'>fosscit@gmail.com </span>
+              <span className='px-5'>fosscit@gmail.com </span>
             </div>
           </div>
         </div>
@@ -104,9 +102,9 @@ const Contact = () => {
         </div>
       </section>
       
-      <section id="mailform" className={`flex md:flex-col flex-col ${styles.paddingY}`} data-aos="fade-up" data-aos-duration='2000'>
+      <section id="mailform" className={`flex md:flex-col flex-col ${styles.paddingY} gap-5`} data-aos="fade-up" data-aos-duration='2000'>
         <div>
-          <h1 className="flex-1 font-poppins font-semibold text-center ss:text-[42px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] text-gradient">
+          <h1 className="flex-1 font-poppins font-semibold text-center text-4xl text-white text-gradient">
             Mail Us Your Message
           </h1>
         </div>

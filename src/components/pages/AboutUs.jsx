@@ -83,7 +83,7 @@ const AboutUs = () => {
             <div className='flex flex-col justify-between'>
               <span className={`flex ${styles.paragraph}`}>Join our Discord community for additional exclusive updates. You can learn about our forthcoming events, cutting-edge technological advancements, and our continuous conversations with those who share our enthusiasm for supporting open source here.</span>
               <div className='flex m-12'>
-                <GetStarted text={'Discord'} link={'https://discord.com/invite/zAqY6nqQ8H'}/>
+                <GetStarted text={'Discord'} link={'https://discord.com/invite/zAqY6nqQ8H'} target={'_blank'}/>
               </div>
             </div>
             <div className='flex'>

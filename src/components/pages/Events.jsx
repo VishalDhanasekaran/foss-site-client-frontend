@@ -9,8 +9,6 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { API } from '../../constants';
 
-// import { eventYears } from '../../constants';
-
 const Events = () => {
   const [data,setData]=useState(null);
   const [loading,setLoading]=useState(true);
@@ -20,7 +18,6 @@ const Events = () => {
   
   let year=(new Date().getFullYear());
   let month=new Date().getMonth();
-  // console.log((new Date().getMonth()));
   if(month>=5)
   {
     year=(year).toString()+'-'+(year+1-2000).toString();
@@ -29,7 +26,6 @@ const Events = () => {
   {
     year=(year-1).toString()+'-'+(year-2000).toString();
   }
-  // console.log('year;',year);
   const [active,setActive]=useState(year.replace('-',' - '));
   
   useEffect(()=>{
@@ -54,19 +50,9 @@ const Events = () => {
 
   },[active]);
   
-  // let years=new Set(eventYears?.map((x)=>x.eventYear));
-  // years=[...years]?.sort().reverse();
-  // console.log('Years',years);
-  // const selectYear=data?.filter(x=>{return x.eventYear === active});
-  // if (selectYear == 0){isAvailable=0;}
-
   const handleChange = (event) => {
     setActive(event.target.value);
   };
-
-  // console.log("Data: ",data)
-  // console.log("Years: ",years)
-  // console.log("Active Years: ",active)
 
   return (
     <div className='flex flex-col'>

@@ -14,12 +14,12 @@ const WhatWeDo = () => {
     }
   return (
     <div className='flex w-full flex-col justify-center items-center'>
-        {data && <div className='hidden sm:flex bg-black bg-opacity-90 fixed z-20 animate-[fadeInDown_1s_ease-in-out] w-2/3' >
+        {data && <div className='hidden sm:flex bg-black bg-opacity-95 fixed z-20 animate-[fadeInDown_1s_ease-in-out] w-2/3 rounded-2xl' >
             <Activity data={data} setData={setData}/>
         </div>}
         <div className='hidden sm:flex gap-3 flex-wrap w-[60%]'>
             {activities.map((item)=>(
-                <div className='flex h-40 w-24 flex-col justify-end items-center gap-2 cursor-pointer hover:bg-amber-500 hover:bg-opacity-5 p-3' key={item.id} onClick={()=>handleClick(item.id)}>
+                <div className='flex h-40 w-24 flex-col justify-end rounded-xl items-center gap-2 cursor-pointer hover:bg-amber-500 hover:bg-opacity-5 p-3' key={item.id} onClick={()=>handleClick(item.id)}>
                     <img src={item.icon} className='flex h-12 w-20 aspect-square'/>
                     <span className='flex text-center text-gradient h-12'>{item.title}</span>
                 </div>

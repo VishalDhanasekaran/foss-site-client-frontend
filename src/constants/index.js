@@ -1,4 +1,4 @@
-import { careerGuidence, codingContest, discord, github, groupDiscussions, instagram, linkedin, quizz, webinar, workshop, youtube, socialMediaIcon, bootcamp, designing, Aruna, Umarani } from "../assets";
+import { careerGuidence, codingContest, discord, github, groupDiscussions, instagram, linkedin, quizz, webinar, workshop, youtube, socialMediaIcon, bootcamp, designing, Aruna, Umarani, interview, funEvents } from "../assets";
 
 export const navLinks =[
     { id:'/',title:'Home'},
@@ -147,7 +147,6 @@ export const missions=[
   }
 ]
 
-import { presentation } from "../assets";
 
 export const activities=[
   {
@@ -155,77 +154,66 @@ export const activities=[
     title:'Webinar',
     icon:webinar,
     desc:'Our webinar provides participants with resources and guidance to help them gain the most out of their college experience and prepare for a successful job in technology.',
-    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7001,
     title:'Bootcamps',
     icon:bootcamp,
     desc:'Our Bootcamps provide students with practical instruction and direction from experienced instructors, allowing them to quickly develop their skills and gain experience.',
-    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7002,
     title:'Workshops',
     icon:workshop,
     desc:'Students will engage in hands-on activities and exercises to practice and develop their skills during a workshop that encourages active participation and learning.',
-    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7003,
     title:'Coding Contests',
     icon:codingContest,
     desc:'Our coding contest will provide an opportunity for students to showcase their programming skills and compete against each other, with the solution and learning materials provided at the end.',
-    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7004,
     title:'Designing Contests',
     icon:designing,
     desc:'Our design contest encourages participants to improve their skills, learn new tools, and compete with other students in a friendly and challenging environment.',
-    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7005,
     title:'Group Discussions',
     icon:groupDiscussions,
     desc:'Event on Group discussion are conducted for individuals who are preparing for job interviews or seeking to improve their communication skills in a group setting.The event will be facilitated by a moderator who guides the discussion and provides feedback to help participants improve their performance. ',
-    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7006,
     title:'Interview Preparations',
-    icon:presentation,
+    icon:interview,
     desc:'Individuals interview skills are improved through interview coaching sessions, where participants can improve their performance through feedback and guidance provided through the event.',
-    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7007,
     title:'SocialMedia Events',
     icon:socialMediaIcon,
     desc:'Social media events are conducted in series by inculcating technical questions and facts to skill up daily through platforms like Instagram and LinkedIn. These events are designed to help individuals gain knowledge and practise basic interview questions to prepare for a job interview.',
-    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7008,
     title:'Quiz',
     icon:quizz,
     desc:'These events typically involve a series of questions on various topics, ranging from general knowledge to specific areas of expertise, to foster intellectual curiosity and encourage learning and competition in a fun and engaging way.',
-    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7009,
     title:'Fun Events',
-    icon:presentation,
+    icon:funEvents,
     desc:'Fun events are conducted by our club to promote engagement, socialization, and overall well-being among students. These events are intended to be fun, interactive, and inclusive, which includes a variety of activities and games.',
-    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
   {
     id:7010,
     title:'Career Guidence',
     icon:careerGuidence,
     desc:'Our career guidance session helps students to identify their strengths and interests, explore potential career paths, and develop a plan for achieving their goals.',
-    img:'https://tse3.mm.bing.net/th?id=OIP.kAjDQUNRKZFGNlWFIjJr_gHaH_&pid=Api&P=0'
   },
 ]
 import { UilUser } from '@iconscout/react-unicons'

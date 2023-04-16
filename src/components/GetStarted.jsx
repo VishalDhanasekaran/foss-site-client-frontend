@@ -1,9 +1,9 @@
 import React from 'react'
 import {arrowUp } from '../assets';
 import styles from '../style';
-const GetStarted = ({text,link}) => {
+const GetStarted = ({text,link,target}) => {
   const handleClick=()=>{ 
-    window.open(link, '_blank', 'noopener,noreferrer');
+    window.open(link, target, 'noopener,noreferrer');
   }
   return (
     <div className={`${styles.flexCenter} w-[200px] h-[40px]  bg-black p-[2px] cursor-pointer hover:scale-105 ease-in-out duration-300`} onClick={handleClick}>

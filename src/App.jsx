@@ -1,10 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import styles from './style';
 
-import { Navbar,Footer,HomePage, AboutUs, Members, Contact,Error, Events,Login,Register,Event } from './components'; 
+import { Navbar,Footer,HomePage, AboutUs, Members, Contact,Error, Events,Login,Event } from './components'; 
 import { Route, Routes } from 'react-router-dom';
 import Cookies from 'js-cookie';
-import axios from 'axios';
 
 
 
@@ -47,8 +46,6 @@ const App = () => {
             <Route path='/events/:id' element={<Event/>}/>
             <Route path='/events' element={<Events/>}/>
             <Route path='/contact' element={<Contact/>}/>
-            {/* <Route path='/login' element={<Login/>}/> */}
-            {/* <Route path='/register' element={<Register/>}/> */}
           </Routes>
         </div>
       </div>

@@ -28,11 +28,12 @@ import webinar from "./webinar.png";
 import workshop from "./workshop.png";
 import bootcamp from "./bootcamp.png";
 import designing from "./designing.png";
-
+import interview from "./interview.png";
+import funEvents from "./funEvents.png";
 import Aruna from "./Aruna.jpg";
 import Umarani from "./Umarani.jpg";
 
 export {
     logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google,apple,outlook,
-    presentation,careerGuidence,codingContest,groupDiscussions,quizz,socialMediaIcon,webinar,workshop,bootcamp,designing,Aruna, Umarani
+    presentation,careerGuidence,codingContest,groupDiscussions,quizz,socialMediaIcon,webinar,workshop,bootcamp,designing,Aruna, Umarani,interview,funEvents
 };

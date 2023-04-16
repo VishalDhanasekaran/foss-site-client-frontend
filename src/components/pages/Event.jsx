@@ -24,7 +24,6 @@ const Event = () => {
         });
     },[]);
 
-    // console.log(data);
     
   return (
     <div className={`flex flex-col ${styles.paddingY} animate-[zoomIn_1s_ease-in-out]`}>
@@ -59,7 +58,7 @@ const Event = () => {
             <div className={`${styles.paragraph} text-justify ss:text-[22px] text-[15px] my-10`} data-aos="fade-up" data-aos-duration='1000'>
                 {data.content}
             </div>
-            <GetStarted text={'View More'} link={data?.link}/>
+            <GetStarted text={'View More'} link={data?.link} target={'_blank'}/>
         </section>}
         {loading && <div className='flex justify-center items-center'> 
             <BoltLoader/>

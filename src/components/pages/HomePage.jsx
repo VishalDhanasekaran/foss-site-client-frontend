@@ -45,7 +45,7 @@ const HomePage = () => {
             We aid students development in both fundamental and contemporary technological trends.
           </p>
           <div className="ss:flex hidden md:mr-4 mr-0 mt-8 ml-[25%]">
-            <GetStarted text={'Get Started'}/>
+            <GetStarted text={'Get Started'} link={'/about'} target={'_self'}/>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ const HomePage = () => {
         </div>
 
         <div className={`ss:hidden ${styles.flexCenter}`}>
-          <GetStarted text={'Get Started'}/>
+          <GetStarted text={'Get Started'} target={'_self'} link={'/about'}/>
         </div>
       </section>
       

@@ -21,7 +21,6 @@ const Login = ({handler,logHandler}) => {
 
     const loginUser=(data)=>{axios.post(`${API}/visits`,data)
             .then((res=>{
-                // console.log(res);
                 Cookies.set("email",data.email,{expires:1});
                 if(data.pic){
                     Cookies.set("pic",data.pic,{expires:1});
@@ -56,7 +55,6 @@ const Login = ({handler,logHandler}) => {
                     }
                 })
 
-                // console.log(res.data)
                 loginUser({email:res.data.email,pic:res.data.picture});
             } catch (err) {
                 console.log(err)
