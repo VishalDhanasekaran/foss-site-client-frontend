@@ -61,9 +61,9 @@ const HomePage = () => {
         </div>
       </section>
       
-      {event&&<section id={'upcomingevents'} className={`flex flex-col mx-3 justify-center items-center bg-zinc-800 rounded-2xl`} data-aos="fade-up" data-aos-duration='2000'>
+      {event&&<section id={'upcomingevents'} className={`flex flex-col mx-3 justify-center items-center bg-zinc-800 rounded-2xl gap-5 p-5`} data-aos="fade-up" data-aos-duration='2000'>
         <div>
-          <h1 className=" flex font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px]">
+          <h1 className=" flex font-poppins font-semibold text-5xl text-gradient">
             Current Event
           </h1>
         </div>
@@ -107,7 +107,7 @@ const HomePage = () => {
       
       <div className={`flex flex-col ${styles.paddingY} my-6`}>
         <section id={'mission'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
+            <h1 className="flex-1 font-poppins font-semibold text-5xl text-gradient">
                 Our Mission...
             </h1>
             <div className='flex sm:flex-row flex-col justify-between w-full items-center'>
@@ -128,13 +128,13 @@ const HomePage = () => {
             </div>
         </section>
         <section id={'whatwedo'}className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
+            <h1 className="flex-1 font-poppins font-semibold text-5xl text-gradient ">
               What We Do...
             </h1>
             <WhatWeDo/>
         </section>
         <section id={'achievements'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 my-6`} data-aos="fade-up" data-aos-duration='2000'>
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] ">
+            <h1 className="flex-1 font-poppins font-semibold text-5xl text-gradient ">
                 What we have achieved...
             </h1>
             <p className={`${styles.paragraph} mt-5 text-justify`} >

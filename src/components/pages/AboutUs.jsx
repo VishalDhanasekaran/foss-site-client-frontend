@@ -25,11 +25,11 @@ const AboutUs = () => {
     <div className={`flex flex-col ${styles.paddingY}`}>
       <section id={'history'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 animate-[fadeInDown_1s_ease-in-out]`}>
         <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-          <h2 className={`${styles.heading2} text-center text-gradient`}>
+          <h2 className={`${styles.heading2} text-center`}>
             About FOSS CIT
           </h2>
         </div>
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-gradient ss:leading-[100.8px] leading-[75px]">
+        <h1 className="flex-1 font-poppins font-semibold text-5xl text-gradient ">
             History
         </h1>
         <p className={`${styles.paragraph} mt-5 text-justify`}>
@@ -41,7 +41,7 @@ const AboutUs = () => {
 
       <section id={'founders'} className={`flex-1 ${styles.flexStart} items-center justify-center my-16 sm:flex-row flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
         <div className='flex flex-col sm:w-1/3'>
-          <h1 className="flex-1 font-poppins text-gradient font-semibold ss:text-[52px] text-[32px] ss:leading-[100.8px] leading-[75px]">
+          <h1 className="flex-1 font-poppins text-gradient font-semibold text-5xl">
             Initiators 
           </h1>
           <p className={`${styles.paragraph} mt-5 text-justify`}>
@@ -57,7 +57,7 @@ const AboutUs = () => {
 
       <section id={'founders'} className={`flex-1 ${styles.flexStart} items-center justify-center my-16 sm:flex-row flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
         <div className='flex flex-col sm:w-1/3'>
-          <h1 className="flex-1 font-poppins text-gradient font-semibold ss:text-[52px] text-[32px] ss:leading-[100.8px] leading-[75px]">
+          <h1 className="flex-1 font-poppins text-gradient font-semibold text-5xl ">
             Staff Advisors 
           </h1>
           <p className={`${styles.paragraph} mt-5 text-justify`}>
@@ -76,18 +76,18 @@ const AboutUs = () => {
       </div>}
       
       <section id={'community'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:p-16 p-6 `} data-aos="fade-up" data-aos-duration='2000'>
-        <h2 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[22px] text-gradient ss:leading-[100.8px] leading-[75px]">
+        <h2 className="flex-1 font-poppins font-semibold text-4xl text-gradient ">
           Join Our Community
         </h2>
-        <div className='flex flex-row gap-10'>
-            <div className='flex flex-col justify-between'>
+        <div className='flex flex-col ss:flex-row gap-10 justify-center items-center'>
+            <div className='flex flex-col justify-between ss:w-1/2'>
               <span className={`flex ${styles.paragraph}`}>Join our Discord community for additional exclusive updates. You can learn about our forthcoming events, cutting-edge technological advancements, and our continuous conversations with those who share our enthusiasm for supporting open source here.</span>
               <div className='flex m-12'>
                 <GetStarted text={'Discord'} link={'https://discord.com/invite/zAqY6nqQ8H'} target={'_blank'}/>
               </div>
             </div>
-            <div className='flex'>
-              <img className='flex aspect-square' src='https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk='/>
+            <div className='flex ss:w-1/2 justify-center items-center'>
+              <img className='flex aspect-square object-contain h-72' src='https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk='/>
             </div>
         </div>
       </section>

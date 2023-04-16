@@ -19,8 +19,8 @@ const Gallery = ({name,data}) => {
     },[]);
   return (
     <div className={`flex w-full px-2`}>
-        <section id={'gallery'} className={`flex flex-col w-full xl:px-0 sm:px-16 px-6`} data-aos="fade-up" data-aos-duration='1000'>
-            <h2 className="flex font-poppins font-semibold ss:text-[42px] text-gradient text-[22px] text-white ss:leading-[100.8px] leading-[75px]">
+        <section id={'gallery'} className={`flex flex-col w-full xl:px-0 sm:px-16 px-6 gap-5`} data-aos="fade-up" data-aos-duration='1000'>
+            <h2 className="flex font-poppins font-semibold text-gradient text-5xl text-white ">
             {name} Gallery
             </h2>
             <div className='flex flex-row w-full overflow-y-auto cursor-grab bg-zinc-700 rounded-2xl p-5'>
