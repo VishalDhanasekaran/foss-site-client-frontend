@@ -39,15 +39,15 @@ const AboutUs = () => {
       
 
       <section id={'founders'} className={`flex-1 ${styles.flexStart} items-center justify-center my-16 sm:flex-row flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
-        <div className='flex flex-col sm:w-1/3'>
+        <div className='flex flex-col sm:w-2/5'>
           <h1 className="flex-1 font-poppins text-gradient font-semibold text-5xl">
             Initiators 
           </h1>
           <p className={`${styles.paragraph} mt-5 text-justify`}>
-          Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose launched FOSS in 2018 when they were second-years students pursuing their degree in Software Systems at Coimbatore Institute Of Technology, Coimbatore.
+          Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose are the initiators of FOSS Club of CIT. Our initiators established the club in the year 2018. They were second-year students pursuing their degree in Software Systems at Coimbatore Institute Of Technology, Coimbatore. Their aim was to address the technical concerns faced by students in their journey of learning the usage and development of Open-Source software. Our initiators focused on spreading, creating and exploring knowledge through an open forum equipped with our fellow followers.
           </p>
         </div>
-        <div className=' flex flex-wrap w-2/3 gap-10 justify-center items-center'>
+        <div className=' flex flex-wrap sm:w-3/5 gap-10 justify-center items-center'>
           {founders.map((user)=>(
             <FounderCard key={user.id} {...user}/>
           ))}
@@ -55,15 +55,15 @@ const AboutUs = () => {
       </section>
 
       <section id={'founders'} className={`flex-1 ${styles.flexStart} items-center justify-center my-16 sm:flex-row flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
-        <div className='flex flex-col sm:w-1/3'>
+        <div className='flex flex-col sm:w-1/2'>
           <h1 className="flex-1 font-poppins text-gradient font-semibold text-5xl ">
             Staff Advisors 
           </h1>
           <p className={`${styles.paragraph} mt-5 text-justify`}>
-            Our club is supported by our two staff advisers. They act as a mentor, offering encouragement, direction, and leadership to our club members and ensuring that the club adheres to college regulations and procedures.
+          Our club is fortunate to have the guidance and support of our two staff advisors from the Department of Computing, CIT. They act as our guiding pillars, mentoring and encouraging us, and emphasizing the importance of leadership and communication to our club members. Our advisors also ensure that the club adheres to college regulations and procedures. They generously share their knowledge and experience with us, helping us to grow and learn through the opportunities we create as a team.
           </p>
         </div>
-        <div className=' flex flex-wrap w-2/3 gap-10 justify-center items-center'>
+        <div className=' flex flex-wrap sm:w-1/2 gap-10 justify-center items-center'>
           {advisors.map((user)=>(
             <FounderCard key={user.id} {...user}/>
           ))}

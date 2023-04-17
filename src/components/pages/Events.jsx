@@ -79,9 +79,8 @@ const Events = () => {
             
             <div className="flex flex-wrap justify-center items-center w-full z-[1] gap-5" >
               {data?.map((card) => 
-                <div data-aos="fade-up" data-aos-duration='1000' key={card._id} >
-                  <a href={`/events/${card._id}`} className='flex justify-center items-center'><AnnounceCard  {...card} /></a>
-                  
+                <div data-aos="fade-up" data-aos-duration='1000' key={card._id}  className='flex cursor-pointer'>
+                  <AnnounceCard  {...card} onClick={()=>{window.open(`/events/${card._id}`,"_self","noopener,noreferrer")}}/>
                 </div>
               ).reverse()}
 

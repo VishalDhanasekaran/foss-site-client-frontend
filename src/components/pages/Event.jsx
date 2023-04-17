@@ -29,7 +29,7 @@ const Event = () => {
     <div className={`flex flex-col ${styles.paddingY} animate-[zoomIn_1s_ease-in-out]`}>
         
         {data && <section id={'event'} className={`flex-1 ${styles.flexCenter} ${styles.paragraph} flex-col xl:px-0 sm:px-16 px-6 gap-5`} data-aos="fade-up" data-aos-duration='1000'>
-            <h1 className="flex-1 font-poppins font-semibold text-5xl text-gradient ">
+            <h1 className="flex font-poppins font-semibold text-5xl text-gradient text-center">
             { data.title}
             </h1>
             <div className={`flex-1 flex justify-center items-center flex-col gap-4 xl:px-0 sm:px-16 px-6 font-poppins font-semibold ss:text-[22px] text-[15px] `}>
