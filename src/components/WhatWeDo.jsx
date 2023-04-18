@@ -17,7 +17,7 @@ const WhatWeDo = () => {
         {data && <div className='hidden sm:flex bg-black bg-opacity-95 fixed z-20 animate-[fadeInDown_1s_ease-in-out] w-2/3 rounded-2xl' >
             <Activity data={data} setData={setData}/>
         </div>}
-        <div className='hidden sm:flex gap-3 flex-wrap w-[60%]'>
+        <div className='hidden sm:flex gap-3 flex-wrap w-[60%] justify-center items-center'>
             {activities.map((item)=>(
                 <div className='flex h-40 w-24 flex-col justify-end rounded-xl items-center gap-2 cursor-pointer hover:bg-amber-500 hover:bg-opacity-5 p-3' key={item.id} onClick={()=>handleClick(item.id)}>
                     <img src={item.icon} className='flex h-12 w-20 aspect-square'/>

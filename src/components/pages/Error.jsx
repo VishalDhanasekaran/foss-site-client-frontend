@@ -1,10 +1,9 @@
 import React from 'react'
-import styles from '../../style';
 
 const Error = () => {
   return (
-    <div className={`flex flex-col ${styles.paddingY}`}>
-        <h2 className={`${styles.heading2} text-center text-gradient`}>
+    <div className={`flex flex-col py-10`}>
+        <h2 className={`font-poppins font-semibold text-5xl text-gradient w-full text-center text-gradient`}>
             Invalid url
         </h2>
     </div>

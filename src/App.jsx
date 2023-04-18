@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from 'react'
-import styles from './style';
 
 import { Navbar,Footer,HomePage, AboutUs, Members, Contact,Error, Events,Login,Event } from './components'; 
 import { Route, Routes } from 'react-router-dom';
@@ -29,14 +28,14 @@ const App = () => {
   return (
   <>
     <div className=' bg-neutral-900 w-full overflow-hidden'>
-      <div className={`${styles.paddingX} ${styles.flexCenter} fixed w-full z-[14] bg-header animate-[fadeInUp_0.5s_ease-in-out]`}>
-        <div className={`${styles.boxWidth} text-white `}>
+      <div className={`px-10 flex justify-center items-center fixed w-full z-[14] bg-header animate-[fadeInUp_0.5s_ease-in-out]`}>
+        <div className={` w-full text-white `}>
           <Navbar loggedIn={loggedIn}/>
         </div>
       </div>
 
-      <div className={`${styles.flexStart} mt-32`}>
-        <div className={`${styles.boxWidth} text-white`}>
+      <div className={`mt-24`}>
+        <div className={`w-full text-white`}>
           <Routes>
             <Route path='/' element={<HomePage/>}/>
             <Route path='*' element={<Error/>}/>
@@ -50,8 +49,8 @@ const App = () => {
         </div>
       </div>
 
-      <div className={`bg-header ${styles.paddingX} ${styles.flexStart} mt-5`} data-aos="fade-up" data-aos-duration='1000'>
-        <div className={`${styles.boxWidth} text-white`}>
+      <div className={`bg-header  flex justify-center items-center mt-5`} data-aos="fade-up" data-aos-duration='1000'>
+        <div className={`w-full text-white`}>
           <Footer/>
         </div>
       </div>

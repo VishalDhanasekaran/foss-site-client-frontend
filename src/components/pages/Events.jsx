@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from 'react'
-import styles from '../../style';
 import AnnounceCard from '../AnnounceCard'
 import {BoltLoader} from "..";
 import axios from 'axios';
@@ -54,12 +53,16 @@ const Events = () => {
     setActive(event.target.value);
   };
 
+  const handleClick = (id) => {
+    window.open(`/events/${id}`,"_self","noopener,noreferrer")
+  }
+
   return (
     <div className='flex flex-col'>
       
       <div className={` py-10 justify-center items-center gap-10 flex flex-row w-full animate-[zoomIn_1s_ease-in-out]`}>
         <div className={` flex items-center relative z-[1]`}>
-          <h2 className={`${styles.heading2}  text-gradient`}>
+          <h2 className={`font-poppins font-semibold text-5xl text-gradient w-full text-gradient`}>
             Events
           </h2>
         </div>
@@ -74,21 +77,21 @@ const Events = () => {
 
       <div className={`flex flex-col`}>
         
-        <section id={"events"} className={` ${styles.flexCenter} flex-col relative `}>
+        <section id={"events"} className={` flex flex-col relative `}>
           <div data-aos="fade-up" data-aos-duration='1000'>
             
             <div className="flex flex-wrap justify-center items-center w-full z-[1] gap-5" >
               {data?.map((card) => 
-                <div data-aos="fade-up" data-aos-duration='1000' key={card._id}  className='flex cursor-pointer'>
-                  <AnnounceCard  {...card} onClick={()=>{window.open(`/events/${card._id}`,"_self","noopener,noreferrer")}}/>
+                <div data-aos="fade-up" data-aos-duration='1000' key={card._id} onClick={()=>{handleClick(card._id)}} className='flex cursor-pointer'>
+                  <AnnounceCard  {...card} />
                 </div>
               ).reverse()}
 
-              {isAvailable === 0 && <div className='flex'><span className={`${styles.heading2} text-center`}>Events Conducted in {active} are Yet to be Updated...</span></div>}
-              {loading && <div className='flex my-10'> 
+              {isAvailable === 0 && <div className='flex'><span className={`font-poppins font-semibold text-5xl text-gradient w-full text-center`}>Events Conducted in {active} are Yet to be Updated...</span></div>}
+              {loading && <div className='flex py-10'> 
                 <BoltLoader/>
               </div>}
-              {error && <div className='flex'><span className={`${styles.heading2} text-center`}>{error}!</span></div>}
+              {error && <div className='flex'><span className={`font-poppins font-semibold text-5xl text-gradient w-full text-center`}>{error}!</span></div>}
             </div>
           </div>
 

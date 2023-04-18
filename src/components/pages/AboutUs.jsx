@@ -1,5 +1,4 @@
 import React,{useEffect,useState} from 'react'
-import styles from '../../style';
 import GetStarted from '../GetStarted';
 import { advisors, founders } from '../../constants';
 import FounderCard from '../FounderCard';
@@ -22,28 +21,28 @@ const AboutUs = () => {
   },[]);
 
   return (
-    <div className={`flex flex-col ${styles.paddingY}`}>
-      <section id={'history'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 animate-[fadeInDown_1s_ease-in-out]`}>
-        <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-          <h2 className={`${styles.heading2} text-center`}>
+    <div className={`flex flex-col py-10`}>
+      <section id={'history'} className={`flex justify-start items-start flex-col xl:px-0 sm:px-16 px-6 animate-[fadeInDown_1s_ease-in-out]`}>
+        <div className="w-full flex justify-between items-center md:flex-row flex-col p-10 relative z-[1]">
+          <h2 className={`font-poppins font-semibold text-5xl text-gradient w-full text-center`}>
             About FOSS CIT
           </h2>
         </div>
         <h1 className="flex-1 font-poppins font-semibold text-5xl text-gradient ">
             History
         </h1>
-        <p className={`${styles.paragraph} mt-5 text-justify`}>
+        <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5 `}>
           The FOSS club of our college, CIT, was established with the intention of introducing students to the world of open-source software, where they can learn and create new software. Students who are actively involved and express a keen interest in the club can benefit immensely from the activities conducted. For example, they can gain valuable skills and experience, and exhibit their talents to prospective employers. As a result, the college indirectly benefits from the club's initiatives.
         </p>
       </section>
       
 
-      <section id={'founders'} className={`flex-1 ${styles.flexStart} items-center justify-center my-16 sm:flex-row flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
+      <section id={'founders'} className={`flex justify-start items-start py-10 sm:flex-row flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
         <div className='flex flex-col sm:w-2/5'>
           <h1 className="flex-1 font-poppins text-gradient font-semibold text-5xl">
             Initiators 
           </h1>
-          <p className={`${styles.paragraph} mt-5 text-justify`}>
+          <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>
           Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose are the initiators of FOSS Club of CIT. Our initiators established the club in the year 2018. They were second-year students pursuing their degree in Software Systems at Coimbatore Institute Of Technology, Coimbatore. Their aim was to address the technical concerns faced by students in their journey of learning the usage and development of Open-Source software. Our initiators focused on spreading, creating and exploring knowledge through an open forum equipped with our fellow followers.
           </p>
         </div>
@@ -54,12 +53,12 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section id={'founders'} className={`flex-1 ${styles.flexStart} items-center justify-center my-16 sm:flex-row flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
+      <section id={'founders'} className={`flex items-center justify-center py-10 sm:flex-row flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
         <div className='flex flex-col sm:w-1/2'>
           <h1 className="flex-1 font-poppins text-gradient font-semibold text-5xl ">
             Staff Advisors 
           </h1>
-          <p className={`${styles.paragraph} mt-5 text-justify`}>
+          <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>
           Our club is fortunate to have the guidance and support of our two staff advisors from the Department of Computing, CIT. They act as our guiding pillars, mentoring and encouraging us, and emphasizing the importance of leadership and communication to our club members. Our advisors also ensure that the club adheres to college regulations and procedures. They generously share their knowledge and experience with us, helping us to grow and learn through the opportunities we create as a team.
           </p>
         </div>
@@ -74,14 +73,14 @@ const AboutUs = () => {
         <Gallery data={data} name={'Event'}/>
       </div>}
       
-      <section id={'community'} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:p-16 p-6 `} data-aos="fade-up" data-aos-duration='2000'>
+      <section id={'community'} className={`flex flex-col xl:px-0 sm:p-16 p-6 `} data-aos="fade-up" data-aos-duration='2000'>
         <h2 className="flex-1 font-poppins font-semibold text-4xl text-gradient ">
           Join Our Community
         </h2>
         <div className='flex flex-col ss:flex-row gap-10 justify-center items-center'>
             <div className='flex flex-col justify-between ss:w-1/2'>
-              <span className={`flex ${styles.paragraph}`}>Join our Discord community for additional exclusive updates. You can learn about our forthcoming events, cutting-edge technological advancements, and our continuous conversations with those who share our enthusiasm for supporting open source here.</span>
-              <div className='flex m-12'>
+              <span className={`flex font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>Join our Discord community for additional exclusive updates. You can learn about our forthcoming events, cutting-edge technological advancements, and our continuous conversations with those who share our enthusiasm for supporting open source here.</span>
+              <div className='flex p-10'>
                 <GetStarted text={'Discord'} link={'https://discord.com/invite/zAqY6nqQ8H'} target={'_blank'}/>
               </div>
             </div>

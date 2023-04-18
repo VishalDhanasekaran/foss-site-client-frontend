@@ -1,7 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import {BoltLoader, Gallery} from "..";
 import MemberCard from '../MemberCard';
-import styles from '../../style';
 import axios from 'axios';
 
 import MenuItem from '@mui/material/MenuItem';
@@ -74,7 +73,7 @@ const Members = () => {
       
       <div className={`py-10 justify-center items-center px-4 gap-10 flex flex-row w-full animate-[zoomIn_1s_ease-in-out]`}>
         <div className=" flex items-center relative z-[1]">
-          <h2 className={`${styles.heading2} text-gradient`}>
+          <h2 className={`font-poppins font-semibold text-5xl text-gradient w-full text-gradient`}>
             Board Members
           </h2>
         </div>
@@ -90,23 +89,23 @@ const Members = () => {
       
       
       <div>
-        <section id="current" className={` ${styles.flexCenter} flex-col relative `}>
+        <section id="current" className={`  flex-col relative `}>
 
           <div className="flex flex-wrap justify-center w-full z-[1]" data-aos="fade-up" data-aos-duration='1000'>
             {data?.map((item) => 
               <div className='flex' key={item.id}  data-aos="fade-up" data-aos-duration='1000'>
-                  <div className='flex flex-wrap justify-center items-center'>
+                  <div className='flex flex-wrap justify-center items-center '>
                     {item.members.map((member)=>(
                         <MemberCard key={member._id} {...member} className='flex '/>
                     ))}
                   </div>
               </div>
             )}
-            {isAvailable === 0 && <div className='flex'><span className={`${styles.heading2} text-center`}>Members of {active} are Yet to be Updated...</span></div>}
-              {loading && <div className='flex my-10'> 
+            {isAvailable === 0 && <div className='flex'><span className={`font-poppins font-semibold text-5xl text-gradient w-fulltext-center`}>Members of {active} are Yet to be Updated...</span></div>}
+              {loading && <div className='flex py-10'> 
                 <BoltLoader/>
               </div>}
-              {error && <div className='flex'><span className={`${styles.heading2} text-center`}>{error}!</span></div>}
+              {error && <div className='flex'><span className={`font-poppins font-semibold text-5xl text-gradient w-full text-center`}>{error}!</span></div>}
           </div>
 
           

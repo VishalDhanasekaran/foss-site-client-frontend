@@ -8,8 +8,8 @@ const Activity = ({data,setData}) => {
             <UilTimes onClick={()=>setData(null)} className='flex cursor-pointer h-10 w-10'/>
             <div className="flex flex-col justify-center items-center w-full z-[1]">
                 <div className='flex flex-col gap-5 p-4 z-10'>
-                    <span className='flex text-gradient text-[45px] font-semibold items-center justify-center'>{data?.title}</span>
-                    <span className='flex text-[20px] text-justify'>{data?.desc}</span>
+                    <span className='flex text-gradient text-2xl font-semibold items-center justify-center'>{data?.title}</span>
+                    <span className='flex text-lg text-justify'>{data?.desc}</span>
                 </div>
             </div>
         </section>
