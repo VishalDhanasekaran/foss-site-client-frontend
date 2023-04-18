@@ -32,7 +32,7 @@ const AboutUs = () => {
             History
         </h1>
         <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5 `}>
-          The FOSS club of our college, CIT, was established with the intention of introducing students to the world of open-source software, where they can learn and create new software. Students who are actively involved and express a keen interest in the club can benefit immensely from the activities conducted. For example, they can gain valuable skills and experience, and exhibit their talents to prospective employers. As a result, the college indirectly benefits from the club's initiatives.
+        FOSS was first established in 2018 by Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose,  students of Software Systems from the department of Computing, Coimbatore Institute of Technology. Initially, the club was a team of 5 members which has now gradually grown to be a successful team of more than 15 members.
         </p>
       </section>
       
@@ -43,7 +43,7 @@ const AboutUs = () => {
             Initiators 
           </h1>
           <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>
-          Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose are the initiators of FOSS Club of CIT. Our initiators established the club in the year 2018. They were second-year students pursuing their degree in Software Systems at Coimbatore Institute Of Technology, Coimbatore. Their aim was to address the technical concerns faced by students in their journey of learning the usage and development of Open-Source software. Our initiators focused on spreading, creating and exploring knowledge through an open forum equipped with our fellow followers.
+          The aim of the initiators, Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose, was to address the technical concerns faced by students in their journey of learning the usage and development of Open-Source softwares. They focused on creating and exploring knowledge through an open forum equipped with fellow followers.
           </p>
         </div>
         <div className=' flex flex-wrap sm:w-3/5 gap-10 justify-center items-center'>
@@ -59,7 +59,7 @@ const AboutUs = () => {
             Staff Advisors 
           </h1>
           <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>
-          Our club is fortunate to have the guidance and support of our two staff advisors from the Department of Computing, CIT. They act as our guiding pillars, mentoring and encouraging us, and emphasizing the importance of leadership and communication to our club members. Our advisors also ensure that the club adheres to college regulations and procedures. They generously share their knowledge and experience with us, helping us to grow and learn through the opportunities we create as a team.
+          The club is fortunate to have the guidance and support of two staff advisors from the Department of Computing, CIT. They act as the guiding pillars, mentoring and encouraging its members, and emphasizing the importance of leadership and communication to the club members. The advisors also ensure that the club adheres to college regulations and procedures. They generously share their knowledge and experience with the members, helping them to grow and learn through the opportunities created as a team.
           </p>
         </div>
         <div className=' flex flex-wrap sm:w-1/2 gap-10 justify-center items-center'>
@@ -79,7 +79,7 @@ const AboutUs = () => {
         </h2>
         <div className='flex flex-col ss:flex-row gap-10 justify-center items-center'>
             <div className='flex flex-col justify-between ss:w-1/2'>
-              <span className={`flex font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>Join our Discord community for additional exclusive updates. You can learn about our forthcoming events, cutting-edge technological advancements, and our continuous conversations with those who share our enthusiasm for supporting open source here.</span>
+              <span className={`flex font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>Join the Discord community for additional exclusive updates. You can learn about the forthcoming events, cutting-edge technological advancements, and the continuous conversations with those who share the enthusiasm for supporting open source here.</span>
               <div className='flex p-10'>
                 <GetStarted text={'Discord'} link={'https://discord.com/invite/zAqY6nqQ8H'} target={'_blank'}/>
               </div>
