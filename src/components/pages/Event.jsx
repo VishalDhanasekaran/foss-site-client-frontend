@@ -15,7 +15,7 @@ const Event = () => {
 
     useEffect(()=>{
         axios.get(`${API}/events/event/${eventId.id}`)
-        .then((res)=>{setData(res.data);setLoading(false);console.log(res.data);})
+        .then((res)=>{setData(res.data);setLoading(false);})
         .catch((err)=>{
             console.log("error:",err.message);
             setError(err.message);
