@@ -19,22 +19,41 @@ import google from "./google.svg";
 import apple from "./apple.svg";
 import outlook from "./outlook.svg";
 import presentation from "./presentation.svg";
-import careerGuidence from "./careerGuidence.png";
+import careerGuidence from "./careerGuidence.svg";
 import codingContest from "./codingContest.svg";
 import groupDiscussions from "./groupDiscussions.svg";
-import quizz from "./quizz.png";
+import quizz from "./quiz.svg";
 import socialMediaIcon from "./socialMedia.svg";
 import webinar from "./webinar.svg";
 import workshop from "./workshop.svg";
-import bootcamp from "./bootcamp.png";
+import bootcamp from "./bootcamp.svg";
 import designing from "./designing.svg";
-import interview from "./interview.png";
-import funEvents from "./funEvents.png";
+import interview from "./interview.svg";
+import funEvents from "./funEvents.svg";
 import openSource from "./open-source.svg";
 import Aruna from "./Aruna.jpg";
 import Umarani from "./Umarani.jpg";
+import founder1 from "./founder1.jpg"
+import founder2 from "./founder2.jpg"
+import founder3 from "./founder3.jpg"
+import targetEvents from "./targetEvents.svg";
+import members from "./members.svg";
+import youtubeViews from "./youtubeViews.svg";
+import discordCommunity from "./discord-community.gif";
+import quiz from "./quizzzz.jpg";
+import webinarPic from "./webinar.jpg";
+import bootcampPic from "./bootcampPic.jpg";
+import interviewprepPic from "./interviewprepPic.jpg";
+import op_pic from "./open_source_software.jpg";
+import fun_events from "./fun_events.jpg";
+import coding_contest from "./coding_contest.jpg";
+import career_Guidence from "./career_guidance.jpg";
+import workshopPic from "./workshop.jpg";
+import SocialEvent from "./social_event.jpg";
+import GD from "./GD.jpg";
+import designContest from "./designcontest.jpg";
 
 export {
     logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google,apple,outlook,
-    presentation,careerGuidence,codingContest,groupDiscussions,quizz,socialMediaIcon,webinar,workshop,bootcamp,designing,Aruna, Umarani,interview,funEvents,openSource
+    presentation,careerGuidence,codingContest,groupDiscussions,quizz,socialMediaIcon,webinar,workshop,bootcamp,designing,Aruna, Umarani,interview,funEvents,openSource,founder1,founder2,founder3,targetEvents,members,youtubeViews,discordCommunity,quiz,op_pic,fun_events,coding_contest,career_Guidence,workshopPic,SocialEvent,webinarPic,bootcampPic,interviewprepPic,GD,designContest
 };

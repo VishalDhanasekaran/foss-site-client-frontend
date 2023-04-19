@@ -7,7 +7,7 @@ const Footer = () => {
     window.open(link, '_blank', 'noopener,noreferrer');
   }
 return (
-    <section className={`sm:py-8 py-3 flex-col`}>
+    <section className={`py-5 flex-col`}>
       <div className={`flex ss:flex-row flex-col py-2 px-5 gap-5 items-start justify-center`}>
         
         <div className=' flex items-center w-full flex-col ss:w-[30%] gap-5 justify-end'>
@@ -38,23 +38,24 @@ return (
 
         <div className={`font-poppins font-normal text-dimWhite text-lg ss:w-[30%]  flex flex-col `}>
           <h4 className='flex text-xl font-medium text-white underline underline-offset-2'>Contact</h4>
-          <div className='cursor-pointer text-lg p-5' onClick={() => handleClick('https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>
+          <div className='cursor-pointer text-sm px-5 py-2' onClick={() => handleClick('https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>
             <h4 className='flex'>Computing Block,</h4>
             <span className='flex'>Coimbatore Institute of Technology,</span>
             <span className='flex'>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore,<br/>Tamil Nadu 641014</span>
           </div>
-          <span className='flex text-xl font-medium text-white'>fosscit@gmail.com </span>
+          <span className='flex underline underline-offset-2 text-white'>Mail</span>
+          <span className='flex text-sm px-5 py-2 font-medium text-white cursor-pointer text-dimWhite' onClick={()=>{handleClick('mailto:fosscit@gmail.com')}}>fosscit@gmail.com</span>
         </div>
         
         <div className='ss:w-[20%] flex flex-col flex-wrap justify-start'>
           <h4 className='font-poppins font-medium text-xl text-white underline underline-offset-2'>Contributors</h4>
           {contributors.map((item)=>(
             <div key={item.id} className='flex justify-start items-center'>
-                <ul className='list-none py-4'>
+                <ul className='list-none py-2'>
                     <div className='flex'>
                       <li className={`font-poppins font-normal`}>
                         <a className='flex text-lg text-white hover:text-secondary cursor-pointer' onClick={() => handleClick(item.link)}>{item.name}</a>
-                        <span className='flex text-sm'>{item.role}</span>
+                        <span className='flex text-sm text-dimWhite'>{item.role}</span>
                       </li>
                     </div>
                 </ul>

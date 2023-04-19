@@ -7,6 +7,7 @@ import axios from 'axios';
 import { API } from '../../constants';
 
 import Gallery from '../Gallery';
+import { discordCommunity } from '../../assets';
 
 const AboutUs = () => {
 
@@ -40,10 +41,10 @@ const AboutUs = () => {
       <section id={'founders'} className={`flex justify-start items-start py-10 sm:flex-row flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
         <div className='flex flex-col sm:w-2/5'>
           <h1 className="flex-1 font-poppins text-gradient font-semibold text-5xl">
-            Initiators 
+            Initiative
           </h1>
           <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>
-          The aim of the initiators, Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose, was to address the technical concerns faced by students in their journey of learning the usage and development of Open-Source softwares. They focused on creating and exploring knowledge through an open forum equipped with fellow followers.
+          Initially, The aim of our Alumni, Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose, was to address the technical concerns faced by students in their journey of learning the usage and development of Open-Source softwares. They focused on creating and exploring knowledge through an open forum equipped with fellow followers.
           </p>
         </div>
         <div className=' flex flex-wrap sm:w-3/5 gap-10 justify-center items-center'>
@@ -59,7 +60,7 @@ const AboutUs = () => {
             Staff Advisors 
           </h1>
           <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>
-          The club is fortunate to have the guidance and support of two staff advisors from the Department of Computing, CIT. They act as the guiding pillars, mentoring and encouraging its members, and emphasizing the importance of leadership and communication to the club members. The advisors also ensure that the club adheres to college regulations and procedures. They generously share their knowledge and experience with the members, helping them to grow and learn through the opportunities created as a team.
+          The club is fortunate to have the guidance and support of two staff advisors from the Department of Computing at Coimbatore Institute of Technology. They act as the guiding pillars, mentoring and encouraging its members, and emphasizing the importance of leadership and communication to the club members. The advisors also ensure that the club adheres to college regulations and procedures. They generously share their knowledge and experience with the members, helping them to grow and learn through the opportunities created as a team.
           </p>
         </div>
         <div className=' flex flex-wrap sm:w-1/2 gap-10 justify-center items-center'>
@@ -73,20 +74,20 @@ const AboutUs = () => {
         <Gallery data={data} name={'Event'}/>
       </div>}
       
-      <section id={'community'} className={`flex flex-col xl:px-0 sm:p-16 p-6 `} data-aos="fade-up" data-aos-duration='2000'>
-        <h2 className="flex-1 font-poppins font-semibold text-4xl text-gradient ">
-          Join Our Community
-        </h2>
-        <div className='flex flex-col ss:flex-row gap-10 justify-center items-center'>
-            <div className='flex flex-col justify-between ss:w-1/2'>
+      <section id={'community'} className={`flex flex-row xl:px-0 sm:p-16 p-6 `} data-aos="fade-up" data-aos-duration='2000'>
+        <div className='flex flex-col ss:w-1/2'>
+          <h2 className="flex font-poppins font-semibold text-4xl text-gradient ">
+            Join Our Community
+          </h2>
+            <div className='flex flex-col justify-between'>
               <span className={`flex font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>Join the Discord community for additional exclusive updates. You can learn about the forthcoming events, cutting-edge technological advancements, and the continuous conversations with those who share the enthusiasm for supporting open source here.</span>
-              <div className='flex p-10'>
+              <div className='flex'>
                 <GetStarted text={'Discord'} link={'https://discord.com/invite/zAqY6nqQ8H'} target={'_blank'}/>
               </div>
             </div>
-            <div className='flex ss:w-1/2 justify-center items-center'>
-              <img className='flex aspect-square object-contain h-72' src='https://media.istockphoto.com/id/491520707/photo/sample-red-grunge-round-stamp-on-white-background.jpg?s=612x612&w=0&k=20&c=FW80kR5ilPkiJtXZEauGTghNBOgQviVPxAbhLWwnKZk='/>
-            </div>
+        </div>
+        <div className='flex ss:w-1/2 justify-center items-center'>
+          <img className='flex aspect-square object-contain h-72' src={discordCommunity}/>
         </div>
       </section>
     </div>

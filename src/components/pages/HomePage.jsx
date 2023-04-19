@@ -40,8 +40,8 @@ const HomePage = () => {
   
   return (
     <div className='flex flex-col justify-center items-center'>
-      <section id="home" className={`flex md:flex-row flex-col py-10 `}>
-        <div className={`flex justify-center items-center flex-col animate-[fadeInLeft_1s_ease-in-out] ss:w-1/2 px-10`}>
+      <section id="home" className={`flex md:flex-row flex-col py-10 justify-end items-center `}>
+        <div className={`flex  flex-col animate-[fadeInLeft_1s_ease-in-out] ss:w-1/2 px-10`}>
           <div className="flex flex-row justify-between items-center w-full h-[16rem]">
             <h1 className="flex font-poppins font-semibold text-6xl text-white text-gradient">
               <Typewriter options={{strings: ['FOSS', 'Free Open Source Software'], autoStart: true, loop: true,}}/>
@@ -50,13 +50,13 @@ const HomePage = () => {
           <p className={`font-poppins font-normal text-justify text-dimWhite text-2xl py-5 `}>
           FOSS-CIT is an integral framework that addresses the unmet needs of emerging technologists, ranging from novices to resource people. This team aids student development in both fundamental and contemporary technological trends.
           </p>
-          <div className="flex justify-center items-center ">
+          <div className="flex ">
             <GetStarted text={'Get Started'} link={'/about'} target={'_self'}/>
           </div>
         </div>
 
         <div className={`flex justify-center items-center relative animate-[fadeInRight_1s_ease-in-out] ss:w-1/2`}>
-          <img src={linux} alt="billing" className="w-[25rem] h-[25rem] relative z-[5] bg-transparent" />
+          <img src={linux} alt="billing" className="w-[25rem] h-[27rem] mt-6 relative z-[5] bg-transparent" />
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
           <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
@@ -66,7 +66,7 @@ const HomePage = () => {
       
       {event&&<section id={'upcomingevents'} className={`flex flex-col w-[80%] justify-center items-center bg-zinc-800 rounded-2xl mt-10 gap-2`} data-aos="fade-up" data-aos-duration='2000'>
         <div>
-          <h1 className=" flex font-poppins font-semibold text-5xl text-gradient py-5">
+          <h1 className=" flex font-poppins font-semibold text-5xl text-gradient py-5 px-5">
             Current Event
           </h1>
         </div>
@@ -76,7 +76,7 @@ const HomePage = () => {
             <a href={`/events/${event?._id}`}>
               <div className='flex flex-col justify-center items-center'>
                 <img src={event?.pic} className='aspect-video object-contain h-72'/>
-                <span className={`font-poppins text-dimWhite text-2xl text-center font-bold text-gradient`}>{event?.title}</span>
+                <span className={`font-poppins text-dimWhite text-2xl text-center font-bold text-gradient p-5`}>{event?.title}</span>
               </div>
             </a>
           </div>
@@ -94,7 +94,7 @@ const HomePage = () => {
               <span className={`font-poppins font-normal text-justify text-dimWhite text-2xl `}>{event?.time}</span>
             </div>
             <div className='flex flex-col justify-center'>
-              <span className='flex font-semibold text-gradient text-2xl'>Speaker:</span>
+              <span className='flex font-semibold text-gradient text-2xl'>Handled by:</span>
               <span className={`font-poppins font-normal text-justify text-dimWhite text-2xl truncate`}>{event?.speaker}</span>
             </div>
             <div className='flex flex-row col-span-2 cursor-pointer justify-start items-center' onClick={()=>{handleClick(event?.link,event?._id)}}>
@@ -102,9 +102,6 @@ const HomePage = () => {
               <span className={`font-poppins font-normal text-justify text-2xl text-[#f5e257] underline underline-offset-2`}>See More</span>
             </div>
           </div>
-        </div>
-        <div className='flex p-2'>
-          <span className={`font-poppins font-normal text-justify text-dimWhite w-full text-xl`}>{event?.content}</span>
         </div>
       </section>}
       
@@ -146,9 +143,9 @@ const HomePage = () => {
             <div className='flex p-3 flex-wrap w-full ss:gap-32 gap-10 py-10 justify-center items-center'>
               {achievements.map((item)=>(
                 <div className='flex flex-col gap-5 justify-center items-center text-justify' key={item.id}>
-                  <item.img className='flex h-16 w-16'/>
+                  <img src={item.img} className='flex h-20 w-20'/>
                   <span className='flex text-gradient text-2xl font-semibold'>{item.title}</span>
-                  <span className='flex'>{item.desc}</span>
+                  <span className='flex text-xl'>{item.desc}</span>
                 </div>
               ))}
             </div>
