@@ -84,7 +84,7 @@ const Contact = () => {
           <div className={`font-poppins font-normal text-dimWhite text-xl text-justify`}>
             <div className='flex flex-row p-4'>
               <img src={location} className='w-6 h-6 object-contain'/>
-              <span className='px-5 cursor-pointer' onClick={() => handleClick( 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>Avinashi Road, Civil Aerodrome Post, Peelambedu, Coimbatore, Tamil Nadu 641014 </span>
+              <span className='px-5 cursor-pointer' onClick={() => handleClick( 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>Avinashi Road, Civil Aerodrome Post, Peelamedu, Coimbatore, Tamil Nadu 641014 </span>
             </div>
             <div className='flex flex-row p-4'>
               <img src={ml} className='w-6 h-6 object-contain'/>
