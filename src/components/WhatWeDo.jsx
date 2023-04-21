@@ -13,7 +13,6 @@ const WhatWeDo = () => {
         let obj=activities.find(obj=>obj.id===id);
         setData(obj);
     }
-    console.log(data);
   return (
     <div className='flex w-full flex-col justify-center items-center'>
         {data && <div className='hidden sm:flex bg-black bg-opacity-95 fixed z-20 animate-[fadeInDown_1s_ease-in-out] w-2/3 rounded-2xl' >

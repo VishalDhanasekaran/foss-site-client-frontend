@@ -17,7 +17,6 @@ const Gallery = ({name,data}) => {
         if(window.innerWidth<"768"){setSlide(1)}
         if(window.innerWidth>"768"){setSlide(3)}
     },[]);
-    console.log(data)
   return (
     <div className={`flex w-full px-2`}>
         <section id={'gallery'} className={`flex flex-col w-full xl:px-0 sm:px-16 px-6 gap-5`} data-aos="fade-up" data-aos-duration='1000'>
@@ -41,8 +40,8 @@ const Gallery = ({name,data}) => {
                 modules={[Keyboard, Pagination, Navigation, Autoplay]}
                 >
                 {data?.map((item)=>(
-                    <SwiperSlide className='flex p-5'>
-                        <div className='flex p-2 justify-center items-center' key={item._id}>
+                    <SwiperSlide className='flex p-5' key={item._id}>
+                        <div className='flex p-2 justify-center items-center' >
                             <img src={item.pic} alt={item.pic} className='flex aspect-square object-contain'/>
                         </div>
                     </SwiperSlide>

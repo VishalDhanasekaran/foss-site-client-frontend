@@ -33,7 +33,7 @@ const AboutUs = () => {
             History
         </h1>
         <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5 `}>
-        FOSS was first established in 2018 by Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose,  students of Software Systems from the department of Computing, Coimbatore Institute of Technology. Initially, the club was a team of 5 members which has now gradually grown to be a successful team of more than 15 members.
+        FOSS was first established in 2018 by Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose,  students of Software Systems from the department of Computing, Coimbatore Institute of Technology. Initially, the club was a team of 5 members which has now gradually grown to be a successful team of more than 15 members. The main objective of introducing this club amidst many other clubs of CIT was to strengthen the technical proficiency of the students by assisting them with Webinars and Hackathons of varied concepts. FOSS has seen a progressive and steady increase in the participants count all through the years. Moreover, the team exhibits enthusiastic support in conducting more events in the near future.
         </p>
       </section>
       

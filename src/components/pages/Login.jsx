@@ -68,10 +68,6 @@ const Login = ({handler,logHandler}) => {
 
         }
     });
-    if (loading)
-    {
-        console.log("Loading...");
-    }
     
   return (
     <div className={`flex flex-col my-60 z-30`}>
