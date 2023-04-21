@@ -54,7 +54,7 @@ const HomePage = () => {
             <GetStarted text={'Get Started'} link={'/about'} target={'_self'}/>
           </div>
         </div>
-        <div className='flex items-end justify-center absolute h-full w-full p-10'>
+        <div className='ss:flex items-end justify-center absolute h-full w-full p-10 hidden '>
           <div className='flex flex-col justify-center items-center'>
             <span className='flex text-dimWhite'>Scoll Down</span>
             <img src={arrow_down} className='flex h-10 w-10'/>
