@@ -28,7 +28,7 @@ const Gallery = ({name,data}) => {
                 loop={true}
                 autoplay={{
                     delay: 2000,
-                    disableOnInteraction: false,
+                    disableOnInteraction:true
                 }}
                 keyboard={{
                     enabled: true,

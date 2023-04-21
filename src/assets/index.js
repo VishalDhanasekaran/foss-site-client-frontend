@@ -52,8 +52,9 @@ import workshopPic from "./workshop.jpg";
 import SocialEvent from "./social_event.jpg";
 import GD from "./GD.jpg";
 import designContest from "./designcontest.jpg";
+import arrow_down from "./arrow-down.gif";
 
 export {
     logo,close,menu,arrowUp,linux,facebook,instagram,linkedin,twitter,discord,youtube,github,location,mail,phone,left_arrow,right_arrow,google,apple,outlook,
-    presentation,careerGuidence,codingContest,groupDiscussions,quizz,socialMediaIcon,webinar,workshop,bootcamp,designing,Aruna, Umarani,interview,funEvents,openSource,founder1,founder2,founder3,targetEvents,members,youtubeViews,discordCommunity,quiz,op_pic,fun_events,coding_contest,career_Guidence,workshopPic,SocialEvent,webinarPic,bootcampPic,interviewprepPic,GD,designContest
+    presentation,careerGuidence,codingContest,groupDiscussions,quizz,socialMediaIcon,webinar,workshop,bootcamp,designing,Aruna, Umarani,interview,funEvents,openSource,founder1,founder2,founder3,targetEvents,members,youtubeViews,discordCommunity,quiz,op_pic,fun_events,coding_contest,career_Guidence,workshopPic,SocialEvent,webinarPic,bootcampPic,interviewprepPic,GD,designContest,arrow_down
 };

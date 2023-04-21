@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import { achievements, missions } from '../../constants';
 import GetStarted from '../GetStarted';
-import {linux} from '../../assets';
+import {arrow_down, linux} from '../../assets';
 import Typewriter from 'typewriter-effect';
 import WhatWeDo from '../WhatWeDo';
 import axios from 'axios';
@@ -40,7 +40,7 @@ const HomePage = () => {
   
   return (
     <div className='flex flex-col justify-center items-center'>
-      <section id="home" className={`flex md:flex-row flex-col py-10 justify-end items-center `}>
+      <section id="home" className={`flex md:flex-row flex-col py-10 justify-center items-center `}>
         <div className={`flex  flex-col animate-[fadeInLeft_1s_ease-in-out] ss:w-1/2 px-10`}>
           <div className="flex flex-row justify-between items-center w-full h-[16rem]">
             <h1 className="flex font-poppins font-semibold text-6xl text-white text-gradient">
@@ -52,6 +52,12 @@ const HomePage = () => {
           </p>
           <div className="flex ">
             <GetStarted text={'Get Started'} link={'/about'} target={'_self'}/>
+          </div>
+        </div>
+        <div className='flex items-end justify-center absolute h-full w-full p-10'>
+          <div className='flex flex-col justify-center items-center'>
+            <span className='flex text-dimWhite'>Scoll Down</span>
+            <img src={arrow_down} className='flex h-10 w-10'/>
           </div>
         </div>
 
