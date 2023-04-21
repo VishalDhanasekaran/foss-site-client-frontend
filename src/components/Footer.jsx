@@ -39,6 +39,7 @@ return (
         <div className={`font-poppins font-normal text-dimWhite text-lg ss:w-[30%]  flex flex-col `}>
           <h4 className='flex text-xl font-medium text-white underline underline-offset-2'>Contact</h4>
           <div className='cursor-pointer text-sm px-5 py-2' onClick={() => handleClick('https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>
+            <h4 className='flex'>Department of Computing,</h4>
             <h4 className='flex'>Computing Block,</h4>
             <span className='flex'>Coimbatore Institute of Technology,</span>
             <span className='flex'>Avinashi Road, Civil Aerodrome Post, Peelamedu, Coimbatore,<br/>Tamil Nadu 641014</span>

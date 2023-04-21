@@ -246,7 +246,7 @@ export const achievements =[
   {
     id:8002,
     title:0,
-    desc:'Events',
+    desc:'Total Events',
     img:targetEvents
   },
   {
