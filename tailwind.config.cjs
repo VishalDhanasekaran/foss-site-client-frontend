@@ -14,6 +14,7 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         roboto: ['Roboto Condensed', 'sans-serif'],
+        lobster: ['Lobster', 'cursive'],
       },
       keyframes:{
         fadeInLeft:{

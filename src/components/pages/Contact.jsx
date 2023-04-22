@@ -65,23 +65,23 @@ const Contact = () => {
     <div className={`flex flex-col p-10 justify-center items-center`}>
     <ToastContainer />
       <div className={`w-full flex justify-between items-center md:flex-row flex-col py-10 relative z-[1] animate-[zoomIn_0.75s_ease-in-out]`}>
-        <h2 className={`font-poppins font-semibold text-5xl text-gradient w-full text-center text-gradient`}>
+        <h2 className={`font-lobster font-semibold text-5xl text-gradient w-full text-center text-gradient`}>
           Contact Us
         </h2>
       </div>
       <section id="location" className={`flex md:flex-row flex-col `}>
         <div className={`flex flex-col animate-[fadeInLeft_0.75s_ease-in-out] p-5 gap-5`}>
           <div className="flex flex-row justify-between items-center w-full">
-            <h1 className="flex gap-5 flex-col font-poppins font-semibold text-4xl text-white ">
+            <h1 className="flex gap-5 flex-col font-lobster font-semibold text-4xl text-white ">
               <span className='flex'>Our Office</span>
               <span className="text-gradient text-2xl">FOSS Club at Coimbatore Institute of Technology</span>{" "}
             </h1>
           </div>
 
-          <h1 className="font-poppins font-semibold text-2xl text-white w-full">
+          <h1 className="font-lobster font-semibold text-2xl text-white w-full">
             Location:
           </h1>
-          <div className={`font-poppins font-normal text-dimWhite text-xl text-justify`}>
+          <div className={`font-lobster font-normal text-dimWhite text-xl text-justify`}>
             <div className='flex flex-row p-4'>
               <img src={location} className='w-6 h-6 object-contain'/>
               <span className='px-5 cursor-pointer' onClick={() => handleClick( 'https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>Avinashi Road, Civil Aerodrome Post, Peelamedu, Coimbatore, Tamil Nadu 641014 </span>
@@ -103,13 +103,13 @@ const Contact = () => {
       
       <section id="mailform" className={`flex md:flex-col flex-col gap-5 py-10`} data-aos="fade-up" data-aos-duration='2000'>
         <div>
-          <h1 className="flex-1 font-poppins font-semibold text-center text-4xl text-white text-gradient">
+          <h1 className="flex-1 font-lobster font-semibold text-center text-4xl text-white text-gradient">
             Mail Us Your Message
           </h1>
         </div>
         <div className="flex  w-full justify-center items-center">
           <div className='flex flex-col justify-center items-center w-full p-5 bg-black bg-opacity-80 backdrop-blur-sm rounded-3xl m-2 '>
-            <div className=' flex flex-col justify-center items-center font-poppins text-justify text-white text-base '>
+            <div className=' flex flex-col justify-center items-center font-lobster text-justify text-white text-base '>
               <form method='post' autoComplete='off' onSubmit={handleSubmit}>
                 <div className='flex flex-col  gap-5'>
                   <input type='text' name={'name'} placeholder={'Name'} className='flex ' onChange={e=>setName(e.target.value)}/>

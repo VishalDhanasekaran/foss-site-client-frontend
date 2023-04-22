@@ -43,11 +43,11 @@ const HomePage = () => {
       <section id="home" className={`flex md:flex-row flex-col py-10 justify-center items-center `}>
         <div className={`flex  flex-col animate-[fadeInLeft_1s_ease-in-out] ss:w-1/2 px-10`}>
           <div className="flex flex-row justify-between items-center w-full h-[16rem]">
-            <h1 className="flex font-poppins font-semibold text-6xl text-white text-gradient">
+            <h1 className="flex font-lobster font-semibold text-6xl text-white text-gradient">
               <Typewriter options={{strings: ['FOSS', 'Free Open Source Software'], autoStart: true, loop: true,}}/>
             </h1>
           </div>
-          <p className={`font-poppins font-normal text-justify text-dimWhite text-2xl py-5 `}>
+          <p className={` font-lobster text-justify text-dimWhite text-2xl py-5 `}>
           FOSS-CIT is an integral framework that addresses the unmet needs of emerging technologists, ranging from novices to resource people. This team aids student development in both fundamental and contemporary technological trends.
           </p>
           <div className="flex ">
@@ -56,7 +56,7 @@ const HomePage = () => {
         </div>
         <div className='ss:flex items-end justify-center absolute h-full w-full p-10 hidden '>
           <div className='flex flex-col justify-center items-center'>
-            <span className='flex text-dimWhite'>Scoll Down</span>
+            <span className='flex text-dimWhite'>Scroll Down</span>
             <img src={arrow_down} className='flex h-10 w-10'/>
           </div>
         </div>
@@ -72,7 +72,7 @@ const HomePage = () => {
       
       {event&&<section id={'upcomingevents'} className={`flex flex-col w-[80%] justify-center items-center bg-zinc-800 rounded-2xl mt-10 gap-2`} data-aos="fade-up" data-aos-duration='2000'>
         <div>
-          <h1 className=" flex font-poppins font-semibold text-5xl text-gradient py-5 px-5">
+          <h1 className=" flex font-lobster font-semibold text-5xl text-gradient py-5 px-5">
             Current Event
           </h1>
         </div>
@@ -82,30 +82,30 @@ const HomePage = () => {
             <a href={`/events/${event?._id}`}>
               <div className='flex flex-col justify-center items-center'>
                 <img src={event?.pic} className='aspect-video object-contain h-72'/>
-                <span className={`font-poppins text-dimWhite text-2xl text-center font-bold text-gradient p-5`}>{event?.title}</span>
+                <span className={`font-lobster text-dimWhite text-2xl text-center font-bold text-gradient p-5`}>{event?.title}</span>
               </div>
             </a>
           </div>
           <div className={` grid grid-cols-2 grid-rows-3 justify-center flex-col w-full`} data-aos="fade-up-left" data-aos-duration='2000'>
             <div className='flex flex-col justify-center'>
               <span className='flex font-semibold text-gradient text-2xl'>Date:</span>
-              <span className={`font-poppins font-normal text-justify text-dimWhite text-2xl `}>{event?.eventDate.slice(0,10).split('-').reverse().join('-')}</span>
+              <span className={`font-lobster font-normal text-justify text-dimWhite text-2xl `}>{event?.eventDate.slice(0,10).split('-').reverse().join('-')}</span>
             </div>
             <div className='flex flex-col justify-center'>
               <span className='flex font-semibold text-gradient text-2xl'>Venue:</span>
-              <span className={`font-poppins font-normal text-justify text-dimWhite text-2xl `}>{event?.venue}</span>
+              <span className={`font-lobster font-normal text-justify text-dimWhite text-2xl `}>{event?.venue}</span>
             </div>
             <div className='flex flex-col justify-center'>
               <span className='flex font-semibold text-gradient text-2xl'>Time:</span>
-              <span className={`font-poppins font-normal text-justify text-dimWhite text-2xl `}>{event?.time}</span>
+              <span className={`font-lobster font-normal text-justify text-dimWhite text-2xl `}>{event?.time}</span>
             </div>
             <div className='flex flex-col justify-center'>
               <span className='flex font-semibold text-gradient text-2xl'>Handled by:</span>
-              <span className={`font-poppins font-normal text-justify text-dimWhite text-2xl truncate`}>{event?.speaker}</span>
+              <span className={`font-lobster font-normal text-justify text-dimWhite text-2xl truncate`}>{event?.speaker}</span>
             </div>
             <div className='flex flex-row col-span-2 cursor-pointer justify-start items-center' onClick={()=>{handleClick(event?.link,event?._id)}}>
               <UilLink/>
-              <span className={`font-poppins font-normal text-justify text-2xl text-[#f5e257] underline underline-offset-2`}>See More</span>
+              <span className={`font-lobster font-normal text-justify text-2xl text-[#f5e257] underline underline-offset-2`}>See More</span>
             </div>
           </div>
         </div>
@@ -113,11 +113,11 @@ const HomePage = () => {
       
       <div className={`flex flex-col py-10 `}>
         <section id={'mission'} className={`flex-1 flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
-            <h1 className="flex-1 font-poppins font-semibold text-5xl text-gradient">
+            <h1 className="flex-1 font-lobster font-semibold text-5xl text-gradient">
                 Our Mission...
             </h1>
             <div className='flex sm:flex-row flex-col justify-between w-full items-center'>
-              <p className={`font-poppins font-normal text-dimWhite text-xl flex text-justify lg:w-[50%]`}>
+              <p className={`font-lobster font-normal text-dimWhite text-xl flex text-justify lg:w-[50%]`}>
               FOSS-CIT aims to assist students in learning essential technical skills for the future and to work with various open-source platforms. Most of the preliminary activities include Bootcamps, Workshops, Hackathons, and talk shows which are conducted to ensure a smooth learning curve for newcomers to the world of open-source. Through the contests and events, students can enhance their skillset not only in the field of computer science, but also in all necessary professional platforms.
               </p>
               <img className='flex sm:w-[50%]' src='https://amfoss.in/illus/what_we_do.svg' alt='mission'/>
@@ -132,7 +132,7 @@ const HomePage = () => {
             </div>
         </section>
         <section id={'whatwedo'}className={`flex-1  flex-col xl:px-0 sm:px-16 px-6 py-10 justify-center items-center`} data-aos="fade-up" data-aos-duration='2000'>
-            <h1 className="flex-1 font-poppins font-semibold text-5xl text-gradient ">
+            <h1 className="flex-1 font-lobster font-semibold text-5xl text-gradient ">
               What We Do...
             </h1>
             <div className='flex py-10'>
@@ -140,10 +140,10 @@ const HomePage = () => {
             </div>
         </section>
         <section id={'achievements'} className={`flex-1 flex-col xl:px-0 sm:px-16 px-6 py-10 `} data-aos="fade-up" data-aos-duration='2000'>
-            <h1 className="flex-1 font-poppins font-semibold text-5xl text-gradient ">
+            <h1 className="flex-1 font-lobster font-semibold text-5xl text-gradient ">
                 What we have achieved...
             </h1>
-            <p className={`font-poppins font-normal text-dimWhite text-xl py-5 text-justify`} >
+            <p className={`font-lobster font-normal text-dimWhite text-xl py-5 text-justify`} >
             FOSS-CIT has conducted various training sessions on web technology, competitive programming, game development, and specific GNU/Linux tools and frameworks. This club has also established successful collaborations with Newton school, Mozilla Campus Clubs, Google Developer Groups in Coimbatore and FOSS Wave, an open-source software community.
             </p>
             <div className='flex p-3 flex-wrap w-full ss:gap-32 gap-10 py-10 justify-center items-center'>

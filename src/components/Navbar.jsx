@@ -13,10 +13,10 @@ const Navbar = () => {
       return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
         <a href='/' className='flex flex-row justify-center items-center'><img src={logo} alt='FOSS-CIT Logo' className='w-16 h-16'/>
-        <span className='font-poppins font-semibold text-3xl px-10'>FOSS CIT</span></a>
+        <span className='font-lobster font-semibold text-3xl px-10'>FOSS CIT</span></a>
         <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
             {navLinks.map((nav,index)=>(
-                <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-lg px-5 text-white hover:text-secondary`}>
+                <li key={nav.id} className={`font-lobster font-normal cursor-pointer text-lg px-5 text-white hover:text-secondary`}>
                     <a href={`${nav.id}`}>
                         {nav.title}
                     </a>
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
                 <ul className='list-none flex flex-col justify-end items-center flex-1'>
                     {navLinks.map((nav,index)=>(
-                        <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-lg p-3 text-white hover:text-secondary`}>
+                        <li key={nav.id} className={`font-lobster font-normal cursor-pointer text-lg p-3 text-white hover:text-secondary`}>
                             <a href={`${nav.id}`}>
                                 {nav.title}
                             </a>

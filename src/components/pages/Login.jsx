@@ -75,7 +75,7 @@ const Login = ({handler,logHandler}) => {
             <div className="flex justify-center items-center w-full z-[1]">
                 <div className='flex flex-col justify-center items-center ss:w-[30%] w-[95%] p-8 bg-primary backdrop-blur-sm rounded-3xl object-fit border-2 border-[#f5e77a]'>
                     {loading&&<PropagateLoader className='flex object-contain' color='#fff'/>}
-                    {!loading&&<div className='flex flex-col gap-3 justify-center items-center font-poppins text-justify text-white text-base'>
+                    {!loading&&<div className='flex flex-col gap-3 justify-center items-center font-lobster text-justify text-white text-base'>
                         <div className='flex flex-row'>
                             <div className='flex bg-zinc-900 rounded-3xl justify-center items-center w-fit p-3 hover:scale-105 ease-in-out duration-300 cursor-pointer' onClick={login}>
                                 <img alt='google' src={google} className={`w-10 h-10 object-contain bg-white rounded-xl`}/>

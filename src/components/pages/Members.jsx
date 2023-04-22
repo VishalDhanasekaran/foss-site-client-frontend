@@ -73,7 +73,7 @@ const Members = () => {
       
       <div className={`py-10 justify-center items-center px-4 gap-10 flex flex-row w-full animate-[zoomIn_1s_ease-in-out]`}>
         <div className=" flex items-center relative z-[1]">
-          <h2 className={`font-poppins font-semibold text-5xl text-gradient w-full text-gradient`}>
+          <h2 className={`font-lobster font-semibold text-5xl text-gradient w-full text-gradient`}>
             Board Members
           </h2>
         </div>
@@ -101,11 +101,11 @@ const Members = () => {
                   </div>
               </div>
             )}
-            {isAvailable === 0 && <div className='flex'><span className={`font-poppins font-semibold text-5xl text-gradient w-fulltext-center`}>Members of {active} are Yet to be Updated...</span></div>}
+            {isAvailable === 0 && <div className='flex'><span className={`font-lobster font-semibold text-5xl text-gradient w-fulltext-center`}>Members of {active} are Yet to be Updated...</span></div>}
               {loading && <div className='flex py-10'> 
                 <BoltLoader/>
               </div>}
-              {error && <div className='flex'><span className={`font-poppins font-semibold text-5xl text-gradient w-full text-center`}>{error}!</span></div>}
+              {error && <div className='flex'><span className={`font-lobster font-semibold text-5xl text-gradient w-full text-center`}>{error}!</span></div>}
           </div>
 
           
