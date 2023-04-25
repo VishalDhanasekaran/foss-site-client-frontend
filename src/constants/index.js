@@ -256,3 +256,22 @@ export const achievements =[
     img:youtubeViews
   },
 ]
+
+export const eventDemo={
+  category:"Interactive session",
+  content:"Launch of the official Foss Club website; prizes awarded to the winners of the Code Quest and Trivia Time events.",
+  createdAt: "2023-04-18T14:18:14.107Z",
+  eventDate:"2023-04-25T14:10:11.000Z",
+  eventYear:"2022 - 23",
+  link: "",
+  materials: "",
+  pic: "http://res.cloudinary.com/piyushproj/image/upload/v1681827296/xt9cqsxg3ncus5zpkpwu.jpg",
+  speaker: "THARUN KAILASH K, PADHMASINI A",
+  time: "4:45 pm",
+  title: "THE FOSS SUMMIT",
+  updatedAt: "2023-04-18T14:18:14.107Z",
+  user: "6418950926d64d5aa4fb07c5",
+  venue: "CM 102",
+  __v: 0,
+  _id: "643ea6a6ed50f5004050e491",
+}

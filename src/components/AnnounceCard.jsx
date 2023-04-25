@@ -9,7 +9,7 @@ const AnnounceCard = ({title,pic}) => {
           <img alt={title} src={pic} className='flex aspect-[16/9] rounded-xl object-contain h-80'/>
         </div>
         <div className='flex  justify-center items-center w-full h-20'>
-          <span className='flex font-bold text-gradient font-lobster text-lg py-5 w-4/5 text-center justify-center items-center'>{title}</span>
+          <span className='flex font-bold text-gradient font-poppins text-lg py-5 w-4/5 text-center justify-center items-center'>{title}</span>
         </div>
         <span className='sm:hidden font-semibold group-hover:flex text-sm text-gradient absolute'>Click to View Details</span>
     </div>

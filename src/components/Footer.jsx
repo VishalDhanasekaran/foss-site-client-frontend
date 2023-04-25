@@ -22,12 +22,12 @@ return (
         </div>
 
         <div className='ss:w-[20%] flex flex-col flex-wrap justify-start'>
-          <h4 className='font-lobster font-medium text-xl text-white underline underline-offset-2'>Sitemap</h4>
+          <h4 className='font-poppins font-medium text-xl text-white underline underline-offset-2'>Sitemap</h4>
           {footerLinks.map((footerLinks)=>(
             <div key={footerLinks.id} className='flex justify-start items-center'>
                 <ul className='list-none py-2 '>
                     <div className='flex'>
-                      <li className={`font-lobster font-normal text-base text-white hover:text-secondary cursor-pointer`}>
+                      <li className={`font-poppins font-normal text-base text-white hover:text-secondary cursor-pointer`}>
                         <a href={`../${footerLinks.link}`}>{footerLinks.name}</a>
                       </li>
                     </div>
@@ -36,7 +36,7 @@ return (
           ))}
         </div>
 
-        <div className={`font-lobster font-normal text-dimWhite text-lg ss:w-[30%]  flex flex-col `}>
+        <div className={`font-poppins font-normal text-dimWhite text-lg ss:w-[30%]  flex flex-col `}>
           <h4 className='flex text-xl font-medium text-white underline underline-offset-2'>Contact</h4>
           <div className='cursor-pointer text-sm px-5 py-2' onClick={() => handleClick('https://goo.gl/maps/GjRuMDe4MQWCrr3S8')}>
             <h4 className='flex'>Department of Computing,</h4>
@@ -49,12 +49,12 @@ return (
         </div>
         
         <div className='ss:w-[20%] flex flex-col flex-wrap justify-start'>
-          <h4 className='font-lobster font-medium text-xl text-white underline underline-offset-2'>Contributors</h4>
+          <h4 className='font-poppins font-medium text-xl text-white underline underline-offset-2'>Contributors</h4>
           {contributors.map((item)=>(
             <div key={item.id} className='flex justify-start items-center'>
                 <ul className='list-none py-2'>
                     <div className='flex'>
-                      <li className={`font-lobster font-normal`}>
+                      <li className={`font-poppins font-normal`}>
                         <a className='flex text-lg text-white hover:text-secondary cursor-pointer' onClick={() => handleClick(item.link)}>{item.name}</a>
                         <span className='flex text-sm text-dimWhite'>{item.role}</span>
                       </li>
@@ -66,7 +66,7 @@ return (
       </div>
       
       <div className='w-full flex justify-center md:flex-row flex-col pt-2 border-t border-t-[#f7f2cb] h-2'>
-        <p className='font-lobster font-normal text-center text-xs text-white'> &#169; 2023 FOSS CIT. All Rights Reserved.</p>
+        <p className='font-poppins font-normal text-center text-xs text-white'> &#169; 2023 FOSS CIT. All Rights Reserved.</p>
       </div>
     
     </section>

@@ -4,11 +4,34 @@ import { Navbar,Footer,HomePage, AboutUs, Members, Contact,Error, Events,Login,E
 import { Route, Routes } from 'react-router-dom';
 import Cookies from 'js-cookie';
 
-
+import { ToastContainer, toast as t } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [loggedIn,setLoggedIn] = useState(false);
+  const customStyle = {
+    backgroundColor:"#fae95e"
+  };
+
+  const handleEvent=()=>{
+    var toast=Cookies.get('toast');
+    Cookies.remove('toast');
+    if(toast==='true')
+      {
+        t.info('There is an Upcoming Event!\nClick here to learn more!', {
+          position: "top-right",
+          autoClose: 10000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          progressStyle: customStyle,
+          });
+      }
+  }
 
   useEffect(() => {
     const cookie=Cookies.get("email");
@@ -20,14 +43,32 @@ const App = () => {
       setShowOverlay(true);
     }, 2500);
     if(loggedIn) {
-    return () => clearTimeout(timeoutId);}
+      return () => {
+        clearTimeout(timeoutId);
+      }
+    }
   }, []);
+  
+  useEffect(()=>{
+    const timeoutEvent = setTimeout(() => {
+      handleEvent();
+    }, 4000);
+    return()=>{
+      clearTimeout(timeoutEvent);
+    }
+  },[])
 
-
+  const handleToastClick=()=>{
+    window.open(`/events/${Cookies.get("event_id")}`,'_self','noopener,norefferer');
+  }
+  
 
   return (
   <>
     <div className=' bg-neutral-900 w-full overflow-hidden'>
+      <div onClick={handleToastClick}>
+        <ToastContainer/>
+      </div>
       <div className={`px-10 flex justify-center items-center fixed w-full z-[14] bg-header animate-[fadeInUp_0.5s_ease-in-out]`}>
         <div className={` w-full text-white `}>
           <Navbar loggedIn={loggedIn}/>
