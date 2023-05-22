@@ -71,7 +71,7 @@ const Members = () => {
   return (
     <div className='flex flex-col'>
       
-      <div className={`py-10 justify-center items-center px-4 gap-10 flex flex-row w-full animate-[zoomIn_1s_ease-in-out]`}>
+      <div className={`py-10 justify-center items-center px-4 gap-10 flex flex-col w-full animate-[zoomIn_1s_ease-in-out]`}>
         <div className=" flex items-center relative z-[1]">
           <h2 className={`font-poppins font-semibold text-5xl text-gradient w-full text-gradient`}>
             Board Members

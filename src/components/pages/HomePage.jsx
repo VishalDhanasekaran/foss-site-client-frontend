@@ -174,7 +174,7 @@ const HomePage = () => {
         </section>
         <section id={'achievements'} className={`flex-1 flex-col xl:px-0 sm:px-16 px-6 py-10 `} data-aos="fade-up" data-aos-duration='2000'>
             <h1 className="flex-1 font-poppins font-semibold text-5xl text-gradient ">
-                What we have achieved...
+              Our Achievements.
             </h1>
             <p className={`font-poppins font-normal text-dimWhite text-xl py-5 text-justify`} >
             FOSS-CIT has conducted various training sessions on web technology, competitive programming, game development, and specific GNU/Linux tools and frameworks. This club has also established successful collaborations with Newton school, Mozilla Campus Clubs, Google Developer Groups in Coimbatore and FOSS Wave, an open-source software community.

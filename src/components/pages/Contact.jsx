@@ -88,7 +88,7 @@ const Contact = () => {
             </div>
             <div className='flex flex-row p-4'>
               <img src={ml} className='w-6 h-6 object-contain'/>
-              <span className='px-5'>fosscit@gmail.com </span>
+              <a href='mailto:fosscit@gmail.com'><span className='px-5'>fosscit@gmail.com</span></a>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ const Contact = () => {
       <section id="mailform" className={`flex md:flex-col flex-col gap-5 py-10`} data-aos="fade-up" data-aos-duration='2000'>
         <div>
           <h1 className="flex-1 font-poppins font-semibold text-center text-4xl text-white text-gradient">
-            Mail Us Your Message
+            Drop us a line through the mail
           </h1>
         </div>
         <div className="flex  w-full justify-center items-center">

@@ -33,7 +33,7 @@ const AboutUs = () => {
             History
         </h1>
         <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5 `}>
-        FOSS was first established in 2018 by Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose,  students of Software Systems from the department of Computing, Coimbatore Institute of Technology. Initially, the club was a team of 5 members which has now gradually grown to be a successful team of more than 15 members. The main objective of introducing this club amidst many other clubs of CIT was to strengthen the technical proficiency of the students by assisting them with Webinars and Hackathons of varied concepts. FOSS has seen a progressive and steady increase in the participants count all through the years. Moreover, the team exhibits enthusiastic support in conducting more events in the near future.
+        FOSS was first established in 2018 by Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose,  students of Software Systems from the Department of Computing, Coimbatore Institute of Technology. Initially, the club was a team of 5 members which has now gradually grown to be a successful team of more than 15 members. The main objective of introducing this club amidst many other clubs of CIT was to strengthen the technical proficiency of the students by assisting them with Webinars and Hackathons of varied concepts. FOSS has seen a progressive and steady increase in the participants count all through the years. Moreover, the team exhibits enthusiastic support in conducting more events in the near future.
         </p>
       </section>
       
@@ -44,7 +44,7 @@ const AboutUs = () => {
             Initiative
           </h1>
           <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>
-          Initially, The aim of our Alumni, Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose, was to address the technical concerns faced by students in their journey of learning the usage and development of Open-Source softwares. They focused on creating and exploring knowledge through an open forum equipped with fellow followers.
+          Initially, the aim of our Alumni, Dhileepan Thangamanimaran, Sai Adarsh, and Sibi Bose, was to address the technical concerns faced by students in their journey of learning the sage and development of Open-Source softwares. They focused on creating and exploring knowledge through an open forum, <span className='font-[800]'>endowed with a dedicated team.</span>
           </p>
         </div>
         <div className=' flex flex-wrap sm:w-3/5 gap-10 justify-center items-center'>
@@ -60,7 +60,7 @@ const AboutUs = () => {
             Staff Advisors 
           </h1>
           <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>
-          The club is fortunate to have the guidance and support of two staff advisors from the Department of Computing at Coimbatore Institute of Technology. They act as the guiding pillars, mentoring and encouraging its members, and emphasizing the importance of leadership and communication to the club members. The advisors also ensure that the club adheres to college regulations and procedures. They generously share their knowledge and experience with the members, helping them to grow and learn through the opportunities created as a team.
+          The club is fortunate to have the guidance and support of two staff advisors from the Department of Computing at Coimbatore Institute of Technology. <span className='font-[800]'>They act as the guiding illars, mentoring, encouraging and emphasizing the importance of leadership and communication to the club members.</span> The advisors also ensure that the club adheres to college regulations and procedures. They generously share their knowledge and experience with the members, helping them to grow and learn through the opportunities created as a team.
           </p>
         </div>
         <div className=' flex flex-wrap sm:w-1/2 gap-10 justify-center items-center'>

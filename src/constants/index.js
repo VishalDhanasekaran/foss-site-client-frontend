@@ -133,17 +133,17 @@ export const missions=[
   {
     id: 6001,
     img:'https://amfoss.in/illus/mentor.svg',
-    tagline:'Mentor & train students to face real-world challenges'
+    tagline:'To mentor and train students to face real-world challenges'
   },
   {
     id: 6002,
     img:'https://amfoss.in/illus/promote.svg',
-    tagline:'Promote Open Source and Computer Science'
+    tagline:'To enhance Open Source and Computer Science Knowledge'
   },
   {
     id: 6003,
     img:'https://amfoss.in/illus/contribute.svg',
-    tagline:'Team Building Activities and Discussion Forums'
+    tagline:'To promote Team Building Activities and Discussion Forums'
   }
 ]
 
