@@ -1,5 +1,5 @@
 import React from 'react'
-import { logo } from '../assets';
+import { logo, logo_optimized } from '../assets';
 import { footerLinks,socialMedia,contributors } from '../constants';
 const Footer = () => {
 
@@ -12,7 +12,7 @@ return (
         
         <div className=' flex items-center w-full flex-col ss:w-[30%] gap-5 justify-end'>
           <div className='flex justify-center items-center'>
-            <a href='/'><img src={logo} alt='FOSS Logo' className='h-[10rem] object-contain '/></a>
+            <a href='/'><img src={logo_optimized} alt='FOSS Logo' className='h-[10rem] object-contain '/></a>
           </div>
           <div className='flex flex-row flex-wrap  justify-center items-center gap-5'>
             {socialMedia.map((social,index)=>(
