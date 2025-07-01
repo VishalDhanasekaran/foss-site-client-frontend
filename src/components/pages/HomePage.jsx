@@ -153,7 +153,7 @@ const HomePage = () => {
               <p className={`font-courier font-normal text-dimWhite text-xl flex text-justify lg:w-[50%]`}>
               FOSS-CIT aims to assist students in learning essential technical skills for the future and to work with various open-source platforms. Most of the preliminary activities include Bootcamps, Workshops, Hackathons, and talk shows which are conducted to ensure a smooth learning curve for newcomers to the world of open-source. Through the contests and events, students can enhance their skillset not only in the field of computer science, but also in all necessary professional platforms.
               </p>
-              <img className='flex sm:w-[50%]' src='' alt='mission'/>
+              {/*<img className='flex sm:w-[50%]' src='' alt='mission'/>*/}
             </div>
             {/*<div className='flex flex-wrap w-full gap-10 justify-center items-end py-10' data-aos="fade-up" data-aos-duration='2000'>
               {missions.map((item)=>(
