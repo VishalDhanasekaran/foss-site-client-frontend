@@ -36,11 +36,11 @@ const Navbar = () => {
                 <img src={toggle ? close : menu} alt='menu' className='w-8 h-8 object-contain' onClick={() => setToggle((prev) => !prev)} />
                 <div className={`${toggle ? 'left-0' : '-left-full'} fixed top-0 h-screen w-2/4 bg-gradient-to-tl from-white/10 to-[#2d270e] backdrop-blur-lg z-[15] p-6 ease-in-out duration-[500ms] object-contain`}>
                     <div className='flex flex-row p-10 justify-center items-center'>
-                        <img src='../assets/FOSS-CIT_Optimized-Logo.jpeg' alt='FOSS-CIT Logo' className='w-16 h-16' />
+                        <img src={logo_optimized} alt='FOSS-CIT Logo' className='w-16 h-16' />
                     </div>
                     <ul className='list-none flex flex-col justify-end items-center flex-1'>
                         {navLinks.map((nav, index) => (
-                            <li key={nav.id} className={`font-poppins font-semibold cursor-pointer text-lg p-3 text-white hover:text-secondary`}>
+                            <li key={nav.id} className={`font-courier font-semibold cursor-pointer text-lg p-3 text-white hover:text-secondary`}>
                                 <a href={`${nav.id}`}>
                                     {nav.title}
                                 </a>
