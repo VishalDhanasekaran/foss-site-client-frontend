@@ -60,7 +60,7 @@ const AboutUs = () => {
             Staff Advisors 
           </h1>
           <p className={`font-poppins font-normal text-justify text-dimWhite text-xl py-5`}>
-          The club is fortunate to have the guidance and support of two staff advisors from the Department of Computing at Coimbatore Institute of Technology. <span className='font-[800]'>They act as the guiding illars, mentoring, encouraging and emphasizing the importance of leadership and communication to the club members.</span> The advisors also ensure that the club adheres to college regulations and procedures. They generously share their knowledge and experience with the members, helping them to grow and learn through the opportunities created as a team.
+          The club is fortunate to have the guidance and support of two staff advisors from the Department of Computing at Coimbatore Institute of Technology. <span className='font-[800]'>They act as the guiding pillars, mentoring, encouraging and emphasizing the importance of leadership and communication to the club members.</span> The advisors also ensure that the club adheres to college regulations and procedures. They generously share their knowledge and experience with the members, helping them to grow and learn through the opportunities created as a team.
           </p>
         </div>
         <div className=' flex flex-wrap sm:w-1/2 gap-10 justify-center items-center'>
