@@ -15,6 +15,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         roboto: ['Roboto Condensed', 'sans-serif'],
         lobster: ['Lobster', 'cursive'],
+        courier: ['Courier New', 'monospace']
       },
       keyframes:{
         fadeInLeft:{

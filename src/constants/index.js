@@ -1,4 +1,11 @@
-import { careerGuidence, codingContest, discord, github, groupDiscussions, instagram, linkedin, quizz, webinar, workshop, youtube, socialMediaIcon, bootcamp, designing, Aruna, Umarani, interview, funEvents, openSource, founder1, founder2, founder3,targetEvents, members, youtubeViews, op_pic, workshopPic, coding_contest, SocialEvent, quiz, fun_events, career_Guidence, webinarPic, bootcampPic, interviewprepPic, GD, designContest } from "../assets";
+import { 
+  careerGuidence, 
+  codingContest, discord, github, groupDiscussions, instagram, linkedin, 
+  quizz, webinar, workshop, youtube, socialMediaIcon, bootcamp, designing, 
+  Aruna, Umarani, interview, funEvents, openSource, founder1, founder2, founder3,targetEvents, 
+  members, youtubeViews, op_pic, workshopPic, coding_contest, SocialEvent, quiz, fun_events, 
+  career_Guidence, webinarPic, bootcampPic, interviewprepPic, GD, designContest 
+} from "../assets";
 
 export const navLinks =[
     { id:'/',title:'Home'},
@@ -93,21 +100,21 @@ export const founders = [
       id:3001,
       img: founder1,
       name: "Dhileepan Thangamanimaran",
-      working: "Senior Member Technical at D. E. Shaw Group",
+      working: "Technical Lead at D. E. Shaw Group",
       linkedin: "https://www.linkedin.com/in/dhileepan/",
     },
     {
       id:3002,
       img: founder2,
       name: "Sibi Bose",
-      working: "Software Engineer at KLA Tencor",
+      working: "Software Engineer-II at KLA Tencor",
       linkedin: "https://www.linkedin.com/in/sibi-bose/",
     },
     {
       id:3003,
       img: founder3,
       name: "Sai Adarsh S",
-      working: "Software Engineer at Cisco",
+      working: "Software Engineer-II at Cisco",
       linkedin: "https://www.linkedin.com/in/sai-adarsh/",
     }
   ]
@@ -196,7 +203,7 @@ export const activities=[
     title:'Social Media Events',
     pic:SocialEvent,
     icon:socialMediaIcon,
-    desc:'Social media events are conducted in series by inculcating technical questions and facts to skill up daily through platforms like Instagram and LinkedIn. These events are designed to help individuals gain knowledge and practise basic interview questions to prepare for a job interview. These events are designed to help individuals gain knowledge and practise basic interview questions to prepare for a job interview.',
+    desc:'Social media events are conducted in series by inculcating technical questions and FOSS facts to skill up daily through platforms like Instagram and LinkedIn. These events are designed to help individuals gain knowledge in FOSS and practise basic interview questions to prepare for a job interview. These events are designed to help individuals gain knowledge and practise basic interview questions to prepare for a job interview.',
   },
   {
     id:7008,
@@ -229,9 +236,9 @@ export const activities=[
   {
     id:7005,
     pic:GD,
-    title:'Group Discussions',
+    title:'Meet-ups',
     icon:groupDiscussions,
-    desc:'Event on Group discussion are conducted for individuals who are preparing for job interviews or seeking to improve their communication skills in a group setting.The event will be facilitated by a moderator who guides the discussion and provides feedback to help participants improve their performance. Participants will have the opportunity to practice their communication skills and receive feedback from an experienced moderator.',
+    desc:'FOSS Meetups are organized for individuals passionate about technology and open-source innovation. These meetups serve as a platform for developers, students, and enthusiasts to come together, share knowledge, and collaborate on community-driven tech. The event features speaker sessions, lightning talks, and networking opportunities, all centered around Free and Open Source Software (FOSS). Participants gain exposure to real-world applications of open-source tools, explore ongoing community projects, and learn from experienced contributors. The meetups encourage active participation, foster peer learning, and promote a culture of collaboration in the open-source ecosystem.',
   },
 ]
 
@@ -259,7 +266,7 @@ export const achievements =[
 
 export const eventDemo={
   category:"Interactive session",
-  content:"Launch of the official Foss Club website; prizes awarded to the winners of the Code Quest and Trivia Time events.",
+  content:"Launch of the official FOSS-CIT website; prizes awarded to the winners of the Code Quest and Trivia Time events.",
   createdAt: "2023-04-18T14:18:14.107Z",
   eventDate:"2023-04-25T14:10:11.000Z",
   eventYear:"2022 - 23",
