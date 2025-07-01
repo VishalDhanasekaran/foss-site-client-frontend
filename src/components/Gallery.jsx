@@ -45,7 +45,7 @@ const Gallery = ({name,data}) => {
                             <img src={item.pic} alt={item.pic} className='flex aspect-square object-contain'/>
                         </div>
                     </SwiperSlide>
-                ))}
+                )).reverse()}
                 </Swiper>
             </div>
         </section>

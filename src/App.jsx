@@ -32,7 +32,7 @@ const App = () => {
           });
       }
   }
-
+/*
   useEffect(() => {
     const cookie=Cookies.get("email");
     if(cookie)
@@ -47,7 +47,7 @@ const App = () => {
         clearTimeout(timeoutId);
       }
     }
-  }, []);
+  }, []);*/
   
   useEffect(()=>{
     const timeoutEvent = setTimeout(() => {
@@ -96,9 +96,9 @@ const App = () => {
         </div>
       </div>
     </div>
-    {showOverlay && !loggedIn &&<div className='fixed bg-opacity-80 z-20 overflow-hidden bg-black top-0 bottom-0 right-0 left-0'>
+    {/*showOverlay && !loggedIn &&<div className='fixed bg-opacity-80 z-20 overflow-hidden bg-black top-0 bottom-0 right-0 left-0'>
       <Login handler={setShowOverlay} logHandler={setLoggedIn}/>
-    </div>}
+    </div>*/}
   </>
 )
 }
