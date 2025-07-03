@@ -13,11 +13,11 @@ import BoltLoader from "./BoltLoader";
 import WhatWeDo from "./WhatWeDo";
 import Activity from "./Activity";
 import Gallery from "./Gallery";
-
+import ParticleAnimation from "./ParticleAnimation";
 export{
     Navbar, 
     Footer, HomePage,AboutUs,Members,Contact,Events,
     Error,Login,Event, 
-    BoltLoader,WhatWeDo,Activity,Gallery,RedirectToOpenCrew
-    
+    BoltLoader,WhatWeDo,Activity,Gallery,RedirectToOpenCrew,
+    ParticleAnimation
 };
