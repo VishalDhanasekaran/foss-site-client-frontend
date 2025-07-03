@@ -12,7 +12,9 @@ export const navLinks =[
     { id:'/about',title:'About Us'},
     { id:'/members',title:'Members'},
     { id:'/events',title:'Events'},
+    {id: '/blogs', title: 'Blogs'},
     { id:'/contact',title:'Contact Us'},
+    {id: '/join', title: 'Join'}
     // { id:'/login',title:'Log In'},
 ];
 
