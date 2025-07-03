@@ -1,9 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
+
 const RedirectToOpenCrew = () => {
-    const [change, setChange] = useState(null);
+    const hasRedirected = useRef(false);
+
     useEffect(() => {
-      window.open('https://opencrew.onrender.com/')
-    }, [change]);
+      if(!hasRedirected.current)
+      {
+        hasRedirected.current = true;
+        window.open('https://opencrew.onrender.com/', '_blank');
+      }
+      
+    }, []);
 
     return (
       <div className={`flex flex-col py-10`}>
