@@ -9,7 +9,7 @@ import { UilLink } from '@iconscout/react-unicons'
 import { API } from '../../constants';
 import ParticleAnimation from '../ParticleAnimation';
 import Cookies from 'js-cookie';
-import { ParticleAnimation } from '..';
+
 
 const HomePage = () => {
 

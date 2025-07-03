@@ -1,3 +1,4 @@
+@use "sass:math"; 
 
 $total: 1000; // total particles
 $orb-size: 100px;
@@ -10,7 +11,7 @@ html, body {
 }
 
 body {
-  background: black;
+  background: black; 
 }
 
 .wrap {
@@ -21,7 +22,7 @@ body {
   height: 0; 
   transform-style: preserve-3d;
   perspective: 1000px;
-  animation: rotate $time infinite linear; // rotate orb
+  animation: rotate $time infinite linear;
 }
 
 @keyframes rotate {
@@ -39,29 +40,29 @@ body {
 }
 
 @for $i from 1 through $total {
-  $z: (random(360) * 1deg); // random angle to rotateZ
-  $y: (random(360) * 1deg); // random to rotateX
-  $hue: ((40/$total * $i) + $base-hue); // set hue
-  
-  .c:nth-child(#{$i}){ // grab the nth particle
+  $z: (math.random() * 360deg);
+  $y: (math.random() * 360deg);
+  $hue: ((math.div(40, $total) * $i) + $base-hue);
+
+  .c:nth-child(#{$i}) {
     animation: orbit#{$i} $time infinite;
     animation-delay: ($i * .01s); 
     background-color: hsla($hue, 100%, 50%, 1);
   }
 
-  @keyframes orbit#{$i}{ 
+  @keyframes orbit#{$i} {
     20% {
-      opacity: 1; // fade in
+      opacity: 1;
     }
     30% {
-      transform: rotateZ(-$z) rotateY($y) translateX($orb-size) rotateZ($z); // form orb
+      transform: rotateZ(-$z) rotateY($y) translateX($orb-size) rotateZ($z);
     }
     80% {
-      transform: rotateZ(-$z) rotateY($y) translateX($orb-size) rotateZ($z); // hold orb state 30-80
-      opacity: 1; // hold opacity 20-80
+      transform: rotateZ(-$z) rotateY($y) translateX($orb-size) rotateZ($z);
+      opacity: 1;
     }
     100% {
-       transform: rotateZ(-$z) rotateY($y) translateX( ($orb-size * 3) ) rotateZ($z); // translateX * 3
+      transform: rotateZ(-$z) rotateY($y) translateX(($orb-size * 3)) rotateZ($z);
     }
   }
 }
