@@ -33,7 +33,7 @@ const Navbar = () => {
                     </div>
                     <ul className='list-none flex flex-col justify-end items-center flex-1'>
                         {navLinks.map((nav, index) => (
-                            <li key={nav.id} className={`font-courier font-semibold cursor-pointer text-lg p-3 text-white hover:text-secondary`}>
+                            <li key={nav.id} className={`font-courier font-bold cursor-pointer text-lg p-3 text-white hover:text-secondary`}>
                                 <a href={`${nav.id}`}>
                                     {nav.title}
                                 </a>

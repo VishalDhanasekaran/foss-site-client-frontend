@@ -29,10 +29,10 @@ const WhatWeDo = () => {
         <div className='flex sm:hidden flex-col gap-3 bg-zinc-800 justify-center items-center p-3 rounded-xl'>
         {activities.map((item)=>(
             <div className='flex flex-col bg-zinc-800 p-2 rounded-xl justify-center items-center gap-3' key={item.id}>
-                <span className='flex text-2xl text-gradient font-semibold'>{item.title}</span>
+                <span className='flex text-2xl text-gradient font-semibold font-courier'>{item.title}</span>
                 <div className='flex flex-row justify-center items-center'>
                     <img className='flex aspect-square object-contain h-20 w-20' src={item.icon}/>
-                    <span className='flex text-justify p-2'>{item.desc}</span>
+                    <span className='flex text-justify p-2 font-courier'>{item.desc}</span>
                 </div>
             </div>
         ))}
