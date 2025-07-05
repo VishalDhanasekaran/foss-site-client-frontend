@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 const RedirectToOpenCrew = () => {
     const hasRedirected = useRef(false);
-
+/*
     useEffect(() => {
       if(!hasRedirected.current)
       {
@@ -11,6 +11,7 @@ const RedirectToOpenCrew = () => {
       }
       
     }, []);
+    */
 
     return (
       <div className={`flex flex-col py-10`}>

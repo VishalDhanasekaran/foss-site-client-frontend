@@ -14,7 +14,7 @@ export const navLinks =[
     { id:'/events',title:'Events'},
     {id: '/blogs', title: 'Blogs'},
     { id:'/contact',title:'Contact Us'},
-    {id: '/join', title: 'Join'}
+    {id: '/join', title: 'Join',newtab:true}
     // { id:'/login',title:'Log In'},
 ];
 

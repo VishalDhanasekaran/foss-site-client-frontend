@@ -90,14 +90,12 @@ const App = () => {
           <div className={`w-full text-white`}>
             <Routes>
               <Route path='/' element={<HomePage />} />
-              <Route path='*' element={<Error />} />
               <Route path='/home' element={<HomePage />} />
               <Route path='/about' element={<AboutUs />} />
               <Route path='/members' element={<Members />} />
               <Route path='/events/:id' element={<Event />} />
               <Route path='/events' element={<Events />} /> 
               <Route path='/contact' element={<Contact />} />
-              <Route path='/join' element={<RedirectToOpenCrew/>} />
               <Route path='/blogs' element={<RedirectToBlogs/>}/>
             </Routes>
           </div>

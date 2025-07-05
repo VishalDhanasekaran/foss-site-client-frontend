@@ -18,7 +18,7 @@ const Navbar = () => {
             <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
                 {navLinks.map((nav, index) => (
                     <li key={nav.id} className={`font-courier font-normal cursor-pointer text-lg px-5 text-white hover:text-secondary`}>
-                        <a href={`${nav.id}`}>
+                        <a href={`${nav.id}`} {...(nav.newtab && { target: "_blank" })} >
                             {nav.title}
                         </a>
                     </li>
