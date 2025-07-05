@@ -91,12 +91,14 @@ const App = () => {
             <Routes>
               <Route path='/' element={<HomePage />} />
               <Route path='/home' element={<HomePage />} />
+              <Route path='*' element={<Error />} />
               <Route path='/about' element={<AboutUs />} />
               <Route path='/members' element={<Members />} />
               <Route path='/events/:id' element={<Event />} />
               <Route path='/events' element={<Events />} /> 
               <Route path='/contact' element={<Contact />} />
               <Route path='/blogs' element={<RedirectToBlogs/>}/>
+              <Route path='/join' element={<RedirectToOpenCrew/>} />
             </Routes>
           </div>
         </div>
