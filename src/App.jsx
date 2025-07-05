@@ -91,7 +91,7 @@ const App = () => {
             <Routes>
               <Route path='/' element={<HomePage />} />
               <Route path='/home' element={<HomePage />} />
-              <Route path='*' element={<Error />} />
+              <Route path='/*' element={<Error/>}/>
               <Route path='/about' element={<AboutUs />} />
               <Route path='/members' element={<Members />} />
               <Route path='/events/:id' element={<Event />} />
