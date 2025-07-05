@@ -9,6 +9,7 @@ import { UilLink } from '@iconscout/react-unicons'
 import { API } from '../../constants';
 import ParticleAnimation from '../ParticleAnimation';
 import Cookies from 'js-cookie';
+import CurrentEventTerminal from '../CurrentEventTerminal';
 
 
 const HomePage = () => {
@@ -102,134 +103,9 @@ const HomePage = () => {
         </div>
 
       </section>
-
-      {/*event&&<section id={'upcomingevents'} className={`flex flex-col w-[80%] justify-center items-center bg-zinc-800 rounded-2xl mt-10 gap-2`} data-aos="fade-up" data-aos-duration='2000'>
-        <div>
-          <h1 className=" flex font-courier font-semibold text-5xl text-gradient py-5 px-5">
-            Current Event
-          </h1>
-        </div>
-        <div className='flex sm:flex-row flex-col px-5 gap-5'>
-
-          <div className={`flex justify-center items-center flex-col mx-4`} data-aos="fade-up-right" data-aos-duration='2000'>
-            <a href={`/events/${event?._id}`}>
-              <div className='flex flex-col justify-center items-center'>
-                <img src={event?.pic} className='aspect-video object-contain h-72'/>
-                <span className={`font-courier text-dimWhite text-2xl text-center font-bold text-gradient p-5`}>{event?.title}</span>
-              </div>
-            </a>
-          </div>
-          <div className={` grid grid-cols-2 grid-rows-3 justify-center flex-col w-full font-courier`} data-aos="fade-up-left" data-aos-duration='2000'>
-            <div className='flex flex-col justify-center'>
-              <span className='flex font-semibold text-gradient text-2xl'>Date:</span>
-              <span className={`font-courier font-normal text-justify text-dimWhite text-2xl `}>{event?.eventDate.slice(0,10).split('-').reverse().join('-')}</span>
-            </div>
-            <div className='flex flex-col justify-center'>
-              <span className='flex font-semibold text-gradient text-2xl'>Venue:</span>
-              <span className={`font-courier font-normal text-justify text-dimWhite text-2xl `}>{event?.venue}</span>
-            </div>
-            <div className='flex flex-col justify-center'>
-              <span className='flex font-semibold text-gradient text-2xl'>Time:</span>
-              <span className={`font-courier font-normal text-justify text-dimWhite text-2xl `}>{event?.time}</span>
-            </div>
-            <div className='flex flex-col justify-center'>
-              <span className='flex font-semibold text-gradient text-2xl'>Handled by:</span>
-              <span className={`font-courier font-normal text-justify text-dimWhite text-2xl truncate`}>{event?.speaker}</span>
-            </div>
-            <div className='flex flex-row col-span-2 cursor-pointer justify-start items-center' onClick={()=>{handleClick(event?.link,event?._id)}}>
-              <UilLink/>
-              <span className={`font-courier font-normal text-justify text-2xl text-[#f5e257] underline underline-offset-2`}>See More</span>
-            </div>
-          </div>
-        </div>
-      </section>*/}
-      {event && <section className="flex flex-col w-[90%] max-w-5xl mx-auto justify-center items-center 
-    bg-zinc-800 backdrop-blur-md shadow-[0_0_15px_3px_rgba(255,255,0,0.3)] ring-1 ring-black 
-    rounded-2xl mt-10 gap-2 terminal-border transition-all duration-500"
-        data-aos="fade-up" data-aos-duration="2000"
-      >
-
-        <div class="w-full text-secondary px-4 py-2 rounded-t-2xl flex items-center gap-2">
-          <div class="flex gap-2">
-            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
-            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-          </div>
-          <span class="font-courier font-bold  text-secondary text-sm ml-4">
-            FOSS@CIT:~$ embrace-the-penguin
-          </span>
-        </div>
-
-
-        <div class="terminal-text w-full p-6">
-          <div class="mb-4">
-            <h1 class="font-courier font-bold text-3xl  text-secondary terminal-glow">
-              <span class=" text-secondary">
-                $</span>
-              cat current_event.txt
-            </h1>
-          </div>
-
-          <div class="flex sm:flex-row flex-col gap-6">
-
-            <div class="flex justify-center items-center flex-col">
-              <a href={`/events/${event?._id}`}>
-                <div class="border-2 border-secondary rounded-lg p-2 bg-black/50">
-
-                  <div class="w-80 h-48 bg-gray-800 rounded flex items-center justify-center border border-yellow-400/30">
-                    <span class="font-courier  text-secondary text-sm">
-                      <img src={event?.pic} />
-                    </span>
-                  </div>
-                </div>
-              </a>
-              <span class="font-courier  text-secondary text-xl font-bold terminal-glow mt-4 text-center">
-                {event.title}
-              </span>
-            </div>
-
-
-            <div class="grid grid-cols-2 grid-rows-3 gap-4 w-full font-mono">
-              <div class="flex flex-col">
-                <span class=" text-secondary font-bold text-lg terminal-glow">DATE:</span>
-                <span class=" text-secondary text-lg font-mono">
-                  {event?.eventDate.slice(0, 10).split('-').reverse().join('-')}
-                </span>
-              </div>
-
-              <div class="flex flex-col">
-                <span class=" text-secondary font-bold text-lg terminal-glow">VENUE:</span>
-                <span class=" text-secondary text-lg font-mono">{event.venue}</span>
-              </div>
-
-              <div class="flex flex-col">
-                <span class=" text-secondary font-bold text-lg terminal-glow">TIME:</span>
-                <span class=" text-secondary text-lg font-mono">{event.time} IST</span>
-              </div>
-
-              <div class="flex flex-col">
-                <span class=" text-secondary font-bold text-lg terminal-glow">SPEAKER:</span>
-                <span class=" text-secondary text-lg font-mono truncate">{event.speaker}</span>
-              </div>
-
-              <div class="col-span-2 cursor-pointer">
-                <button class="flex items-center gap-2 px-4 py-2 border border-yellow-400 rounded bg-black/50 hover:bg-yellow-400/10 transition-all duration-300 terminal-button">
-                  <span class=" text-secondary font-bold">$</span>
-                  <span class=" text-secondary font-mono" onClick={() => { handleClick(event?.link, event?._id) }}>./view_more.sh</span>
-                  <span class="cursor  text-secondary"></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="mt-6 pt-4 border-t border-yellow-400/30">
-            <span class="font-courier  text-secondary text-sm">FOSS@CIT:~$ </span>
-            <span className="text-secondary font-bold animate-blink mt-2">_</span>
-          </div>
-        </div>
-      </section>
-      }
+      
+      {/* Current Event updates */}
+      { event && <CurrentEventTerminal event={event}/> }
 
       <div className={`flex flex-col py-10 `}>
         <section id={'mission'} className={`flex-1 flex-col xl:px-0 sm:px-16 px-6 `} data-aos="fade-up" data-aos-duration='2000'>
