@@ -14,12 +14,12 @@ const RedirectToOpenCrew = () => {
     }, []);*/
 
     return (
-      <div className={`flex flex-col py-10`}>
+      <div className={`flex flex-col py-10 items-center`}>
         <h2 className={`font-courier font-semibold text-5xl text-gradient w-full text-center text-gradient`}>
           Redirect to OpenCrew, FOSS-CIT's Recruitment Portal <br/>
           the Gateway of Open Source World
         </h2>
-        <GetStarted text={'Click here'}/>
+        <GetStarted text={'Click here'} link={`https://opencrew.onrender.com/`} target={`_blank`} />
       </div>
     );
   }
