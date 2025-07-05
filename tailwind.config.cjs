@@ -46,7 +46,14 @@ module.exports = {
           '0%': {transform:'scale(0,0)'},
           '100%':{transform:'scale(1,1)'}
         },
+        blink:{
+          '0%, 100%' : {opacity: 1},
+          '50%' : {opacity: 0}
+        }
       }
+    },
+    animation:{
+      blink: 'blink 1s step-end infinite'
     },
     screens: {
       xs: "480px",

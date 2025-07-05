@@ -15,7 +15,7 @@ const WhatWeDo = () => {
     }
   return (
     <div className='flex w-full flex-col justify-center items-center'>
-        {data && <div className='hidden sm:flex bg-black bg-opacity-95 fixed z-20 animate-[fadeInDown_1s_ease-in-out] w-2/3 rounded-2xl' >
+        {data && <div className='hidden sm:flex bg-zinc-800 bg-opacity-95 fixed z-20 animate-[fadeInDown_1s_ease-in-out] w-2/3 rounded-2xl' >
             <Activity data={data} setData={setData}/>
         </div>}
         <div className='hidden sm:flex gap-3 flex-wrap w-[60%] justify-center items-center'>
@@ -28,7 +28,7 @@ const WhatWeDo = () => {
         </div>
         <div className='flex sm:hidden flex-col gap-3 bg-zinc-800 justify-center items-center p-3 rounded-xl'>
         {activities.map((item)=>(
-            <div className='flex flex-col bg-zinc-700 p-2 rounded-xl justify-center items-center gap-3' key={item.id}>
+            <div className='flex flex-col bg-zinc-800 p-2 rounded-xl justify-center items-center gap-3' key={item.id}>
                 <span className='flex text-2xl text-gradient font-semibold'>{item.title}</span>
                 <div className='flex flex-row justify-center items-center'>
                     <img className='flex aspect-square object-contain h-20 w-20' src={item.icon}/>

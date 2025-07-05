@@ -11,7 +11,7 @@ const Navbar = () => {
     const email = Cookies.get('email')
 
     return (
-        <nav className='fixed bg-black/40 backdrop-blur-md rounded-xl w-[90%] shadow-2xl flex justify-between items-center py-[.8rem] lg:py-[1rem] px-[1rem] lg:px-[4rem] top'>
+        <nav className='fixed bg-zinc-800/40 backdrop-blur-md rounded-xl w-[90%] shadow-2xl flex justify-between items-center py-[.8rem] lg:py-[1rem] px-[1rem] lg:px-[4rem] top'>
             <a href='/' className='flex flex-row justify-center items-center'>
                 <img src={logo_optimized} alt='FOSS-CIT Logo' className='w-16 h-16' />
                 <span className='font-courier font-semibold text-3xl px-10'>FOSS CIT</span></a>
@@ -24,13 +24,6 @@ const Navbar = () => {
                     </li>
 
                 ))}
-                {/*pic &&
-                    <img src={pic} alt={email} className='flex rounded-full h-10 w-10  cursor-pointer' />
-                
-                */ }
-                {/*!pic &&
-                    <UilUser className='flex h-10 w-10  cursor-pointer hover:fill-secondary' />
-                */}
             </ul>
             <div className='sm:hidden flex justify-center items-center'>
                 <img src={toggle ? close : menu} alt='menu' className='w-8 h-8 object-contain' onClick={() => setToggle((prev) => !prev)} />
@@ -46,12 +39,7 @@ const Navbar = () => {
                                 </a>
                             </li>
                         ))}
-                        {/*pic &&
-                            <img src={pic} alt={email} className='flex rounded-full h-10 w-10   cursor-pointer' />
-                        */}
-                        {/*!pic &&
-                            <UilUser className='flex h-10 w-10  cursor-pointer hover:fill-secondary' />
-                        */}
+                        
                     </ul>
                 </div>
             </div>
